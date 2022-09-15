@@ -26,7 +26,7 @@ namespace CaseMgmtAPI.Features.Children.Handlers
 
             public async Task<ActionResult<IEnumerable<ChildDTO>>> Handle(Query request, CancellationToken cancellationToken)
             {
-                var child = await _context.Cases
+                var child = await _context.Children
                    .Where(x => !x.IsDeleted)
                    .AsNoTracking()
                    .ProjectTo<ChildDTO>(_mapper.ConfigurationProvider)

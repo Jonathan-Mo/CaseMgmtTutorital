@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Case Management Tutorial\\CaseMgmtAPI\\CaseMgmtAPI\\CaseMgmtAPI.csproj": {}
+    "C:\\Users\\P00348089\\Documents\\GitHub\\CaseMgmtTutorital\\CaseMgmtAPI\\CaseMgmtAPI\\CaseMgmtAPI.csproj": {}
   },
   "projects": {
-    "C:\\Case Management Tutorial\\CaseMgmtAPI\\CaseMgmtAPI\\CaseMgmtAPI.csproj": {
+    "C:\\Users\\P00348089\\Documents\\GitHub\\CaseMgmtTutorital\\CaseMgmtAPI\\CaseMgmtAPI\\CaseMgmtAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Case Management Tutorial\\CaseMgmtAPI\\CaseMgmtAPI\\CaseMgmtAPI.csproj",
+        "projectUniqueName": "C:\\Users\\P00348089\\Documents\\GitHub\\CaseMgmtTutorital\\CaseMgmtAPI\\CaseMgmtAPI\\CaseMgmtAPI.csproj",
         "projectName": "CaseMgmtAPI",
-        "projectPath": "C:\\Case Management Tutorial\\CaseMgmtAPI\\CaseMgmtAPI\\CaseMgmtAPI.csproj",
+        "projectPath": "C:\\Users\\P00348089\\Documents\\GitHub\\CaseMgmtTutorital\\CaseMgmtAPI\\CaseMgmtAPI\\CaseMgmtAPI.csproj",
         "packagesPath": "C:\\Users\\P00348089\\.nuget\\packages\\",
-        "outputPath": "C:\\Case Management Tutorial\\CaseMgmtAPI\\CaseMgmtAPI\\obj\\",
+        "outputPath": "C:\\Users\\P00348089\\Documents\\GitHub\\CaseMgmtTutorital\\CaseMgmtAPI\\CaseMgmtAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\P00348089\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -78,6 +78,18 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.8, )"
+            },
+            "Serilog": {
+              "target": "Package",
+              "version": "[2.12.0, )"
+            },
+            "Serilog.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            },
+            "Serilog.Sinks.File": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

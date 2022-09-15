@@ -6,9 +6,15 @@ using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using HealthChecks.UI.Client;
 using CaseMgmtAPI.Test;
+using Serilog;
+
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .WriteTo.File("logs/CMILog.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
 
 var builder = WebApplication.CreateBuilder(args);
-
+builder.Host.UseSerilog();
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -22,13 +28,13 @@ builder.Services.AddMediatR(typeof(Program).Assembly);
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
-builder.Services.AddHealthChecksUI().AddInMemoryStorage();
-builder.Services.AddHealthChecks()
-    //.AddCheck("Foo Service", () => HealthCheckResult.Healthy("The check of the foo service worked."), new[] { "service" })
-    //.AddCheck("Bar Service", () => HealthCheckResult.Healthy("The check of the foo service worked."), new[] { "service" })
-    .AddCheck<ResponseTimeHealthCheck>("Network spped test", null, new[] {"service"})
-    .AddCheck("Database", () => HealthCheckResult.Healthy("The check of the foo service worked."), new[] { "database", "sql" });
-builder.Services.AddSingleton<ResponseTimeHealthCheck>();
+//builder.Services.AddHealthChecksUI().AddInMemoryStorage();
+//builder.Services.AddHealthChecks()
+//    //.AddCheck("Foo Service", () => HealthCheckResult.Healthy("The check of the foo service worked."), new[] { "service" })
+//    //.AddCheck("Bar Service", () => HealthCheckResult.Healthy("The check of the foo service worked."), new[] { "service" })
+//    .AddCheck<ResponseTimeHealthCheck>("Network spped test", null, new[] {"service"})
+//    .AddCheck("Database", () => HealthCheckResult.Healthy("The check of the foo service worked."), new[] { "database", "sql" });
+//builder.Services.AddSingleton<ResponseTimeHealthCheck>();
 
 var app = builder.Build();
 
@@ -43,17 +49,17 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-app.MapHealthChecksUI();
+//app.MapHealthChecksUI();
 
-app.MapHealthChecks("/health/services", new HealthCheckOptions()
-{
-    Predicate = reg => reg.Tags.Contains("service"),
-    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
-});
-app.MapHealthChecks("/health", new HealthCheckOptions()
-{
-    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
-});
+//app.MapHealthChecks("/health/services", new HealthCheckOptions()
+//{
+//    Predicate = reg => reg.Tags.Contains("service"),
+//    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+//});
+//app.MapHealthChecks("/health", new HealthCheckOptions()
+//{
+//    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+//});
 
 app.MapControllers();
 

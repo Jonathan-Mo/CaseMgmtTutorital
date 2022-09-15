@@ -78,13 +78,13 @@ namespace CaseMgmtAPI.Features.Children.Controllers
             catch (Exception ex)
             {
                 _logger.LogCritical($"Exception while creating a child.", ex);
-                return BadRequest();
+                return StatusCode(500, "A problem happened while handling your request.");
             }
         }
 
         // PUT api/<ChildrenController>/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(long id, [FromBody] Child value)
+        public async Task<IActionResult> Put(int id, [FromBody] Child value)
         {
             try
             {
@@ -104,7 +104,7 @@ namespace CaseMgmtAPI.Features.Children.Controllers
 
         // DELETE api/<ChildrenController>/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(long id)
+        public async Task<IActionResult> Delete(int id)
         {
             try
             {

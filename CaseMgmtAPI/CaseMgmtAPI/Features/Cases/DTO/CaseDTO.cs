@@ -5,9 +5,10 @@ namespace CaseMgmtAPI.Features.Cases.DTO
 {
     public class CaseDTO
     {
+        public int Id { get; set; }
         [Required]
-        public Child? Child { get; set; }
+        public Child Child { get; set; }
         [Required]
-        public Reporter? Reporter { get; set; }
+        public Reporter Reporter { get; set; }
     }
 }

@@ -10,40 +10,27 @@ namespace CaseMgmtAPI.Features.Cases.Handlers
     {
         public class Command : CaseDTO, IRequest<CaseDTO>
         {
-            public long idVerify;
+            public int idVerify;
             public int Id;
-            public int ChildId { get; set; }
-            public string FirstName { get; set; }
-            public string? LastName { get; set; }
-            public string? StreetAddress { get; set; }
-            public int City { get; set; }
-            public int State { get; set; }
-            public string? ZipCode { get; set; }
-            public string? Details { get; set; }
-            public int ReporterId { get; set; }
-            public string? ReporterFirstName { get; set; }
-            public string? ReporterLastName { get; set; }
-            public string? ReporterEmail { get; set; }
-            public string? ReporterPhone { get; set; }
 
-            public Command(long caseID, Case childCase)
+            public Command(int caseID, Case childCase)
             {
                 idVerify = caseID;
 
-                //this.Id = childCase.Id;
-                //this.ChildId = childCase.ChildId;
-                this.FirstName = childCase.Child.FirstName;
-                this.LastName = childCase.Child.LastName;
-                this.StreetAddress = childCase.Child.StreetAddress;
-                this.City = childCase.Child.City;
-                this.State = childCase.Child.State;
-                this.ZipCode = childCase.Child.ZipCode;
-                this.Details = childCase.Child.Details;
-                //this.ReporterId = childCase.Reporter.Id;
-                this.ReporterFirstName = childCase.Reporter.FirstName;
-                this.ReporterLastName = childCase.Reporter.LastName;
-                this.ReporterEmail = childCase.Reporter.Email;
-                this.ReporterPhone = childCase.Reporter.Phone;
+                this.Child = childCase.Child;
+                this.Reporter = childCase.Reporter;
+                this.Id = childCase.Id;
+                this.Child.FirstName = childCase.Child.FirstName;
+                this.Child.LastName = childCase.Child.LastName;
+                this.Child.StreetAddress = childCase.Child.StreetAddress;
+                this.Child.City = childCase.Child.City;
+                this.Child.State = childCase.Child.State;
+                this.Child.ZipCode = childCase.Child.ZipCode;
+                this.Child.Details = childCase.Child.Details;
+                this.Reporter.FirstName = childCase.Reporter.FirstName;
+                this.Reporter.LastName = childCase.Reporter.LastName;
+                this.Reporter.Email = childCase.Reporter.Email;
+                this.Reporter.Phone = childCase.Reporter.Phone;
             }
         }
 
@@ -58,10 +45,10 @@ namespace CaseMgmtAPI.Features.Cases.Handlers
 
             public async Task<CaseDTO?> Handle(Command request, CancellationToken cancellationToken)
             {
-                if (request.idVerify != request.Id)
-                {
-                    return null;
-                }
+                //if (request.idVerify != request.Id)
+                //{
+                //    return null;
+                //}
 
                 var childCase = await _context.Cases.FindAsync(request.idVerify);
                 if (childCase == null || childCase.IsDeleted)
@@ -69,6 +56,8 @@ namespace CaseMgmtAPI.Features.Cases.Handlers
                     return null;
                 }
 
+                childCase.Child = request.Child;
+                childCase.Reporter = request.Reporter;
                 childCase.Child.FirstName = request.Child.FirstName;
                 childCase.Child.LastName = request.Child.LastName;
                 childCase.Child.StreetAddress = request.Child.StreetAddress;

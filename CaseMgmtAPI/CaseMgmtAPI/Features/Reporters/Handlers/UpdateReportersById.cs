@@ -11,18 +11,13 @@ namespace CaseMgmtAPI.Features.Reporters.Handlers
     {
         public class Command : ReporterDTO, IRequest<ReporterDTO>
         {
-            public long idVerify;
+            public int idVerify;
             public int Id;
-            public string? FirstName { get; set; }
-            public string? LastName { get; set; }
-            public string? Email { get; set; }
-            public string? Phone { get; set; }
 
-            public Command(long reporterID, Reporter reporter)
+            public Command(int reporterID, Reporter reporter)
             {
                 idVerify = reporterID;
 
-                //this.Id = childCase.Id;
                 this.FirstName = reporter.FirstName;
                 this.LastName = reporter.LastName;
                 this.Email = reporter.Email;
@@ -41,10 +36,10 @@ namespace CaseMgmtAPI.Features.Reporters.Handlers
 
             public async Task<ReporterDTO?> Handle(Command request, CancellationToken cancellationToken)
             {
-                if (request.idVerify != request.Id)
-                {
-                    return null;
-                }
+                //if (request.idVerify != request.Id)
+                //{
+                //    return null;
+                //}
 
                 var reporter = await _context.Reporters.FindAsync(request.idVerify);
                 if (reporter == null || reporter.IsDeleted)

@@ -10,20 +10,10 @@ namespace CaseMgmtAPI.Features.Children.Handlers
 {
     public class CreateChildren
     {
-        public class Command : IRequest<ChildDTO>
+        public class Command : ChildDTO, IRequest<ChildDTO>
         {
-            public int Id { get; set; }
-            public string FirstName { get; set; }
-            public string? LastName { get; set; }
-            public string? StreetAddress { get; set; }
-            public int City { get; set; }
-            public int State { get; set; }
-            public string? ZipCode { get; set; }
-            public string? Details { get; set; }
-
             public Command(Child child)
             {
-                //this.Id = childCase.Id;
                 this.FirstName = child.FirstName;
                 this.LastName = child.LastName;
                 this.StreetAddress = child.StreetAddress;
@@ -31,6 +21,7 @@ namespace CaseMgmtAPI.Features.Children.Handlers
                 this.State = child.State;
                 this.ZipCode = child.ZipCode;
                 this.Details = child.Details;
+                this.IsDeleted = child.IsDeleted;
             }
         }
 
@@ -47,13 +38,14 @@ namespace CaseMgmtAPI.Features.Children.Handlers
 
             public async Task<ChildDTO> Handle(Command request, CancellationToken cancellationToken)
             {
-
                 _context.Children.Add(_mapper.Map<Child>(request));
 
                 await _context.SaveChangesAsync(cancellationToken);
 
-                var region = await _context.Children.FirstOrDefaultAsync(x => x.Id == request.Id);
-                return _mapper.Map<ChildDTO>(region);
+                var region = await _context.Children.FirstOrDefaultAsync(x => x.FirstName == request.FirstName);
+                var Child = new ChildDTO();
+                Child = _mapper.Map<ChildDTO>(region);
+                return Child;
             }
         }
     }

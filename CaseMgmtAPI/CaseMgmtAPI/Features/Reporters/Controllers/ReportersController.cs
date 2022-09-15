@@ -85,7 +85,7 @@ namespace CaseMgmtAPI.Features.Reporters.Controllers
 
         // PUT api/<ReportersController>/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(long id, [FromBody] Reporter value)
+        public async Task<IActionResult> Put(int id, [FromBody] Reporter value)
         {
             try
             {
@@ -105,7 +105,7 @@ namespace CaseMgmtAPI.Features.Reporters.Controllers
 
         // DELETE api/<ReportersController>/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(long id)
+        public async Task<IActionResult> Delete(int id)
         {
             try
             {

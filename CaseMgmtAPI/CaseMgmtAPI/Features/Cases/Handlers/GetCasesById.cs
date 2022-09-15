@@ -10,9 +10,9 @@ namespace CaseMgmtAPI.Features.Cases.Handlers
     {
         public class Query : IRequest<CaseDTO>
         {
-            public long Id;
+            public int Id;
 
-            public Query(long userRegion)
+            public Query(int userRegion)
             {
                 this.Id = userRegion;
             }

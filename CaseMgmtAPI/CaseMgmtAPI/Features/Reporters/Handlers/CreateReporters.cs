@@ -10,17 +10,10 @@ namespace CaseMgmtAPI.Features.Reporters.Handlers
 {
     public class CreateReporters
     {
-        public class Command : IRequest<ReporterDTO>
+        public class Command : ReporterDTO, IRequest<ReporterDTO>
         {
-            public int Id { get; set; }
-            public string FirstName { get; set; }
-            public string? LastName { get; set; }
-            public string? Email { get; set; }
-            public string? Phone { get; set; }
-
             public Command(Reporter reporter)
             {
-                //this.Id = childCase.Id;
                 this.FirstName = reporter.FirstName;
                 this.LastName = reporter.LastName;
                 this.Email = reporter.Email;
@@ -45,7 +38,7 @@ namespace CaseMgmtAPI.Features.Reporters.Handlers
 
                 await _context.SaveChangesAsync(cancellationToken);
 
-                var reporter = await _context.Reporters.FirstOrDefaultAsync(x => x.Id == request.Id);
+                var reporter = await _context.Reporters.FirstOrDefaultAsync(x => x.FirstName == request.FirstName);
                 return _mapper.Map<ReporterDTO>(reporter);
             }
         }

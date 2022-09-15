@@ -11,21 +11,13 @@ namespace CaseMgmtAPI.Features.Children.Handlers
     {
         public class Command : ChildDTO, IRequest<ChildDTO>
         {
-            public long idVerify;
-            public int Id;
-            public string FirstName { get; set; }
-            public string? LastName { get; set; }
-            public string? StreetAddress { get; set; }
-            public int City { get; set; }
-            public int State { get; set; }
-            public string? ZipCode { get; set; }
-            public string? Details { get; set; }
+            public int idVerify;
 
-            public Command(long childID, Child child)
+            public Command(int childID, Child child)
             {
                 idVerify = childID;
 
-                //this.Id = childCase.Id;
+                //this.Id = child.Id;
                 this.FirstName = child.FirstName;
                 this.LastName = child.LastName;
                 this.StreetAddress = child.StreetAddress;
@@ -47,10 +39,10 @@ namespace CaseMgmtAPI.Features.Children.Handlers
 
             public async Task<ChildDTO?> Handle(Command request, CancellationToken cancellationToken)
             {
-                if (request.idVerify != request.Id)
-                {
-                    return null;
-                }
+                //if (request.idVerify != request.Id)
+                //{
+                //    return null;
+                //}
 
                 var child = await _context.Children.FindAsync(request.idVerify);
                 if (child == null || child.IsDeleted)
@@ -76,9 +68,6 @@ namespace CaseMgmtAPI.Features.Children.Handlers
                 }
 
                 return null;
-
-
-
             }
 
             private bool ChildrenExists(long id)

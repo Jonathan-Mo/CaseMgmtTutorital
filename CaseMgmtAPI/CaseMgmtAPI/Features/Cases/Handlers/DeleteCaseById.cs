@@ -8,8 +8,8 @@ namespace CaseMgmtAPI.Features.Cases.Handlers
     {
         public class Command : CaseDTO, IRequest<CaseDTO>
         {
-            public long id;
-            public Command(long caseID)
+            public int id;
+            public Command(int caseID)
             {
                 id = caseID;
             }

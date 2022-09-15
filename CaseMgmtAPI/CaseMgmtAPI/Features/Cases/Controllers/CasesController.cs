@@ -41,7 +41,7 @@ namespace CaseMgmtAPI.Features.Cases.Controllers
 
         // GET api/<CasesController>/5
         [HttpGet("{id}")]
-        public async Task<ActionResult<CaseDTO>> Get([FromRoute] long id)
+        public async Task<ActionResult<CaseDTO>> Get([FromRoute] int id)
         {
             try
             {
@@ -83,7 +83,7 @@ namespace CaseMgmtAPI.Features.Cases.Controllers
 
         // PUT api/<CasesController>/5
         [HttpPut("{id}")]
-        public async Task<IActionResult> Put(long id, [FromBody] Case value)
+        public async Task<IActionResult> Put(int id, [FromBody] Case value)
         {
             try
             {
@@ -103,7 +103,7 @@ namespace CaseMgmtAPI.Features.Cases.Controllers
 
         // DELETE api/<CasesController>/5
         [HttpDelete("{id}")]
-        public async Task<IActionResult> Delete(long id)
+        public async Task<IActionResult> Delete(int id)
         {
             try
             {

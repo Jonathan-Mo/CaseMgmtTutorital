@@ -9,8 +9,8 @@ namespace CaseMgmtAPI.Features.Reporters.Handlers
     {
         public class Command : ReporterDTO, IRequest<ReporterDTO>
         {
-            public long id;
-            public Command(long reporterID)
+            public int id;
+            public Command(int reporterID)
             {
                 id = reporterID;
             }

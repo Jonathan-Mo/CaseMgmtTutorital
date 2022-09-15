@@ -9,8 +9,8 @@ namespace CaseMgmtAPI.Features.Children.Handlers
     {
         public class Command : ChildDTO, IRequest<ChildDTO>
         {
-            public long id;
-            public Command(long childID)
+            public int id;
+            public Command(int childID)
             {
                 id = childID;
             }

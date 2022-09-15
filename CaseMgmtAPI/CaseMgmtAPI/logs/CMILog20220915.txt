@@ -1,0 +1,1639 @@
+2022-09-15 07:25:46.493 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-09-15 07:25:46.590 -05:00 [DBG] Hosting starting
+2022-09-15 07:25:47.104 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60D9DC33054A8CA56CD12BC2E96E05719EFCB64C)
+2022-09-15 07:25:47.164 -05:00 [INF] Now listening on: https://localhost:7060
+2022-09-15 07:25:47.164 -05:00 [INF] Now listening on: http://localhost:5060
+2022-09-15 07:25:47.164 -05:00 [DBG] Loaded hosting startup assembly CaseMgmtAPI
+2022-09-15 07:25:47.164 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-09-15 07:25:47.164 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-09-15 07:25:47.164 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 07:25:47.165 -05:00 [INF] Hosting environment: Development
+2022-09-15 07:25:47.165 -05:00 [INF] Content root path: C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtAPI\CaseMgmtAPI\
+2022-09-15 07:25:47.165 -05:00 [DBG] Hosting started
+2022-09-15 07:25:47.413 -05:00 [DBG] Connection id "0HMKN2LLIC0R6" accepted.
+2022-09-15 07:25:47.413 -05:00 [DBG] Connection id "0HMKN2LLIC0R5" accepted.
+2022-09-15 07:25:47.415 -05:00 [DBG] Connection id "0HMKN2LLIC0R5" started.
+2022-09-15 07:25:47.415 -05:00 [DBG] Connection id "0HMKN2LLIC0R6" started.
+2022-09-15 07:25:47.480 -05:00 [DBG] Connection id "0HMKN2LLIC0R5" received FIN.
+2022-09-15 07:25:47.480 -05:00 [DBG] Connection id "0HMKN2LLIC0R6" received FIN.
+2022-09-15 07:25:47.495 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-09-15 07:25:47.495 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-09-15 07:25:47.547 -05:00 [DBG] Connection id "0HMKN2LLIC0R6" stopped.
+2022-09-15 07:25:47.547 -05:00 [DBG] Connection id "0HMKN2LLIC0R5" stopped.
+2022-09-15 07:25:47.549 -05:00 [DBG] Connection id "0HMKN2LLIC0R5" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-09-15 07:25:47.549 -05:00 [DBG] Connection id "0HMKN2LLIC0R6" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-09-15 07:25:48.950 -05:00 [DBG] Connection id "0HMKN2LLIC0R7" accepted.
+2022-09-15 07:25:48.953 -05:00 [DBG] Connection id "0HMKN2LLIC0R7" started.
+2022-09-15 07:25:49.046 -05:00 [DBG] Connection 0HMKN2LLIC0R7 established using the following protocol: "Tls12"
+2022-09-15 07:25:49.222 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/swagger/index.html - -
+2022-09-15 07:25:49.302 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-09-15 07:25:49.352 -05:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2022-09-15 07:25:49.352 -05:00 [DBG] Request did not match any endpoints
+2022-09-15 07:25:49.554 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-09-15 07:25:49.838 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-09-15 07:25:49.848 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/swagger/index.html - - - 200 - text/html;charset=utf-8 632.9354ms
+2022-09-15 07:25:49.902 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/_vs/browserLink - -
+2022-09-15 07:25:49.904 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 07:25:49.916 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 11.2807ms
+2022-09-15 07:25:50.104 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 202.4825ms
+2022-09-15 07:25:50.258 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/swagger/v1/swagger.json - -
+2022-09-15 07:25:50.258 -05:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2022-09-15 07:25:50.258 -05:00 [DBG] Request did not match any endpoints
+2022-09-15 07:25:50.548 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 290.2381ms
+2022-09-15 07:27:27.506 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7060/api/Cases application/json 482
+2022-09-15 07:27:27.515 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Cases'
+2022-09-15 07:27:27.518 -05:00 [DBG] Endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Post (CaseMgmtAPI)' with route pattern 'api/Cases' is valid for the request path '/api/Cases'
+2022-09-15 07:27:27.518 -05:00 [DBG] Request matched endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Post (CaseMgmtAPI)'
+2022-09-15 07:27:27.520 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-09-15 07:27:27.522 -05:00 [INF] Executing endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Post (CaseMgmtAPI)'
+2022-09-15 07:27:27.545 -05:00 [INF] Route matched with {action = "Post", controller = "Cases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(CaseMgmtAPI.Domain.Entity.Case) on controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI).
+2022-09-15 07:27:27.546 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-09-15 07:27:27.546 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-09-15 07:27:27.546 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-09-15 07:27:27.546 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-09-15 07:27:27.546 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-09-15 07:27:27.546 -05:00 [DBG] Executing controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 07:27:27.547 -05:00 [DBG] Executed controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 07:27:27.551 -05:00 [DBG] Attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case' ...
+2022-09-15 07:27:27.552 -05:00 [DBG] Attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case' using the name '' in request data ...
+2022-09-15 07:27:27.553 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2022-09-15 07:27:27.556 -05:00 [DBG] Connection id "0HMKN2LLIC0R7", Request id "0HMKN2LLIC0R7:00000009": started reading request body.
+2022-09-15 07:27:27.556 -05:00 [DBG] Connection id "0HMKN2LLIC0R7", Request id "0HMKN2LLIC0R7:00000009": done reading request body.
+2022-09-15 07:27:27.562 -05:00 [DBG] JSON input formatter succeeded, deserializing to type 'CaseMgmtAPI.Domain.Entity.Case'
+2022-09-15 07:27:27.562 -05:00 [DBG] Done attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case'.
+2022-09-15 07:27:27.562 -05:00 [DBG] Done attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case'.
+2022-09-15 07:27:27.562 -05:00 [DBG] Attempting to validate the bound parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case' ...
+2022-09-15 07:27:27.571 -05:00 [DBG] Done attempting to validate the bound parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case'.
+2022-09-15 07:28:23.969 -05:00 [FTL] Exception while creating a new case.
+2022-09-15 07:28:23.978 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-09-15 07:28:23.979 -05:00 [DBG] No information found on request to perform content negotiation.
+2022-09-15 07:28:23.979 -05:00 [DBG] Attempting to select the first output formatter in the output formatters list which supports a content type from the explicitly specified content types '["application/problem+json","application/problem+xml","application/problem+json","application/problem+xml"]'.
+2022-09-15 07:28:23.979 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/problem+json' to write the response.
+2022-09-15 07:28:23.980 -05:00 [INF] Executing ObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ProblemDetails'.
+2022-09-15 07:28:23.985 -05:00 [INF] Executed action CaseMgmtAPI.Features.Cases.Controllers.CasesController.Post (CaseMgmtAPI) in 56435.9596ms
+2022-09-15 07:28:23.989 -05:00 [INF] Executed endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Post (CaseMgmtAPI)'
+2022-09-15 07:28:23.989 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7060/api/Cases application/json 482 - 400 - application/problem+json;+charset=utf-8 56483.7356ms
+2022-09-15 07:31:09.752 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-09-15 07:31:09.811 -05:00 [DBG] Hosting starting
+2022-09-15 07:31:09.931 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60D9DC33054A8CA56CD12BC2E96E05719EFCB64C)
+2022-09-15 07:31:09.979 -05:00 [INF] Now listening on: https://localhost:7060
+2022-09-15 07:31:09.979 -05:00 [INF] Now listening on: http://localhost:5060
+2022-09-15 07:31:09.980 -05:00 [DBG] Loaded hosting startup assembly CaseMgmtAPI
+2022-09-15 07:31:09.982 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-09-15 07:31:09.984 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-09-15 07:31:09.985 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 07:31:09.985 -05:00 [INF] Hosting environment: Development
+2022-09-15 07:31:09.985 -05:00 [INF] Content root path: C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtAPI\CaseMgmtAPI\
+2022-09-15 07:31:09.985 -05:00 [DBG] Hosting started
+2022-09-15 07:31:10.020 -05:00 [DBG] Connection id "0HMKN2OLN0OCT" received FIN.
+2022-09-15 07:31:10.020 -05:00 [DBG] Connection id "0HMKN2OLN0OCU" received FIN.
+2022-09-15 07:31:10.025 -05:00 [DBG] Connection id "0HMKN2OLN0OCU" accepted.
+2022-09-15 07:31:10.025 -05:00 [DBG] Connection id "0HMKN2OLN0OCT" accepted.
+2022-09-15 07:31:10.026 -05:00 [DBG] Connection id "0HMKN2OLN0OCT" started.
+2022-09-15 07:31:10.026 -05:00 [DBG] Connection id "0HMKN2OLN0OCU" started.
+2022-09-15 07:31:10.045 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-09-15 07:31:10.045 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-09-15 07:31:10.078 -05:00 [DBG] Connection id "0HMKN2OLN0OCT" stopped.
+2022-09-15 07:31:10.079 -05:00 [DBG] Connection id "0HMKN2OLN0OCU" stopped.
+2022-09-15 07:31:10.084 -05:00 [DBG] Connection id "0HMKN2OLN0OCU" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-09-15 07:31:10.084 -05:00 [DBG] Connection id "0HMKN2OLN0OCT" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-09-15 07:31:11.033 -05:00 [DBG] Connection id "0HMKN2OLN0OCV" accepted.
+2022-09-15 07:31:11.034 -05:00 [DBG] Connection id "0HMKN2OLN0OCV" started.
+2022-09-15 07:31:11.117 -05:00 [DBG] Connection 0HMKN2OLN0OCV established using the following protocol: "Tls12"
+2022-09-15 07:31:11.197 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/swagger/index.html - -
+2022-09-15 07:31:11.251 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-09-15 07:31:11.281 -05:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2022-09-15 07:31:11.281 -05:00 [DBG] Request did not match any endpoints
+2022-09-15 07:31:11.431 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-09-15 07:31:11.586 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-09-15 07:31:11.591 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/swagger/index.html - - - 200 - text/html;charset=utf-8 399.8700ms
+2022-09-15 07:31:11.616 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/_vs/browserLink - -
+2022-09-15 07:31:11.617 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 07:31:11.626 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 8.6981ms
+2022-09-15 07:31:11.676 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.0263ms
+2022-09-15 07:31:11.715 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/swagger/v1/swagger.json - -
+2022-09-15 07:31:11.716 -05:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2022-09-15 07:31:11.716 -05:00 [DBG] Request did not match any endpoints
+2022-09-15 07:31:11.823 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 107.3390ms
+2022-09-15 07:31:14.340 -05:00 [DBG] Connection id "0HMKN2OLN0OCV" received FIN.
+2022-09-15 07:31:14.351 -05:00 [DBG] Connection id "0HMKN2OLN0OCV" is closed. The last processed stream ID was 7.
+2022-09-15 07:31:14.351 -05:00 [DBG] Connection id "0HMKN2OLN0OCV" sending FIN because: "The client closed the connection."
+2022-09-15 07:31:55.234 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-09-15 07:31:55.316 -05:00 [DBG] Hosting starting
+2022-09-15 07:31:55.508 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60D9DC33054A8CA56CD12BC2E96E05719EFCB64C)
+2022-09-15 07:31:55.549 -05:00 [INF] Now listening on: https://localhost:7060
+2022-09-15 07:31:55.549 -05:00 [INF] Now listening on: http://localhost:5060
+2022-09-15 07:31:55.549 -05:00 [DBG] Loaded hosting startup assembly CaseMgmtAPI
+2022-09-15 07:31:55.549 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-09-15 07:31:55.549 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-09-15 07:31:55.549 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 07:31:55.550 -05:00 [INF] Hosting environment: Development
+2022-09-15 07:31:55.550 -05:00 [INF] Content root path: C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtAPI\CaseMgmtAPI\
+2022-09-15 07:31:55.550 -05:00 [DBG] Hosting started
+2022-09-15 07:31:55.571 -05:00 [DBG] Connection id "0HMKN2P39D7NH" accepted.
+2022-09-15 07:31:55.571 -05:00 [DBG] Connection id "0HMKN2P39D7NG" accepted.
+2022-09-15 07:31:55.572 -05:00 [DBG] Connection id "0HMKN2P39D7NH" started.
+2022-09-15 07:31:55.572 -05:00 [DBG] Connection id "0HMKN2P39D7NG" started.
+2022-09-15 07:31:55.589 -05:00 [DBG] Connection id "0HMKN2P39D7NH" received FIN.
+2022-09-15 07:31:55.589 -05:00 [DBG] Connection id "0HMKN2P39D7NG" received FIN.
+2022-09-15 07:31:55.604 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-09-15 07:31:55.604 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-09-15 07:31:55.639 -05:00 [DBG] Connection id "0HMKN2P39D7NG" stopped.
+2022-09-15 07:31:55.639 -05:00 [DBG] Connection id "0HMKN2P39D7NH" stopped.
+2022-09-15 07:31:55.641 -05:00 [DBG] Connection id "0HMKN2P39D7NH" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-09-15 07:31:55.641 -05:00 [DBG] Connection id "0HMKN2P39D7NG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-09-15 07:31:57.130 -05:00 [DBG] Connection id "0HMKN2P39D7NI" accepted.
+2022-09-15 07:31:57.130 -05:00 [DBG] Connection id "0HMKN2P39D7NI" started.
+2022-09-15 07:31:57.274 -05:00 [DBG] Connection 0HMKN2P39D7NI established using the following protocol: "Tls12"
+2022-09-15 07:31:57.492 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/swagger/index.html - -
+2022-09-15 07:31:57.559 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-09-15 07:31:57.597 -05:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2022-09-15 07:31:57.599 -05:00 [DBG] Request did not match any endpoints
+2022-09-15 07:31:57.782 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-09-15 07:31:58.001 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-09-15 07:31:58.004 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 07:31:58.006 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/swagger/index.html - - - 200 - text/html;charset=utf-8 521.3132ms
+2022-09-15 07:31:58.012 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 7.3671ms
+2022-09-15 07:31:58.028 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/_vs/browserLink - -
+2022-09-15 07:31:58.068 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 39.5703ms
+2022-09-15 07:31:58.156 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/swagger/v1/swagger.json - -
+2022-09-15 07:31:58.156 -05:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2022-09-15 07:31:58.156 -05:00 [DBG] Request did not match any endpoints
+2022-09-15 07:31:58.350 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 194.4777ms
+2022-09-15 07:32:49.039 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7060/api/Cases application/json 482
+2022-09-15 07:32:49.051 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Cases'
+2022-09-15 07:32:49.054 -05:00 [DBG] Endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Post (CaseMgmtAPI)' with route pattern 'api/Cases' is valid for the request path '/api/Cases'
+2022-09-15 07:32:49.054 -05:00 [DBG] Request matched endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Post (CaseMgmtAPI)'
+2022-09-15 07:32:49.055 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-09-15 07:32:49.056 -05:00 [INF] Executing endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Post (CaseMgmtAPI)'
+2022-09-15 07:32:49.075 -05:00 [INF] Route matched with {action = "Post", controller = "Cases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(CaseMgmtAPI.Domain.Entity.Case) on controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI).
+2022-09-15 07:32:49.076 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-09-15 07:32:49.076 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-09-15 07:32:49.076 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-09-15 07:32:49.076 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-09-15 07:32:49.076 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-09-15 07:32:49.076 -05:00 [DBG] Executing controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 07:32:49.077 -05:00 [DBG] Executed controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 07:32:49.081 -05:00 [DBG] Attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case' ...
+2022-09-15 07:32:49.083 -05:00 [DBG] Attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case' using the name '' in request data ...
+2022-09-15 07:32:49.083 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2022-09-15 07:32:49.086 -05:00 [DBG] Connection id "0HMKN2P39D7NI", Request id "0HMKN2P39D7NI:00000009": started reading request body.
+2022-09-15 07:32:49.086 -05:00 [DBG] Connection id "0HMKN2P39D7NI", Request id "0HMKN2P39D7NI:00000009": done reading request body.
+2022-09-15 07:32:49.091 -05:00 [DBG] JSON input formatter succeeded, deserializing to type 'CaseMgmtAPI.Domain.Entity.Case'
+2022-09-15 07:32:49.092 -05:00 [DBG] Done attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case'.
+2022-09-15 07:32:49.092 -05:00 [DBG] Done attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case'.
+2022-09-15 07:32:49.092 -05:00 [DBG] Attempting to validate the bound parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case' ...
+2022-09-15 07:32:49.099 -05:00 [DBG] Done attempting to validate the bound parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case'.
+2022-09-15 07:36:07.729 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-09-15 07:36:07.783 -05:00 [DBG] Hosting starting
+2022-09-15 07:36:07.947 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60D9DC33054A8CA56CD12BC2E96E05719EFCB64C)
+2022-09-15 07:36:07.989 -05:00 [INF] Now listening on: https://localhost:7060
+2022-09-15 07:36:07.989 -05:00 [INF] Now listening on: http://localhost:5060
+2022-09-15 07:36:07.989 -05:00 [DBG] Loaded hosting startup assembly CaseMgmtAPI
+2022-09-15 07:36:07.989 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-09-15 07:36:07.989 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-09-15 07:36:07.989 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 07:36:07.990 -05:00 [INF] Hosting environment: Development
+2022-09-15 07:36:07.990 -05:00 [INF] Content root path: C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtAPI\CaseMgmtAPI\
+2022-09-15 07:36:07.990 -05:00 [DBG] Hosting started
+2022-09-15 07:36:08.019 -05:00 [DBG] Connection id "0HMKN2REGURGO" received FIN.
+2022-09-15 07:36:08.019 -05:00 [DBG] Connection id "0HMKN2REGURGP" received FIN.
+2022-09-15 07:36:08.027 -05:00 [DBG] Connection id "0HMKN2REGURGO" accepted.
+2022-09-15 07:36:08.027 -05:00 [DBG] Connection id "0HMKN2REGURGP" accepted.
+2022-09-15 07:36:08.028 -05:00 [DBG] Connection id "0HMKN2REGURGP" started.
+2022-09-15 07:36:08.028 -05:00 [DBG] Connection id "0HMKN2REGURGO" started.
+2022-09-15 07:36:08.042 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-09-15 07:36:08.042 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-09-15 07:36:08.099 -05:00 [DBG] Connection id "0HMKN2REGURGP" stopped.
+2022-09-15 07:36:08.099 -05:00 [DBG] Connection id "0HMKN2REGURGO" stopped.
+2022-09-15 07:36:08.103 -05:00 [DBG] Connection id "0HMKN2REGURGP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-09-15 07:36:08.103 -05:00 [DBG] Connection id "0HMKN2REGURGO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-09-15 07:36:08.977 -05:00 [DBG] Connection id "0HMKN2REGURGQ" accepted.
+2022-09-15 07:36:08.979 -05:00 [DBG] Connection id "0HMKN2REGURGQ" started.
+2022-09-15 07:36:09.052 -05:00 [DBG] Connection 0HMKN2REGURGQ established using the following protocol: "Tls12"
+2022-09-15 07:36:09.128 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/swagger/index.html - -
+2022-09-15 07:36:09.166 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-09-15 07:36:09.188 -05:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2022-09-15 07:36:09.189 -05:00 [DBG] Request did not match any endpoints
+2022-09-15 07:36:09.278 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-09-15 07:36:09.412 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-09-15 07:36:09.419 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/swagger/index.html - - - 200 - text/html;charset=utf-8 296.8908ms
+2022-09-15 07:36:09.421 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/_vs/browserLink - -
+2022-09-15 07:36:09.421 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 07:36:09.429 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 7.7314ms
+2022-09-15 07:36:09.442 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 20.3787ms
+2022-09-15 07:36:09.516 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/swagger/v1/swagger.json - -
+2022-09-15 07:36:09.516 -05:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2022-09-15 07:36:09.516 -05:00 [DBG] Request did not match any endpoints
+2022-09-15 07:36:09.618 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 101.7375ms
+2022-09-15 07:36:19.226 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7060/api/Cases application/json 482
+2022-09-15 07:36:19.235 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Cases'
+2022-09-15 07:36:19.238 -05:00 [DBG] Endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Post (CaseMgmtAPI)' with route pattern 'api/Cases' is valid for the request path '/api/Cases'
+2022-09-15 07:36:19.238 -05:00 [DBG] Request matched endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Post (CaseMgmtAPI)'
+2022-09-15 07:36:19.239 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-09-15 07:36:19.241 -05:00 [INF] Executing endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Post (CaseMgmtAPI)'
+2022-09-15 07:36:19.264 -05:00 [INF] Route matched with {action = "Post", controller = "Cases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(CaseMgmtAPI.Domain.Entity.Case) on controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI).
+2022-09-15 07:36:19.265 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-09-15 07:36:19.265 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-09-15 07:36:19.265 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-09-15 07:36:19.265 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-09-15 07:36:19.265 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-09-15 07:36:19.265 -05:00 [DBG] Executing controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 07:36:19.266 -05:00 [DBG] Executed controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 07:36:19.268 -05:00 [DBG] Attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case' ...
+2022-09-15 07:36:19.269 -05:00 [DBG] Attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case' using the name '' in request data ...
+2022-09-15 07:36:19.269 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2022-09-15 07:36:19.272 -05:00 [DBG] Connection id "0HMKN2REGURGQ", Request id "0HMKN2REGURGQ:00000009": started reading request body.
+2022-09-15 07:36:19.272 -05:00 [DBG] Connection id "0HMKN2REGURGQ", Request id "0HMKN2REGURGQ:00000009": done reading request body.
+2022-09-15 07:36:19.280 -05:00 [DBG] JSON input formatter succeeded, deserializing to type 'CaseMgmtAPI.Domain.Entity.Case'
+2022-09-15 07:36:19.280 -05:00 [DBG] Done attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case'.
+2022-09-15 07:36:19.280 -05:00 [DBG] Done attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case'.
+2022-09-15 07:36:19.280 -05:00 [DBG] Attempting to validate the bound parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case' ...
+2022-09-15 07:36:19.286 -05:00 [DBG] Done attempting to validate the bound parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case'.
+2022-09-15 07:36:55.989 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-09-15 07:36:56.215 -05:00 [DBG] Hosting starting
+2022-09-15 07:36:56.416 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60D9DC33054A8CA56CD12BC2E96E05719EFCB64C)
+2022-09-15 07:36:56.471 -05:00 [INF] Now listening on: https://localhost:7060
+2022-09-15 07:36:56.471 -05:00 [INF] Now listening on: http://localhost:5060
+2022-09-15 07:36:56.471 -05:00 [DBG] Loaded hosting startup assembly CaseMgmtAPI
+2022-09-15 07:36:56.471 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-09-15 07:36:56.471 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-09-15 07:36:56.471 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 07:36:56.472 -05:00 [INF] Hosting environment: Development
+2022-09-15 07:36:56.472 -05:00 [INF] Content root path: C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtAPI\CaseMgmtAPI\
+2022-09-15 07:36:56.472 -05:00 [DBG] Hosting started
+2022-09-15 07:36:56.507 -05:00 [DBG] Connection id "0HMKN2RSVC4JP" received FIN.
+2022-09-15 07:36:56.507 -05:00 [DBG] Connection id "0HMKN2RSVC4JO" received FIN.
+2022-09-15 07:36:56.514 -05:00 [DBG] Connection id "0HMKN2RSVC4JP" accepted.
+2022-09-15 07:36:56.514 -05:00 [DBG] Connection id "0HMKN2RSVC4JO" accepted.
+2022-09-15 07:36:56.515 -05:00 [DBG] Connection id "0HMKN2RSVC4JO" started.
+2022-09-15 07:36:56.515 -05:00 [DBG] Connection id "0HMKN2RSVC4JP" started.
+2022-09-15 07:36:56.533 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-09-15 07:36:56.533 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-09-15 07:36:56.579 -05:00 [DBG] Connection id "0HMKN2RSVC4JP" stopped.
+2022-09-15 07:36:56.579 -05:00 [DBG] Connection id "0HMKN2RSVC4JO" stopped.
+2022-09-15 07:36:56.585 -05:00 [DBG] Connection id "0HMKN2RSVC4JO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-09-15 07:36:56.585 -05:00 [DBG] Connection id "0HMKN2RSVC4JP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-09-15 07:36:57.242 -05:00 [DBG] Connection id "0HMKN2RSVC4JQ" accepted.
+2022-09-15 07:36:57.242 -05:00 [DBG] Connection id "0HMKN2RSVC4JQ" started.
+2022-09-15 07:36:57.342 -05:00 [DBG] Connection 0HMKN2RSVC4JQ established using the following protocol: "Tls12"
+2022-09-15 07:36:57.443 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/swagger/index.html - -
+2022-09-15 07:36:57.527 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-09-15 07:36:57.572 -05:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2022-09-15 07:36:57.572 -05:00 [DBG] Request did not match any endpoints
+2022-09-15 07:36:57.726 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-09-15 07:36:57.946 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-09-15 07:36:57.950 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 07:36:57.952 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/swagger/index.html - - - 200 - text/html;charset=utf-8 518.1480ms
+2022-09-15 07:36:57.963 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 12.8714ms
+2022-09-15 07:36:57.964 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/_vs/browserLink - -
+2022-09-15 07:36:58.004 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 40.5732ms
+2022-09-15 07:36:58.123 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/swagger/v1/swagger.json - -
+2022-09-15 07:36:58.123 -05:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2022-09-15 07:36:58.123 -05:00 [DBG] Request did not match any endpoints
+2022-09-15 07:36:58.295 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 172.7747ms
+2022-09-15 07:37:12.072 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7060/api/Cases application/json 482
+2022-09-15 07:37:12.080 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Cases'
+2022-09-15 07:37:12.086 -05:00 [DBG] Endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Post (CaseMgmtAPI)' with route pattern 'api/Cases' is valid for the request path '/api/Cases'
+2022-09-15 07:37:12.086 -05:00 [DBG] Request matched endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Post (CaseMgmtAPI)'
+2022-09-15 07:37:12.087 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-09-15 07:37:12.089 -05:00 [INF] Executing endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Post (CaseMgmtAPI)'
+2022-09-15 07:37:12.109 -05:00 [INF] Route matched with {action = "Post", controller = "Cases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Post(CaseMgmtAPI.Domain.Entity.Case) on controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI).
+2022-09-15 07:37:12.110 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-09-15 07:37:12.110 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-09-15 07:37:12.110 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-09-15 07:37:12.110 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-09-15 07:37:12.110 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-09-15 07:37:12.110 -05:00 [DBG] Executing controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 07:37:12.110 -05:00 [DBG] Executed controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 07:37:12.113 -05:00 [DBG] Attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case' ...
+2022-09-15 07:37:12.115 -05:00 [DBG] Attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case' using the name '' in request data ...
+2022-09-15 07:37:12.116 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2022-09-15 07:37:12.118 -05:00 [DBG] Connection id "0HMKN2RSVC4JQ", Request id "0HMKN2RSVC4JQ:00000009": started reading request body.
+2022-09-15 07:37:12.118 -05:00 [DBG] Connection id "0HMKN2RSVC4JQ", Request id "0HMKN2RSVC4JQ:00000009": done reading request body.
+2022-09-15 07:37:12.125 -05:00 [DBG] JSON input formatter succeeded, deserializing to type 'CaseMgmtAPI.Domain.Entity.Case'
+2022-09-15 07:37:12.125 -05:00 [DBG] Done attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case'.
+2022-09-15 07:37:12.125 -05:00 [DBG] Done attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case'.
+2022-09-15 07:37:12.125 -05:00 [DBG] Attempting to validate the bound parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case' ...
+2022-09-15 07:37:12.133 -05:00 [DBG] Done attempting to validate the bound parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case'.
+2022-09-15 07:37:12.254 -05:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-09-15 07:37:28.420 -05:00 [INF] Entity Framework Core 6.0.8 initialized 'CaseMgmtContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 07:37:28.458 -05:00 [DBG] 'CaseMgmtContext' generated a temporary value for the property 'Id.Case'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 07:37:28.512 -05:00 [DBG] Context 'CaseMgmtContext' started tracking 'Case' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 07:37:28.514 -05:00 [DBG] 'CaseMgmtContext' generated a temporary value for the property 'Id.Child'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 07:37:28.536 -05:00 [DBG] The foreign key property 'Case.ChildId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-09-15 07:37:28.541 -05:00 [DBG] Context 'CaseMgmtContext' started tracking 'Child' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 07:37:28.542 -05:00 [DBG] 'CaseMgmtContext' generated a temporary value for the property 'Id.Reporter'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 07:37:28.547 -05:00 [DBG] The foreign key property 'Case.ReporterId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-09-15 07:37:28.547 -05:00 [DBG] Context 'CaseMgmtContext' started tracking 'Reporter' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 07:37:58.272 -05:00 [DBG] DetectChanges starting for 'CaseMgmtContext'.
+2022-09-15 07:37:58.284 -05:00 [DBG] DetectChanges completed for 'CaseMgmtContext'.
+2022-09-15 07:39:16.451 -05:00 [DBG] SaveChanges starting for 'CaseMgmtContext'.
+2022-09-15 07:39:16.453 -05:00 [DBG] DetectChanges starting for 'CaseMgmtContext'.
+2022-09-15 07:39:16.453 -05:00 [DBG] DetectChanges completed for 'CaseMgmtContext'.
+2022-09-15 07:39:16.525 -05:00 [DBG] Opening connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:39:16.873 -05:00 [DBG] Opened connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:39:16.876 -05:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2022-09-15 07:39:16.890 -05:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2022-09-15 07:39:16.930 -05:00 [DBG] Executing update commands individually as the number of batchable commands (2) is smaller than the minimum batch size (4).
+2022-09-15 07:39:16.955 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-09-15 07:39:16.962 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2022-09-15 07:39:16.985 -05:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Children] ([City], [Details], [FirstName], [IsDeleted], [LastName], [State], [StreetAddress], [ZipCode])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Id]
+FROM [Children]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-09-15 07:39:17.057 -05:00 [INF] Executed DbCommand (80ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Children] ([City], [Details], [FirstName], [IsDeleted], [LastName], [State], [StreetAddress], [ZipCode])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Id]
+FROM [Children]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-09-15 07:39:17.083 -05:00 [DBG] The foreign key property 'Child.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-09-15 07:39:17.085 -05:00 [DBG] The foreign key property 'Case.ChildId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-09-15 07:39:17.097 -05:00 [DBG] A data reader was disposed.
+2022-09-15 07:39:17.102 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-09-15 07:39:17.102 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-09-15 07:39:17.103 -05:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Reporters] ([Email], [FirstName], [IsDeleted], [LastName], [Phone])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [Id]
+FROM [Reporters]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-09-15 07:39:17.105 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Reporters] ([Email], [FirstName], [IsDeleted], [LastName], [Phone])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [Id]
+FROM [Reporters]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-09-15 07:39:17.106 -05:00 [DBG] The foreign key property 'Reporter.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-09-15 07:39:17.106 -05:00 [DBG] The foreign key property 'Case.ReporterId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-09-15 07:39:17.106 -05:00 [DBG] A data reader was disposed.
+2022-09-15 07:39:17.106 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-09-15 07:39:17.106 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-09-15 07:39:17.106 -05:00 [DBG] Executing DbCommand [Parameters=[@p5='?' (DbType = Int32), @p6='?' (DbType = Boolean), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Cases] ([ChildId], [IsDeleted], [ReporterId])
+VALUES (@p5, @p6, @p7);
+SELECT [Id]
+FROM [Cases]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-09-15 07:39:17.111 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[@p5='?' (DbType = Int32), @p6='?' (DbType = Boolean), @p7='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Cases] ([ChildId], [IsDeleted], [ReporterId])
+VALUES (@p5, @p6, @p7);
+SELECT [Id]
+FROM [Cases]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-09-15 07:39:17.112 -05:00 [DBG] The foreign key property 'Case.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-09-15 07:39:17.113 -05:00 [DBG] A data reader was disposed.
+2022-09-15 07:39:17.122 -05:00 [DBG] Committing transaction.
+2022-09-15 07:39:17.127 -05:00 [DBG] Committed transaction.
+2022-09-15 07:39:17.134 -05:00 [DBG] Closing connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:39:17.143 -05:00 [DBG] Closed connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:39:17.147 -05:00 [DBG] Disposing transaction.
+2022-09-15 07:39:17.159 -05:00 [DBG] An entity of type 'Case' tracked by 'CaseMgmtContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 07:39:17.160 -05:00 [DBG] An entity of type 'Child' tracked by 'CaseMgmtContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 07:39:17.160 -05:00 [DBG] An entity of type 'Reporter' tracked by 'CaseMgmtContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 07:39:17.162 -05:00 [DBG] SaveChanges completed for 'CaseMgmtContext' with 3 entities written to the database.
+2022-09-15 07:39:19.203 -05:00 [DBG] Compiling query expression: 
+'DbSet<Case>()
+    .FirstOrDefault(x => x.Id == __request_Id_0)'
+2022-09-15 07:39:19.457 -05:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Case>(
+    asyncEnumerable: new SingleQueryingEnumerable<Case>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Case.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Case.ChildId (int) Required FK Index, 1], [Property: Case.IsDeleted (bool) Required, 2], [Property: Case.ReporterId (int) Required FK Index, 3] }
+            SELECT TOP(1) c.Id, c.ChildId, c.IsDeleted, c.ReporterId
+            FROM Cases AS c
+            WHERE c.Id == @__request_Id_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Case>, 
+        CaseMgmtAPI.Infra.CaseMgmtContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2022-09-15 07:39:19.498 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-09-15 07:39:19.498 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-09-15 07:39:19.499 -05:00 [DBG] Opening connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:39:19.500 -05:00 [DBG] Opened connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:39:19.500 -05:00 [DBG] Executing DbCommand [Parameters=[@__request_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[ChildId], [c].[IsDeleted], [c].[ReporterId]
+FROM [Cases] AS [c]
+WHERE [c].[Id] = @__request_Id_0
+2022-09-15 07:39:19.505 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[@__request_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[ChildId], [c].[IsDeleted], [c].[ReporterId]
+FROM [Cases] AS [c]
+WHERE [c].[Id] = @__request_Id_0
+2022-09-15 07:39:19.540 -05:00 [DBG] A data reader was disposed.
+2022-09-15 07:39:19.540 -05:00 [DBG] Closing connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:39:19.540 -05:00 [DBG] Closed connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:39:34.213 -05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-09-15 07:39:34.218 -05:00 [INF] Executed action CaseMgmtAPI.Features.Cases.Controllers.CasesController.Post (CaseMgmtAPI) in 142104.3189ms
+2022-09-15 07:39:34.219 -05:00 [INF] Executed endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Post (CaseMgmtAPI)'
+2022-09-15 07:39:34.227 -05:00 [DBG] 'CaseMgmtContext' disposed.
+2022-09-15 07:39:34.229 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7060/api/Cases application/json 482 - 204 - - 142157.0876ms
+2022-09-15 07:39:55.826 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/api/Cases - -
+2022-09-15 07:39:55.827 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Cases'
+2022-09-15 07:39:55.827 -05:00 [DBG] Endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Get (CaseMgmtAPI)' with route pattern 'api/Cases' is valid for the request path '/api/Cases'
+2022-09-15 07:39:55.827 -05:00 [DBG] Request matched endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Get (CaseMgmtAPI)'
+2022-09-15 07:39:55.827 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-09-15 07:39:55.827 -05:00 [INF] Executing endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Get (CaseMgmtAPI)'
+2022-09-15 07:39:55.830 -05:00 [INF] Route matched with {action = "Get", controller = "Cases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CaseMgmtAPI.Features.Cases.DTO.CaseDTO]]] Get() on controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI).
+2022-09-15 07:39:55.830 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-09-15 07:39:55.830 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-09-15 07:39:55.830 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-09-15 07:39:55.830 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-09-15 07:39:55.830 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-09-15 07:39:55.830 -05:00 [DBG] Executing controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 07:39:55.830 -05:00 [DBG] Executed controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 07:39:55.873 -05:00 [INF] Entity Framework Core 6.0.8 initialized 'CaseMgmtContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 07:39:55.905 -05:00 [DBG] Compiling query expression: 
+'DbSet<Case>()
+    .Where(x => !(x.IsDeleted))
+    .AsNoTracking()
+    .Select(dtoCase => new CaseDTO{ 
+        Child = dtoCase.Child, 
+        Id = dtoCase.Id, 
+        Reporter = dtoCase.Reporter 
+    }
+    )'
+2022-09-15 07:39:55.962 -05:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<CaseDTO>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            Child -> Dictionary<IProperty, int> { [Property: Child.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Child.City (int) Required, 1], [Property: Child.Details (string), 2], [Property: Child.FirstName (string), 3], [Property: Child.IsDeleted (bool) Required, 4], [Property: Child.LastName (string), 5], [Property: Child.State (int) Required, 6], [Property: Child.StreetAddress (string), 7], [Property: Child.ZipCode (string), 8] }
+            Id -> 9
+            Reporter -> Dictionary<IProperty, int> { [Property: Reporter.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 10], [Property: Reporter.Email (string) Required, 11], [Property: Reporter.FirstName (string) Required, 12], [Property: Reporter.IsDeleted (bool) Required, 13], [Property: Reporter.LastName (string) Required, 14], [Property: Reporter.Phone (string) Required, 15] }
+        SELECT c0.Id, c0.City, c0.Details, c0.FirstName, c0.IsDeleted, c0.LastName, c0.State, c0.StreetAddress, c0.ZipCode, c.Id, r.Id, r.Email, r.FirstName, r.IsDeleted, r.LastName, r.Phone
+        FROM Cases AS c
+        INNER JOIN Children AS c0 ON c.ChildId == c0.Id
+        INNER JOIN Reporters AS r ON c.ReporterId == r.Id
+        WHERE Not(c.IsDeleted)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CaseDTO>, 
+    CaseMgmtAPI.Infra.CaseMgmtContext, 
+    False, 
+    False, 
+    True
+)'
+2022-09-15 07:39:55.966 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-09-15 07:39:55.966 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-09-15 07:39:55.966 -05:00 [DBG] Opening connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:39:55.967 -05:00 [DBG] Opened connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:39:55.967 -05:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c0].[Id], [c0].[City], [c0].[Details], [c0].[FirstName], [c0].[IsDeleted], [c0].[LastName], [c0].[State], [c0].[StreetAddress], [c0].[ZipCode], [c].[Id], [r].[Id], [r].[Email], [r].[FirstName], [r].[IsDeleted], [r].[LastName], [r].[Phone]
+FROM [Cases] AS [c]
+INNER JOIN [Children] AS [c0] ON [c].[ChildId] = [c0].[Id]
+INNER JOIN [Reporters] AS [r] ON [c].[ReporterId] = [r].[Id]
+WHERE [c].[IsDeleted] = CAST(0 AS bit)
+2022-09-15 07:39:55.982 -05:00 [INF] Executed DbCommand (15ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c0].[Id], [c0].[City], [c0].[Details], [c0].[FirstName], [c0].[IsDeleted], [c0].[LastName], [c0].[State], [c0].[StreetAddress], [c0].[ZipCode], [c].[Id], [r].[Id], [r].[Email], [r].[FirstName], [r].[IsDeleted], [r].[LastName], [r].[Phone]
+FROM [Cases] AS [c]
+INNER JOIN [Children] AS [c0] ON [c].[ChildId] = [c0].[Id]
+INNER JOIN [Reporters] AS [r] ON [c].[ReporterId] = [r].[Id]
+WHERE [c].[IsDeleted] = CAST(0 AS bit)
+2022-09-15 07:39:55.985 -05:00 [DBG] A data reader was disposed.
+2022-09-15 07:39:55.985 -05:00 [DBG] Closing connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:39:55.985 -05:00 [DBG] Closed connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:39:55.988 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-09-15 07:39:55.991 -05:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2022-09-15 07:39:55.991 -05:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2022-09-15 07:39:55.991 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-09-15 07:39:55.991 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-09-15 07:39:55.991 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-09-15 07:39:55.992 -05:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ActionResult`1[[System.Collections.Generic.IEnumerable`1[[CaseMgmtAPI.Features.Cases.DTO.CaseDTO, CaseMgmtAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-09-15 07:39:55.995 -05:00 [INF] Executed action CaseMgmtAPI.Features.Cases.Controllers.CasesController.Get (CaseMgmtAPI) in 164.7566ms
+2022-09-15 07:39:55.995 -05:00 [INF] Executed endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Get (CaseMgmtAPI)'
+2022-09-15 07:39:55.995 -05:00 [DBG] 'CaseMgmtContext' disposed.
+2022-09-15 07:39:55.995 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/api/Cases - - - 200 - application/json;+charset=utf-8 169.3139ms
+2022-09-15 07:41:24.273 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/api/Reporters - -
+2022-09-15 07:41:24.278 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Reporters'
+2022-09-15 07:41:24.278 -05:00 [DBG] Endpoint 'CaseMgmtAPI.Features.Reporters.Controllers.ReportersController.Get (CaseMgmtAPI)' with route pattern 'api/Reporters' is valid for the request path '/api/Reporters'
+2022-09-15 07:41:24.278 -05:00 [DBG] Request matched endpoint 'CaseMgmtAPI.Features.Reporters.Controllers.ReportersController.Get (CaseMgmtAPI)'
+2022-09-15 07:41:24.278 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-09-15 07:41:24.278 -05:00 [INF] Executing endpoint 'CaseMgmtAPI.Features.Reporters.Controllers.ReportersController.Get (CaseMgmtAPI)'
+2022-09-15 07:41:24.280 -05:00 [INF] Route matched with {action = "Get", controller = "Reporters"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CaseMgmtAPI.Features.Reporters.DTO.ReporterDTO]]] Get() on controller CaseMgmtAPI.Features.Reporters.Controllers.ReportersController (CaseMgmtAPI).
+2022-09-15 07:41:24.280 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-09-15 07:41:24.280 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-09-15 07:41:24.280 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-09-15 07:41:24.281 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-09-15 07:41:24.281 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-09-15 07:41:24.281 -05:00 [DBG] Executing controller factory for controller CaseMgmtAPI.Features.Reporters.Controllers.ReportersController (CaseMgmtAPI)
+2022-09-15 07:41:24.281 -05:00 [DBG] Executed controller factory for controller CaseMgmtAPI.Features.Reporters.Controllers.ReportersController (CaseMgmtAPI)
+2022-09-15 07:41:24.292 -05:00 [INF] Entity Framework Core 6.0.8 initialized 'CaseMgmtContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 07:41:24.293 -05:00 [DBG] Compiling query expression: 
+'DbSet<Reporter>()
+    .Where(x => !(x.IsDeleted))
+    .AsNoTracking()
+    .Select(dtoReporter => new ReporterDTO{ 
+        Email = dtoReporter.Email, 
+        FirstName = dtoReporter.FirstName, 
+        LastName = dtoReporter.LastName, 
+        Phone = dtoReporter.Phone 
+    }
+    )'
+2022-09-15 07:41:24.295 -05:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<ReporterDTO>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            Email -> 0
+            FirstName -> 1
+            LastName -> 2
+            Phone -> 3
+        SELECT r.Email, r.FirstName, r.LastName, r.Phone
+        FROM Reporters AS r
+        WHERE Not(r.IsDeleted)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, ReporterDTO>, 
+    CaseMgmtAPI.Infra.CaseMgmtContext, 
+    False, 
+    False, 
+    True
+)'
+2022-09-15 07:41:24.295 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-09-15 07:41:24.295 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-09-15 07:41:24.295 -05:00 [DBG] Opening connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:41:24.295 -05:00 [DBG] Opened connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:41:24.295 -05:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Email], [r].[FirstName], [r].[LastName], [r].[Phone]
+FROM [Reporters] AS [r]
+WHERE [r].[IsDeleted] = CAST(0 AS bit)
+2022-09-15 07:41:24.297 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Email], [r].[FirstName], [r].[LastName], [r].[Phone]
+FROM [Reporters] AS [r]
+WHERE [r].[IsDeleted] = CAST(0 AS bit)
+2022-09-15 07:41:24.316 -05:00 [DBG] A data reader was disposed.
+2022-09-15 07:41:24.316 -05:00 [DBG] Closing connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:41:24.316 -05:00 [DBG] Closed connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:41:24.316 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-09-15 07:41:24.316 -05:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2022-09-15 07:41:24.316 -05:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2022-09-15 07:41:24.316 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-09-15 07:41:24.316 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-09-15 07:41:24.316 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-09-15 07:41:24.316 -05:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ActionResult`1[[System.Collections.Generic.IEnumerable`1[[CaseMgmtAPI.Features.Reporters.DTO.ReporterDTO, CaseMgmtAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-09-15 07:41:24.318 -05:00 [INF] Executed action CaseMgmtAPI.Features.Reporters.Controllers.ReportersController.Get (CaseMgmtAPI) in 37.3834ms
+2022-09-15 07:41:24.318 -05:00 [INF] Executed endpoint 'CaseMgmtAPI.Features.Reporters.Controllers.ReportersController.Get (CaseMgmtAPI)'
+2022-09-15 07:41:24.318 -05:00 [DBG] 'CaseMgmtContext' disposed.
+2022-09-15 07:41:24.318 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/api/Reporters - - - 200 - application/json;+charset=utf-8 44.9798ms
+2022-09-15 07:41:38.407 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/api/Children - -
+2022-09-15 07:41:38.407 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Children'
+2022-09-15 07:41:38.407 -05:00 [DBG] Endpoint 'CaseMgmtAPI.Features.Children.Controllers.ChildrenController.Get (CaseMgmtAPI)' with route pattern 'api/Children' is valid for the request path '/api/Children'
+2022-09-15 07:41:38.407 -05:00 [DBG] Request matched endpoint 'CaseMgmtAPI.Features.Children.Controllers.ChildrenController.Get (CaseMgmtAPI)'
+2022-09-15 07:41:38.407 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-09-15 07:41:38.407 -05:00 [INF] Executing endpoint 'CaseMgmtAPI.Features.Children.Controllers.ChildrenController.Get (CaseMgmtAPI)'
+2022-09-15 07:41:38.412 -05:00 [INF] Route matched with {action = "Get", controller = "Children"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CaseMgmtAPI.Features.Children.DTO.ChildDTO]]] Get() on controller CaseMgmtAPI.Features.Children.Controllers.ChildrenController (CaseMgmtAPI).
+2022-09-15 07:41:38.412 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-09-15 07:41:38.412 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-09-15 07:41:38.412 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-09-15 07:41:38.412 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-09-15 07:41:38.412 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-09-15 07:41:38.412 -05:00 [DBG] Executing controller factory for controller CaseMgmtAPI.Features.Children.Controllers.ChildrenController (CaseMgmtAPI)
+2022-09-15 07:41:38.412 -05:00 [DBG] Executed controller factory for controller CaseMgmtAPI.Features.Children.Controllers.ChildrenController (CaseMgmtAPI)
+2022-09-15 07:41:38.418 -05:00 [INF] Entity Framework Core 6.0.8 initialized 'CaseMgmtContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 07:41:38.420 -05:00 [DBG] Compiling query expression: 
+'DbSet<Child>()
+    .Where(x => !(x.IsDeleted))
+    .AsNoTracking()
+    .Select(dtoChild => new ChildDTO{ 
+        City = dtoChild.City, 
+        Details = dtoChild.Details, 
+        FirstName = dtoChild.FirstName, 
+        IsDeleted = dtoChild.IsDeleted, 
+        LastName = dtoChild.LastName, 
+        State = dtoChild.State, 
+        StreetAddress = dtoChild.StreetAddress, 
+        ZipCode = dtoChild.ZipCode 
+    }
+    )'
+2022-09-15 07:41:38.427 -05:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<ChildDTO>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            City -> 0
+            Details -> 1
+            FirstName -> 2
+            IsDeleted -> 3
+            LastName -> 4
+            State -> 5
+            StreetAddress -> 6
+            ZipCode -> 7
+        SELECT c.City, c.Details, c.FirstName, c.IsDeleted, c.LastName, c.State, c.StreetAddress, c.ZipCode
+        FROM Children AS c
+        WHERE Not(c.IsDeleted)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, ChildDTO>, 
+    CaseMgmtAPI.Infra.CaseMgmtContext, 
+    False, 
+    False, 
+    True
+)'
+2022-09-15 07:41:38.427 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-09-15 07:41:38.428 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-09-15 07:41:38.428 -05:00 [DBG] Opening connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:41:38.428 -05:00 [DBG] Opened connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:41:38.428 -05:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[City], [c].[Details], [c].[FirstName], [c].[IsDeleted], [c].[LastName], [c].[State], [c].[StreetAddress], [c].[ZipCode]
+FROM [Children] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit)
+2022-09-15 07:41:38.429 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[City], [c].[Details], [c].[FirstName], [c].[IsDeleted], [c].[LastName], [c].[State], [c].[StreetAddress], [c].[ZipCode]
+FROM [Children] AS [c]
+WHERE [c].[IsDeleted] = CAST(0 AS bit)
+2022-09-15 07:41:38.430 -05:00 [DBG] A data reader was disposed.
+2022-09-15 07:41:38.430 -05:00 [DBG] Closing connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:41:38.430 -05:00 [DBG] Closed connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:41:38.430 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-09-15 07:41:38.430 -05:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2022-09-15 07:41:38.430 -05:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2022-09-15 07:41:38.430 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-09-15 07:41:38.430 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-09-15 07:41:38.430 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-09-15 07:41:38.430 -05:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ActionResult`1[[System.Collections.Generic.IEnumerable`1[[CaseMgmtAPI.Features.Children.DTO.ChildDTO, CaseMgmtAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-09-15 07:41:38.432 -05:00 [INF] Executed action CaseMgmtAPI.Features.Children.Controllers.ChildrenController.Get (CaseMgmtAPI) in 19.9083ms
+2022-09-15 07:41:38.432 -05:00 [INF] Executed endpoint 'CaseMgmtAPI.Features.Children.Controllers.ChildrenController.Get (CaseMgmtAPI)'
+2022-09-15 07:41:38.432 -05:00 [DBG] 'CaseMgmtContext' disposed.
+2022-09-15 07:41:38.432 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/api/Children - - - 200 - application/json;+charset=utf-8 24.7878ms
+2022-09-15 07:44:18.475 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-09-15 07:44:18.533 -05:00 [DBG] Hosting starting
+2022-09-15 07:44:18.663 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60D9DC33054A8CA56CD12BC2E96E05719EFCB64C)
+2022-09-15 07:44:18.716 -05:00 [INF] Now listening on: https://localhost:7060
+2022-09-15 07:44:18.716 -05:00 [INF] Now listening on: http://localhost:5060
+2022-09-15 07:44:18.716 -05:00 [DBG] Loaded hosting startup assembly CaseMgmtAPI
+2022-09-15 07:44:18.716 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-09-15 07:44:18.716 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-09-15 07:44:18.716 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 07:44:18.716 -05:00 [INF] Hosting environment: Development
+2022-09-15 07:44:18.716 -05:00 [INF] Content root path: C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtAPI\CaseMgmtAPI\
+2022-09-15 07:44:18.716 -05:00 [DBG] Hosting started
+2022-09-15 07:44:19.041 -05:00 [DBG] Connection id "0HMKN300RMJTJ" received FIN.
+2022-09-15 07:44:19.041 -05:00 [DBG] Connection id "0HMKN300RMJTK" received FIN.
+2022-09-15 07:44:19.047 -05:00 [DBG] Connection id "0HMKN300RMJTJ" accepted.
+2022-09-15 07:44:19.047 -05:00 [DBG] Connection id "0HMKN300RMJTK" accepted.
+2022-09-15 07:44:19.048 -05:00 [DBG] Connection id "0HMKN300RMJTK" started.
+2022-09-15 07:44:19.048 -05:00 [DBG] Connection id "0HMKN300RMJTJ" started.
+2022-09-15 07:44:19.067 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-09-15 07:44:19.067 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-09-15 07:44:19.102 -05:00 [DBG] Connection id "0HMKN300RMJTK" stopped.
+2022-09-15 07:44:19.102 -05:00 [DBG] Connection id "0HMKN300RMJTJ" stopped.
+2022-09-15 07:44:19.106 -05:00 [DBG] Connection id "0HMKN300RMJTJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-09-15 07:44:19.106 -05:00 [DBG] Connection id "0HMKN300RMJTK" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-09-15 07:44:19.498 -05:00 [DBG] Connection id "0HMKN300RMJTL" accepted.
+2022-09-15 07:44:19.498 -05:00 [DBG] Connection id "0HMKN300RMJTL" started.
+2022-09-15 07:44:19.579 -05:00 [DBG] Connection 0HMKN300RMJTL established using the following protocol: "Tls12"
+2022-09-15 07:44:19.647 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/swagger/index.html - -
+2022-09-15 07:44:19.689 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-09-15 07:44:19.720 -05:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2022-09-15 07:44:19.721 -05:00 [DBG] Request did not match any endpoints
+2022-09-15 07:44:19.835 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-09-15 07:44:19.967 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-09-15 07:44:19.971 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/swagger/index.html - - - 200 - text/html;charset=utf-8 332.6157ms
+2022-09-15 07:44:19.975 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 07:44:19.985 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 10.3369ms
+2022-09-15 07:44:19.986 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/_vs/browserLink - -
+2022-09-15 07:44:20.004 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 16.9979ms
+2022-09-15 07:44:20.068 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/swagger/v1/swagger.json - -
+2022-09-15 07:44:20.068 -05:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2022-09-15 07:44:20.068 -05:00 [DBG] Request did not match any endpoints
+2022-09-15 07:44:20.193 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 124.6812ms
+2022-09-15 07:44:34.604 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-09-15 07:44:34.724 -05:00 [DBG] Hosting starting
+2022-09-15 07:44:34.890 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60D9DC33054A8CA56CD12BC2E96E05719EFCB64C)
+2022-09-15 07:44:35.088 -05:00 [INF] Now listening on: https://localhost:7060
+2022-09-15 07:44:35.089 -05:00 [INF] Now listening on: http://localhost:5060
+2022-09-15 07:44:35.089 -05:00 [DBG] Loaded hosting startup assembly CaseMgmtAPI
+2022-09-15 07:44:35.089 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-09-15 07:44:35.089 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-09-15 07:44:35.089 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 07:44:35.089 -05:00 [INF] Hosting environment: Development
+2022-09-15 07:44:35.089 -05:00 [INF] Content root path: C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtAPI\CaseMgmtAPI\
+2022-09-15 07:44:35.089 -05:00 [DBG] Hosting started
+2022-09-15 07:44:35.107 -05:00 [DBG] Connection id "0HMKN305KTKQ2" received FIN.
+2022-09-15 07:44:35.107 -05:00 [DBG] Connection id "0HMKN305KTKQ3" received FIN.
+2022-09-15 07:44:35.119 -05:00 [DBG] Connection id "0HMKN305KTKQ3" accepted.
+2022-09-15 07:44:35.119 -05:00 [DBG] Connection id "0HMKN305KTKQ2" accepted.
+2022-09-15 07:44:35.120 -05:00 [DBG] Connection id "0HMKN305KTKQ3" started.
+2022-09-15 07:44:35.120 -05:00 [DBG] Connection id "0HMKN305KTKQ2" started.
+2022-09-15 07:44:35.153 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-09-15 07:44:35.153 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-09-15 07:44:35.215 -05:00 [DBG] Connection id "0HMKN305KTKQ3" stopped.
+2022-09-15 07:44:35.215 -05:00 [DBG] Connection id "0HMKN305KTKQ2" stopped.
+2022-09-15 07:44:35.220 -05:00 [DBG] Connection id "0HMKN305KTKQ3" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-09-15 07:44:35.221 -05:00 [DBG] Connection id "0HMKN305KTKQ2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-09-15 07:44:36.353 -05:00 [DBG] Connection id "0HMKN305KTKQ4" accepted.
+2022-09-15 07:44:36.357 -05:00 [DBG] Connection id "0HMKN305KTKQ4" started.
+2022-09-15 07:44:36.511 -05:00 [DBG] Connection 0HMKN305KTKQ4 established using the following protocol: "Tls12"
+2022-09-15 07:44:36.640 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/swagger/index.html - -
+2022-09-15 07:44:36.725 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-09-15 07:44:36.777 -05:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2022-09-15 07:44:36.778 -05:00 [DBG] Request did not match any endpoints
+2022-09-15 07:44:36.966 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-09-15 07:44:37.197 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-09-15 07:44:37.200 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 07:44:37.204 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/swagger/index.html - - - 200 - text/html;charset=utf-8 570.4678ms
+2022-09-15 07:44:37.214 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/_vs/browserLink - -
+2022-09-15 07:44:37.219 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 15.2396ms
+2022-09-15 07:44:37.270 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 55.5834ms
+2022-09-15 07:44:37.356 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/swagger/v1/swagger.json - -
+2022-09-15 07:44:37.356 -05:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2022-09-15 07:44:37.356 -05:00 [DBG] Request did not match any endpoints
+2022-09-15 07:44:37.526 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 170.1931ms
+2022-09-15 07:44:52.812 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/api/Cases/1 - -
+2022-09-15 07:44:52.820 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Cases/1'
+2022-09-15 07:44:52.823 -05:00 [DBG] Endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Get (CaseMgmtAPI)' with route pattern 'api/Cases/{id}' is valid for the request path '/api/Cases/1'
+2022-09-15 07:44:52.823 -05:00 [DBG] Request matched endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Get (CaseMgmtAPI)'
+2022-09-15 07:44:52.824 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-09-15 07:44:52.827 -05:00 [INF] Executing endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Get (CaseMgmtAPI)'
+2022-09-15 07:44:52.851 -05:00 [INF] Route matched with {action = "Get", controller = "Cases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[CaseMgmtAPI.Features.Cases.DTO.CaseDTO]] Get(Int32) on controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI).
+2022-09-15 07:44:52.851 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-09-15 07:44:52.851 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-09-15 07:44:52.851 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-09-15 07:44:52.851 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-09-15 07:44:52.851 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-09-15 07:44:52.851 -05:00 [DBG] Executing controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 07:44:52.852 -05:00 [DBG] Executed controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 07:44:52.854 -05:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2022-09-15 07:44:52.855 -05:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2022-09-15 07:44:52.856 -05:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2022-09-15 07:44:52.856 -05:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2022-09-15 07:44:52.856 -05:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2022-09-15 07:44:52.857 -05:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2022-09-15 07:44:52.985 -05:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-09-15 07:45:01.477 -05:00 [INF] Entity Framework Core 6.0.8 initialized 'CaseMgmtContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 07:45:01.553 -05:00 [DBG] Compiling query expression: 
+'DbSet<Case>()
+    .FirstOrDefault(x => x.Id == __request_Id_0)'
+2022-09-15 07:45:01.830 -05:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Case>(
+    asyncEnumerable: new SingleQueryingEnumerable<Case>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Case.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Case.ChildId (int) Required FK Index, 1], [Property: Case.IsDeleted (bool) Required, 2], [Property: Case.ReporterId (int) Required FK Index, 3] }
+            SELECT TOP(1) c.Id, c.ChildId, c.IsDeleted, c.ReporterId
+            FROM Cases AS c
+            WHERE c.Id == @__request_Id_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Case>, 
+        CaseMgmtAPI.Infra.CaseMgmtContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2022-09-15 07:45:01.887 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-09-15 07:45:01.928 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (37ms).
+2022-09-15 07:45:01.957 -05:00 [DBG] Opening connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:45:02.306 -05:00 [DBG] Opened connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:45:02.321 -05:00 [DBG] Executing DbCommand [Parameters=[@__request_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[ChildId], [c].[IsDeleted], [c].[ReporterId]
+FROM [Cases] AS [c]
+WHERE [c].[Id] = @__request_Id_0
+2022-09-15 07:45:02.407 -05:00 [INF] Executed DbCommand (91ms) [Parameters=[@__request_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[ChildId], [c].[IsDeleted], [c].[ReporterId]
+FROM [Cases] AS [c]
+WHERE [c].[Id] = @__request_Id_0
+2022-09-15 07:45:02.440 -05:00 [DBG] Context 'CaseMgmtContext' started tracking 'Case' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 07:45:02.473 -05:00 [DBG] A data reader was disposed.
+2022-09-15 07:45:02.478 -05:00 [DBG] Closing connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:45:02.491 -05:00 [DBG] Closed connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:45:15.774 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-09-15 07:45:15.776 -05:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2022-09-15 07:45:15.776 -05:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2022-09-15 07:45:15.776 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-09-15 07:45:15.776 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-09-15 07:45:15.777 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-09-15 07:45:15.777 -05:00 [INF] Executing OkObjectResult, writing value of type 'CaseMgmtAPI.Features.Cases.DTO.CaseDTO'.
+2022-09-15 07:45:15.814 -05:00 [INF] Executed action CaseMgmtAPI.Features.Cases.Controllers.CasesController.Get (CaseMgmtAPI) in 22958.391ms
+2022-09-15 07:45:15.817 -05:00 [INF] Executed endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Get (CaseMgmtAPI)'
+2022-09-15 07:45:15.822 -05:00 [DBG] 'CaseMgmtContext' disposed.
+2022-09-15 07:45:15.825 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/api/Cases/1 - - - 200 - application/json;+charset=utf-8 23013.3220ms
+2022-09-15 07:52:08.901 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-09-15 07:52:08.974 -05:00 [DBG] Hosting starting
+2022-09-15 07:52:09.105 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60D9DC33054A8CA56CD12BC2E96E05719EFCB64C)
+2022-09-15 07:52:09.157 -05:00 [INF] Now listening on: https://localhost:7060
+2022-09-15 07:52:09.157 -05:00 [INF] Now listening on: http://localhost:5060
+2022-09-15 07:52:09.157 -05:00 [DBG] Loaded hosting startup assembly CaseMgmtAPI
+2022-09-15 07:52:09.157 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-09-15 07:52:09.157 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-09-15 07:52:09.157 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 07:52:09.157 -05:00 [INF] Hosting environment: Development
+2022-09-15 07:52:09.157 -05:00 [INF] Content root path: C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtAPI\CaseMgmtAPI\
+2022-09-15 07:52:09.157 -05:00 [DBG] Hosting started
+2022-09-15 07:52:09.244 -05:00 [DBG] Connection id "0HMKN34CVSE8B" accepted.
+2022-09-15 07:52:09.244 -05:00 [DBG] Connection id "0HMKN34CVSE8A" accepted.
+2022-09-15 07:52:09.245 -05:00 [DBG] Connection id "0HMKN34CVSE8B" started.
+2022-09-15 07:52:09.245 -05:00 [DBG] Connection id "0HMKN34CVSE8A" started.
+2022-09-15 07:52:09.253 -05:00 [DBG] Connection id "0HMKN34CVSE8A" received FIN.
+2022-09-15 07:52:09.253 -05:00 [DBG] Connection id "0HMKN34CVSE8B" received FIN.
+2022-09-15 07:52:09.267 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-09-15 07:52:09.267 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-09-15 07:52:09.312 -05:00 [DBG] Connection id "0HMKN34CVSE8A" stopped.
+2022-09-15 07:52:09.312 -05:00 [DBG] Connection id "0HMKN34CVSE8B" stopped.
+2022-09-15 07:52:09.315 -05:00 [DBG] Connection id "0HMKN34CVSE8B" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-09-15 07:52:09.315 -05:00 [DBG] Connection id "0HMKN34CVSE8A" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-09-15 07:52:09.901 -05:00 [DBG] Connection id "0HMKN34CVSE8C" accepted.
+2022-09-15 07:52:09.902 -05:00 [DBG] Connection id "0HMKN34CVSE8C" started.
+2022-09-15 07:52:09.985 -05:00 [DBG] Connection 0HMKN34CVSE8C established using the following protocol: "Tls12"
+2022-09-15 07:52:10.051 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/swagger/index.html - -
+2022-09-15 07:52:10.100 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-09-15 07:52:10.126 -05:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2022-09-15 07:52:10.127 -05:00 [DBG] Request did not match any endpoints
+2022-09-15 07:52:10.270 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-09-15 07:52:10.400 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-09-15 07:52:10.404 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/swagger/index.html - - - 200 - text/html;charset=utf-8 359.1994ms
+2022-09-15 07:52:10.415 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/_vs/browserLink - -
+2022-09-15 07:52:10.415 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 07:52:10.421 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 5.3867ms
+2022-09-15 07:52:10.465 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 49.6211ms
+2022-09-15 07:52:10.525 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/swagger/v1/swagger.json - -
+2022-09-15 07:52:10.526 -05:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2022-09-15 07:52:10.526 -05:00 [DBG] Request did not match any endpoints
+2022-09-15 07:52:10.635 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 109.7948ms
+2022-09-15 07:53:07.910 -05:00 [INF] Request starting HTTP/2 PUT https://localhost:7060/api/Cases/1 application/json 445
+2022-09-15 07:53:07.921 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Cases/1'
+2022-09-15 07:53:07.924 -05:00 [DBG] Endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Put (CaseMgmtAPI)' with route pattern 'api/Cases/{id}' is valid for the request path '/api/Cases/1'
+2022-09-15 07:53:07.925 -05:00 [DBG] Request matched endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Put (CaseMgmtAPI)'
+2022-09-15 07:53:07.926 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-09-15 07:53:07.932 -05:00 [INF] Executing endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Put (CaseMgmtAPI)'
+2022-09-15 07:53:07.957 -05:00 [INF] Route matched with {action = "Put", controller = "Cases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Put(Int32, CaseMgmtAPI.Domain.Entity.Case) on controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI).
+2022-09-15 07:53:07.957 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-09-15 07:53:07.957 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-09-15 07:53:07.958 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-09-15 07:53:07.958 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-09-15 07:53:07.958 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-09-15 07:53:07.958 -05:00 [DBG] Executing controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 07:53:07.959 -05:00 [DBG] Executed controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 07:53:07.964 -05:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2022-09-15 07:53:07.965 -05:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2022-09-15 07:53:07.965 -05:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2022-09-15 07:53:07.965 -05:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2022-09-15 07:53:07.965 -05:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2022-09-15 07:53:07.966 -05:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2022-09-15 07:53:07.967 -05:00 [DBG] Attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case' ...
+2022-09-15 07:53:07.967 -05:00 [DBG] Attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case' using the name '' in request data ...
+2022-09-15 07:53:07.968 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2022-09-15 07:53:07.970 -05:00 [DBG] Connection id "0HMKN34CVSE8C", Request id "0HMKN34CVSE8C:00000009": started reading request body.
+2022-09-15 07:53:07.970 -05:00 [DBG] Connection id "0HMKN34CVSE8C", Request id "0HMKN34CVSE8C:00000009": done reading request body.
+2022-09-15 07:53:07.976 -05:00 [DBG] JSON input formatter succeeded, deserializing to type 'CaseMgmtAPI.Domain.Entity.Case'
+2022-09-15 07:53:07.977 -05:00 [DBG] Done attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case'.
+2022-09-15 07:53:07.977 -05:00 [DBG] Done attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case'.
+2022-09-15 07:53:07.977 -05:00 [DBG] Attempting to validate the bound parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case' ...
+2022-09-15 07:53:07.986 -05:00 [DBG] Done attempting to validate the bound parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case'.
+2022-09-15 07:54:30.611 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-09-15 07:54:30.657 -05:00 [DBG] Hosting starting
+2022-09-15 07:54:30.788 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60D9DC33054A8CA56CD12BC2E96E05719EFCB64C)
+2022-09-15 07:54:30.834 -05:00 [INF] Now listening on: https://localhost:7060
+2022-09-15 07:54:30.834 -05:00 [INF] Now listening on: http://localhost:5060
+2022-09-15 07:54:30.834 -05:00 [DBG] Loaded hosting startup assembly CaseMgmtAPI
+2022-09-15 07:54:30.834 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-09-15 07:54:30.834 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-09-15 07:54:30.834 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 07:54:30.835 -05:00 [INF] Hosting environment: Development
+2022-09-15 07:54:30.835 -05:00 [INF] Content root path: C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtAPI\CaseMgmtAPI\
+2022-09-15 07:54:30.835 -05:00 [DBG] Hosting started
+2022-09-15 07:54:30.941 -05:00 [DBG] Connection id "0HMKN35N77OH8" received FIN.
+2022-09-15 07:54:30.944 -05:00 [DBG] Connection id "0HMKN35N77OH8" accepted.
+2022-09-15 07:54:30.945 -05:00 [DBG] Connection id "0HMKN35N77OH8" started.
+2022-09-15 07:54:30.958 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-09-15 07:54:30.996 -05:00 [DBG] Connection id "0HMKN35N77OH8" stopped.
+2022-09-15 07:54:30.998 -05:00 [DBG] Connection id "0HMKN35N77OH8" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-09-15 07:54:32.227 -05:00 [DBG] Connection id "0HMKN35N77OH9" accepted.
+2022-09-15 07:54:32.227 -05:00 [DBG] Connection id "0HMKN35N77OH9" started.
+2022-09-15 07:54:32.352 -05:00 [DBG] Connection 0HMKN35N77OH9 established using the following protocol: "Tls12"
+2022-09-15 07:54:32.412 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/swagger/index.html - -
+2022-09-15 07:54:32.442 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-09-15 07:54:32.466 -05:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2022-09-15 07:54:32.466 -05:00 [DBG] Request did not match any endpoints
+2022-09-15 07:54:32.577 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-09-15 07:54:32.752 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-09-15 07:54:32.756 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 07:54:32.757 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/swagger/index.html - - - 200 - text/html;charset=utf-8 347.3793ms
+2022-09-15 07:54:32.761 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 5.1649ms
+2022-09-15 07:54:32.768 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/_vs/browserLink - -
+2022-09-15 07:54:32.796 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.8139ms
+2022-09-15 07:54:32.869 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/swagger/v1/swagger.json - -
+2022-09-15 07:54:32.869 -05:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2022-09-15 07:54:32.869 -05:00 [DBG] Request did not match any endpoints
+2022-09-15 07:54:33.011 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 142.3062ms
+2022-09-15 07:54:54.368 -05:00 [INF] Request starting HTTP/2 PUT https://localhost:7060/api/Cases/1 application/json 445
+2022-09-15 07:54:54.374 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Cases/1'
+2022-09-15 07:54:54.378 -05:00 [DBG] Endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Put (CaseMgmtAPI)' with route pattern 'api/Cases/{id}' is valid for the request path '/api/Cases/1'
+2022-09-15 07:54:54.378 -05:00 [DBG] Request matched endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Put (CaseMgmtAPI)'
+2022-09-15 07:54:54.379 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-09-15 07:54:54.381 -05:00 [INF] Executing endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Put (CaseMgmtAPI)'
+2022-09-15 07:54:54.405 -05:00 [INF] Route matched with {action = "Put", controller = "Cases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Put(Int32, CaseMgmtAPI.Domain.Entity.Case) on controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI).
+2022-09-15 07:54:54.406 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-09-15 07:54:54.406 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-09-15 07:54:54.406 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-09-15 07:54:54.406 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-09-15 07:54:54.406 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-09-15 07:54:54.406 -05:00 [DBG] Executing controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 07:54:54.407 -05:00 [DBG] Executed controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 07:54:54.410 -05:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2022-09-15 07:54:54.411 -05:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2022-09-15 07:54:54.411 -05:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2022-09-15 07:54:54.411 -05:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2022-09-15 07:54:54.411 -05:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2022-09-15 07:54:54.412 -05:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2022-09-15 07:54:54.414 -05:00 [DBG] Attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case' ...
+2022-09-15 07:54:54.414 -05:00 [DBG] Attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case' using the name '' in request data ...
+2022-09-15 07:54:54.415 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2022-09-15 07:54:54.419 -05:00 [DBG] Connection id "0HMKN35N77OH9", Request id "0HMKN35N77OH9:00000009": started reading request body.
+2022-09-15 07:54:54.419 -05:00 [DBG] Connection id "0HMKN35N77OH9", Request id "0HMKN35N77OH9:00000009": done reading request body.
+2022-09-15 07:54:54.428 -05:00 [DBG] JSON input formatter succeeded, deserializing to type 'CaseMgmtAPI.Domain.Entity.Case'
+2022-09-15 07:54:54.428 -05:00 [DBG] Done attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case'.
+2022-09-15 07:54:54.428 -05:00 [DBG] Done attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case'.
+2022-09-15 07:54:54.428 -05:00 [DBG] Attempting to validate the bound parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case' ...
+2022-09-15 07:54:54.436 -05:00 [DBG] Done attempting to validate the bound parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case'.
+2022-09-15 07:54:54.538 -05:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-09-15 07:55:24.899 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-09-15 07:55:25.006 -05:00 [DBG] Hosting starting
+2022-09-15 07:55:25.215 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60D9DC33054A8CA56CD12BC2E96E05719EFCB64C)
+2022-09-15 07:55:25.269 -05:00 [INF] Now listening on: https://localhost:7060
+2022-09-15 07:55:25.269 -05:00 [INF] Now listening on: http://localhost:5060
+2022-09-15 07:55:25.269 -05:00 [DBG] Loaded hosting startup assembly CaseMgmtAPI
+2022-09-15 07:55:25.269 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-09-15 07:55:25.269 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-09-15 07:55:25.269 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 07:55:25.269 -05:00 [INF] Hosting environment: Development
+2022-09-15 07:55:25.269 -05:00 [INF] Content root path: C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtAPI\CaseMgmtAPI\
+2022-09-15 07:55:25.269 -05:00 [DBG] Hosting started
+2022-09-15 07:55:25.785 -05:00 [DBG] Connection id "0HMKN367I8EOG" received FIN.
+2022-09-15 07:55:25.785 -05:00 [DBG] Connection id "0HMKN367I8EOF" received FIN.
+2022-09-15 07:55:25.786 -05:00 [DBG] Connection id "0HMKN367I8EOG" accepted.
+2022-09-15 07:55:25.786 -05:00 [DBG] Connection id "0HMKN367I8EOF" accepted.
+2022-09-15 07:55:25.787 -05:00 [DBG] Connection id "0HMKN367I8EOG" started.
+2022-09-15 07:55:25.787 -05:00 [DBG] Connection id "0HMKN367I8EOF" started.
+2022-09-15 07:55:25.799 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-09-15 07:55:25.799 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-09-15 07:55:25.827 -05:00 [DBG] Connection id "0HMKN367I8EOG" stopped.
+2022-09-15 07:55:25.827 -05:00 [DBG] Connection id "0HMKN367I8EOF" stopped.
+2022-09-15 07:55:25.828 -05:00 [DBG] Connection id "0HMKN367I8EOF" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-09-15 07:55:25.828 -05:00 [DBG] Connection id "0HMKN367I8EOG" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-09-15 07:55:26.302 -05:00 [DBG] Connection id "0HMKN367I8EOH" accepted.
+2022-09-15 07:55:26.302 -05:00 [DBG] Connection id "0HMKN367I8EOH" started.
+2022-09-15 07:55:26.378 -05:00 [DBG] Connection 0HMKN367I8EOH established using the following protocol: "Tls12"
+2022-09-15 07:55:26.449 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/swagger/index.html - -
+2022-09-15 07:55:26.492 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-09-15 07:55:26.517 -05:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2022-09-15 07:55:26.517 -05:00 [DBG] Request did not match any endpoints
+2022-09-15 07:55:26.636 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-09-15 07:55:26.805 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-09-15 07:55:26.809 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 07:55:26.811 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/swagger/index.html - - - 200 - text/html;charset=utf-8 369.1777ms
+2022-09-15 07:55:26.815 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 5.7971ms
+2022-09-15 07:55:26.819 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/_vs/browserLink - -
+2022-09-15 07:55:26.853 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 34.4367ms
+2022-09-15 07:55:26.943 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/swagger/v1/swagger.json - -
+2022-09-15 07:55:26.944 -05:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2022-09-15 07:55:26.944 -05:00 [DBG] Request did not match any endpoints
+2022-09-15 07:55:27.098 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 154.0342ms
+2022-09-15 07:55:37.733 -05:00 [INF] Request starting HTTP/2 PUT https://localhost:7060/api/Cases/1 application/json 445
+2022-09-15 07:55:37.739 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Cases/1'
+2022-09-15 07:55:37.744 -05:00 [DBG] Endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Put (CaseMgmtAPI)' with route pattern 'api/Cases/{id}' is valid for the request path '/api/Cases/1'
+2022-09-15 07:55:37.744 -05:00 [DBG] Request matched endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Put (CaseMgmtAPI)'
+2022-09-15 07:55:37.745 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-09-15 07:55:37.747 -05:00 [INF] Executing endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Put (CaseMgmtAPI)'
+2022-09-15 07:55:37.767 -05:00 [INF] Route matched with {action = "Put", controller = "Cases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Put(Int32, CaseMgmtAPI.Domain.Entity.Case) on controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI).
+2022-09-15 07:55:37.768 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-09-15 07:55:37.768 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-09-15 07:55:37.768 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-09-15 07:55:37.768 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-09-15 07:55:37.768 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-09-15 07:55:37.768 -05:00 [DBG] Executing controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 07:55:37.769 -05:00 [DBG] Executed controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 07:55:37.772 -05:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2022-09-15 07:55:37.773 -05:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2022-09-15 07:55:37.773 -05:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2022-09-15 07:55:37.774 -05:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2022-09-15 07:55:37.774 -05:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2022-09-15 07:55:37.774 -05:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2022-09-15 07:55:37.775 -05:00 [DBG] Attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case' ...
+2022-09-15 07:55:37.776 -05:00 [DBG] Attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case' using the name '' in request data ...
+2022-09-15 07:55:37.776 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2022-09-15 07:55:37.778 -05:00 [DBG] Connection id "0HMKN367I8EOH", Request id "0HMKN367I8EOH:00000009": started reading request body.
+2022-09-15 07:55:37.779 -05:00 [DBG] Connection id "0HMKN367I8EOH", Request id "0HMKN367I8EOH:00000009": done reading request body.
+2022-09-15 07:55:37.784 -05:00 [DBG] JSON input formatter succeeded, deserializing to type 'CaseMgmtAPI.Domain.Entity.Case'
+2022-09-15 07:55:37.785 -05:00 [DBG] Done attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case'.
+2022-09-15 07:55:37.785 -05:00 [DBG] Done attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case'.
+2022-09-15 07:55:37.785 -05:00 [DBG] Attempting to validate the bound parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case' ...
+2022-09-15 07:55:37.796 -05:00 [DBG] Done attempting to validate the bound parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case'.
+2022-09-15 07:55:37.917 -05:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-09-15 07:55:43.196 -05:00 [INF] Entity Framework Core 6.0.8 initialized 'CaseMgmtContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 07:55:43.310 -05:00 [DBG] Compiling query expression: 
+'DbSet<Case>()
+    .FirstOrDefault(e => EF.Property<int>(e, "Id") == __p_0)'
+2022-09-15 07:55:43.586 -05:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Case>(
+    asyncEnumerable: new SingleQueryingEnumerable<Case>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Case.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Case.ChildId (int) Required FK Index, 1], [Property: Case.IsDeleted (bool) Required, 2], [Property: Case.ReporterId (int) Required FK Index, 3] }
+            SELECT TOP(1) c.Id, c.ChildId, c.IsDeleted, c.ReporterId
+            FROM Cases AS c
+            WHERE c.Id == @__p_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Case>, 
+        CaseMgmtAPI.Infra.CaseMgmtContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2022-09-15 07:55:43.634 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-09-15 07:55:43.673 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (36ms).
+2022-09-15 07:55:43.701 -05:00 [DBG] Opening connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:55:44.062 -05:00 [DBG] Opened connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:55:44.076 -05:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[ChildId], [c].[IsDeleted], [c].[ReporterId]
+FROM [Cases] AS [c]
+WHERE [c].[Id] = @__p_0
+2022-09-15 07:55:44.151 -05:00 [INF] Executed DbCommand (80ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[ChildId], [c].[IsDeleted], [c].[ReporterId]
+FROM [Cases] AS [c]
+WHERE [c].[Id] = @__p_0
+2022-09-15 07:55:44.181 -05:00 [DBG] Context 'CaseMgmtContext' started tracking 'Case' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 07:55:44.217 -05:00 [DBG] A data reader was disposed.
+2022-09-15 07:55:44.222 -05:00 [DBG] Closing connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:55:44.232 -05:00 [DBG] Closed connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:57:32.569 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-09-15 07:57:32.636 -05:00 [DBG] Hosting starting
+2022-09-15 07:57:32.769 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60D9DC33054A8CA56CD12BC2E96E05719EFCB64C)
+2022-09-15 07:57:32.880 -05:00 [INF] Now listening on: https://localhost:7060
+2022-09-15 07:57:32.880 -05:00 [INF] Now listening on: http://localhost:5060
+2022-09-15 07:57:32.880 -05:00 [DBG] Loaded hosting startup assembly CaseMgmtAPI
+2022-09-15 07:57:32.880 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-09-15 07:57:32.880 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-09-15 07:57:32.881 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 07:57:32.881 -05:00 [INF] Hosting environment: Development
+2022-09-15 07:57:32.881 -05:00 [INF] Content root path: C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtAPI\CaseMgmtAPI\
+2022-09-15 07:57:32.881 -05:00 [DBG] Hosting started
+2022-09-15 07:57:32.892 -05:00 [DBG] Connection id "0HMKN37DEEPRO" received FIN.
+2022-09-15 07:57:32.900 -05:00 [DBG] Connection id "0HMKN37DEEPRO" accepted.
+2022-09-15 07:57:32.907 -05:00 [DBG] Connection id "0HMKN37DEEPRO" started.
+2022-09-15 07:57:33.152 -05:00 [DBG] Connection id "0HMKN37DEEPRP" received FIN.
+2022-09-15 07:57:33.157 -05:00 [DBG] Connection id "0HMKN37DEEPRP" accepted.
+2022-09-15 07:57:33.157 -05:00 [DBG] Connection id "0HMKN37DEEPRP" started.
+2022-09-15 07:57:33.187 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-09-15 07:57:33.187 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-09-15 07:57:33.240 -05:00 [DBG] Connection id "0HMKN37DEEPRO" stopped.
+2022-09-15 07:57:33.241 -05:00 [DBG] Connection id "0HMKN37DEEPRP" stopped.
+2022-09-15 07:57:33.258 -05:00 [DBG] Connection id "0HMKN37DEEPRP" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-09-15 07:57:33.260 -05:00 [DBG] Connection id "0HMKN37DEEPRO" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-09-15 07:57:33.709 -05:00 [DBG] Connection id "0HMKN37DEEPRQ" accepted.
+2022-09-15 07:57:33.711 -05:00 [DBG] Connection id "0HMKN37DEEPRQ" started.
+2022-09-15 07:57:33.780 -05:00 [DBG] Connection 0HMKN37DEEPRQ established using the following protocol: "Tls12"
+2022-09-15 07:57:33.848 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/swagger/index.html - -
+2022-09-15 07:57:33.906 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-09-15 07:57:33.934 -05:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2022-09-15 07:57:33.934 -05:00 [DBG] Request did not match any endpoints
+2022-09-15 07:57:34.029 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-09-15 07:57:34.169 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-09-15 07:57:34.173 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/swagger/index.html - - - 200 - text/html;charset=utf-8 328.3440ms
+2022-09-15 07:57:34.182 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/_vs/browserLink - -
+2022-09-15 07:57:34.182 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 07:57:34.188 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 6.0845ms
+2022-09-15 07:57:34.211 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 28.7462ms
+2022-09-15 07:57:34.293 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/swagger/v1/swagger.json - -
+2022-09-15 07:57:34.294 -05:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2022-09-15 07:57:34.294 -05:00 [DBG] Request did not match any endpoints
+2022-09-15 07:57:34.448 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 154.8182ms
+2022-09-15 07:57:48.114 -05:00 [INF] Request starting HTTP/2 PUT https://localhost:7060/api/Cases/1 application/json 445
+2022-09-15 07:57:48.123 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Cases/1'
+2022-09-15 07:57:48.127 -05:00 [DBG] Endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Put (CaseMgmtAPI)' with route pattern 'api/Cases/{id}' is valid for the request path '/api/Cases/1'
+2022-09-15 07:57:48.127 -05:00 [DBG] Request matched endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Put (CaseMgmtAPI)'
+2022-09-15 07:57:48.129 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-09-15 07:57:48.131 -05:00 [INF] Executing endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Put (CaseMgmtAPI)'
+2022-09-15 07:57:48.155 -05:00 [INF] Route matched with {action = "Put", controller = "Cases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Put(Int32, CaseMgmtAPI.Domain.Entity.Case) on controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI).
+2022-09-15 07:57:48.155 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-09-15 07:57:48.155 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-09-15 07:57:48.155 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-09-15 07:57:48.155 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-09-15 07:57:48.155 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-09-15 07:57:48.156 -05:00 [DBG] Executing controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 07:57:48.156 -05:00 [DBG] Executed controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 07:57:48.158 -05:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2022-09-15 07:57:48.159 -05:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2022-09-15 07:57:48.159 -05:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2022-09-15 07:57:48.159 -05:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2022-09-15 07:57:48.159 -05:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2022-09-15 07:57:48.160 -05:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2022-09-15 07:57:48.161 -05:00 [DBG] Attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case' ...
+2022-09-15 07:57:48.161 -05:00 [DBG] Attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case' using the name '' in request data ...
+2022-09-15 07:57:48.162 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonInputFormatter' for content type 'application/json'.
+2022-09-15 07:57:48.166 -05:00 [DBG] Connection id "0HMKN37DEEPRQ", Request id "0HMKN37DEEPRQ:00000009": started reading request body.
+2022-09-15 07:57:48.167 -05:00 [DBG] Connection id "0HMKN37DEEPRQ", Request id "0HMKN37DEEPRQ:00000009": done reading request body.
+2022-09-15 07:57:48.173 -05:00 [DBG] JSON input formatter succeeded, deserializing to type 'CaseMgmtAPI.Domain.Entity.Case'
+2022-09-15 07:57:48.173 -05:00 [DBG] Done attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case'.
+2022-09-15 07:57:48.173 -05:00 [DBG] Done attempting to bind parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case'.
+2022-09-15 07:57:48.173 -05:00 [DBG] Attempting to validate the bound parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case' ...
+2022-09-15 07:57:48.179 -05:00 [DBG] Done attempting to validate the bound parameter 'value' of type 'CaseMgmtAPI.Domain.Entity.Case'.
+2022-09-15 07:57:48.308 -05:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-09-15 07:57:52.181 -05:00 [INF] Entity Framework Core 6.0.8 initialized 'CaseMgmtContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 07:57:52.278 -05:00 [DBG] Compiling query expression: 
+'DbSet<Case>()
+    .FirstOrDefault(e => EF.Property<int>(e, "Id") == __p_0)'
+2022-09-15 07:57:52.551 -05:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Case>(
+    asyncEnumerable: new SingleQueryingEnumerable<Case>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Case.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Case.ChildId (int) Required FK Index, 1], [Property: Case.IsDeleted (bool) Required, 2], [Property: Case.ReporterId (int) Required FK Index, 3] }
+            SELECT TOP(1) c.Id, c.ChildId, c.IsDeleted, c.ReporterId
+            FROM Cases AS c
+            WHERE c.Id == @__p_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Case>, 
+        CaseMgmtAPI.Infra.CaseMgmtContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2022-09-15 07:57:52.611 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-09-15 07:57:52.653 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (35ms).
+2022-09-15 07:57:52.685 -05:00 [DBG] Opening connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:57:53.006 -05:00 [DBG] Opened connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:57:53.022 -05:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[ChildId], [c].[IsDeleted], [c].[ReporterId]
+FROM [Cases] AS [c]
+WHERE [c].[Id] = @__p_0
+2022-09-15 07:57:53.104 -05:00 [INF] Executed DbCommand (87ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[ChildId], [c].[IsDeleted], [c].[ReporterId]
+FROM [Cases] AS [c]
+WHERE [c].[Id] = @__p_0
+2022-09-15 07:57:53.134 -05:00 [DBG] Context 'CaseMgmtContext' started tracking 'Case' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 07:57:53.175 -05:00 [DBG] A data reader was disposed.
+2022-09-15 07:57:53.182 -05:00 [DBG] Closing connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:57:53.189 -05:00 [DBG] Closed connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:58:06.710 -05:00 [DBG] SaveChanges starting for 'CaseMgmtContext'.
+2022-09-15 07:58:06.713 -05:00 [DBG] DetectChanges starting for 'CaseMgmtContext'.
+2022-09-15 07:58:06.727 -05:00 [DBG] The navigation 'Case.Child' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 07:58:06.746 -05:00 [DBG] 'CaseMgmtContext' generated a temporary value for the property 'Id.Child'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 07:58:06.782 -05:00 [DBG] An entity of type 'Case' tracked by 'CaseMgmtContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 07:58:06.783 -05:00 [DBG] The foreign key property 'Case.ChildId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-09-15 07:58:06.790 -05:00 [DBG] Context 'CaseMgmtContext' started tracking 'Child' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 07:58:06.794 -05:00 [DBG] The navigation 'Case.Reporter' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 07:58:06.794 -05:00 [DBG] 'CaseMgmtContext' generated a temporary value for the property 'Id.Reporter'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 07:58:06.803 -05:00 [DBG] The foreign key property 'Case.ReporterId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-09-15 07:58:06.803 -05:00 [DBG] Context 'CaseMgmtContext' started tracking 'Reporter' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 07:58:06.805 -05:00 [DBG] DetectChanges completed for 'CaseMgmtContext'.
+2022-09-15 07:58:06.825 -05:00 [DBG] Opening connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:58:06.827 -05:00 [DBG] Opened connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:58:06.829 -05:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2022-09-15 07:58:06.839 -05:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2022-09-15 07:58:06.875 -05:00 [DBG] Executing update commands individually as the number of batchable commands (2) is smaller than the minimum batch size (4).
+2022-09-15 07:58:06.888 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-09-15 07:58:06.888 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-09-15 07:58:06.889 -05:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Children] ([City], [Details], [FirstName], [IsDeleted], [LastName], [State], [StreetAddress], [ZipCode])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Id]
+FROM [Children]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-09-15 07:58:06.897 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (DbType = Boolean), @p4='?' (Size = 4000), @p5='?' (DbType = Int32), @p6='?' (Size = 4000), @p7='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Children] ([City], [Details], [FirstName], [IsDeleted], [LastName], [State], [StreetAddress], [ZipCode])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7);
+SELECT [Id]
+FROM [Children]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-09-15 07:58:06.927 -05:00 [DBG] The foreign key property 'Child.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-09-15 07:58:06.929 -05:00 [DBG] The foreign key property 'Case.ChildId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-09-15 07:58:06.929 -05:00 [DBG] A data reader was disposed.
+2022-09-15 07:58:06.931 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-09-15 07:58:06.931 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-09-15 07:58:06.931 -05:00 [DBG] Executing DbCommand [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Reporters] ([Email], [FirstName], [IsDeleted], [LastName], [Phone])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [Id]
+FROM [Reporters]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-09-15 07:58:06.933 -05:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000), @p2='?' (DbType = Boolean), @p3='?' (Size = 4000), @p4='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+INSERT INTO [Reporters] ([Email], [FirstName], [IsDeleted], [LastName], [Phone])
+VALUES (@p0, @p1, @p2, @p3, @p4);
+SELECT [Id]
+FROM [Reporters]
+WHERE @@ROWCOUNT = 1 AND [Id] = scope_identity();
+2022-09-15 07:58:06.934 -05:00 [DBG] The foreign key property 'Reporter.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-09-15 07:58:06.934 -05:00 [DBG] The foreign key property 'Case.ReporterId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-09-15 07:58:06.934 -05:00 [DBG] A data reader was disposed.
+2022-09-15 07:58:06.937 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-09-15 07:58:06.937 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-09-15 07:58:06.937 -05:00 [DBG] Executing DbCommand [Parameters=[@p7='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Cases] SET [ChildId] = @p5, [ReporterId] = @p6
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT;
+2022-09-15 07:58:06.941 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p7='?' (DbType = Int32), @p5='?' (DbType = Int32), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Cases] SET [ChildId] = @p5, [ReporterId] = @p6
+WHERE [Id] = @p7;
+SELECT @@ROWCOUNT;
+2022-09-15 07:58:06.943 -05:00 [DBG] A data reader was disposed.
+2022-09-15 07:58:06.950 -05:00 [DBG] Committing transaction.
+2022-09-15 07:58:06.955 -05:00 [DBG] Committed transaction.
+2022-09-15 07:58:06.960 -05:00 [DBG] Closing connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:58:06.960 -05:00 [DBG] Closed connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:58:06.963 -05:00 [DBG] Disposing transaction.
+2022-09-15 07:58:06.966 -05:00 [DBG] An entity of type 'Child' tracked by 'CaseMgmtContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 07:58:06.966 -05:00 [DBG] An entity of type 'Reporter' tracked by 'CaseMgmtContext' changed state from '"Added"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 07:58:06.967 -05:00 [DBG] An entity of type 'Case' tracked by 'CaseMgmtContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 07:58:06.969 -05:00 [DBG] SaveChanges completed for 'CaseMgmtContext' with 3 entities written to the database.
+2022-09-15 07:58:17.343 -05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-09-15 07:58:17.350 -05:00 [INF] Executed action CaseMgmtAPI.Features.Cases.Controllers.CasesController.Put (CaseMgmtAPI) in 29188.7846ms
+2022-09-15 07:58:17.352 -05:00 [INF] Executed endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Put (CaseMgmtAPI)'
+2022-09-15 07:58:17.357 -05:00 [DBG] 'CaseMgmtContext' disposed.
+2022-09-15 07:58:17.361 -05:00 [INF] Request finished HTTP/2 PUT https://localhost:7060/api/Cases/1 application/json 445 - 204 - - 29247.3053ms
+2022-09-15 07:58:35.102 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/api/Cases - -
+2022-09-15 07:58:35.103 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Cases'
+2022-09-15 07:58:35.103 -05:00 [DBG] Endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Get (CaseMgmtAPI)' with route pattern 'api/Cases' is valid for the request path '/api/Cases'
+2022-09-15 07:58:35.103 -05:00 [DBG] Request matched endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Get (CaseMgmtAPI)'
+2022-09-15 07:58:35.103 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-09-15 07:58:35.103 -05:00 [INF] Executing endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Get (CaseMgmtAPI)'
+2022-09-15 07:58:35.105 -05:00 [INF] Route matched with {action = "Get", controller = "Cases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CaseMgmtAPI.Features.Cases.DTO.CaseDTO]]] Get() on controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI).
+2022-09-15 07:58:35.105 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-09-15 07:58:35.105 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-09-15 07:58:35.105 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-09-15 07:58:35.105 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-09-15 07:58:35.105 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-09-15 07:58:35.105 -05:00 [DBG] Executing controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 07:58:35.105 -05:00 [DBG] Executed controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 07:58:35.270 -05:00 [INF] Entity Framework Core 6.0.8 initialized 'CaseMgmtContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 07:58:35.309 -05:00 [DBG] Compiling query expression: 
+'DbSet<Case>()
+    .Where(x => !(x.IsDeleted))
+    .AsNoTracking()
+    .Select(dtoCase => new CaseDTO{ 
+        Child = dtoCase.Child, 
+        Id = dtoCase.Id, 
+        Reporter = dtoCase.Reporter 
+    }
+    )'
+2022-09-15 07:58:35.363 -05:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<CaseDTO>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            Child -> Dictionary<IProperty, int> { [Property: Child.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Child.City (int) Required, 1], [Property: Child.Details (string), 2], [Property: Child.FirstName (string), 3], [Property: Child.IsDeleted (bool) Required, 4], [Property: Child.LastName (string), 5], [Property: Child.State (int) Required, 6], [Property: Child.StreetAddress (string), 7], [Property: Child.ZipCode (string), 8] }
+            Id -> 9
+            Reporter -> Dictionary<IProperty, int> { [Property: Reporter.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 10], [Property: Reporter.Email (string) Required, 11], [Property: Reporter.FirstName (string) Required, 12], [Property: Reporter.IsDeleted (bool) Required, 13], [Property: Reporter.LastName (string) Required, 14], [Property: Reporter.Phone (string) Required, 15] }
+        SELECT c0.Id, c0.City, c0.Details, c0.FirstName, c0.IsDeleted, c0.LastName, c0.State, c0.StreetAddress, c0.ZipCode, c.Id, r.Id, r.Email, r.FirstName, r.IsDeleted, r.LastName, r.Phone
+        FROM Cases AS c
+        INNER JOIN Children AS c0 ON c.ChildId == c0.Id
+        INNER JOIN Reporters AS r ON c.ReporterId == r.Id
+        WHERE Not(c.IsDeleted)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CaseDTO>, 
+    CaseMgmtAPI.Infra.CaseMgmtContext, 
+    False, 
+    False, 
+    True
+)'
+2022-09-15 07:58:35.370 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-09-15 07:58:35.370 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-09-15 07:58:35.370 -05:00 [DBG] Opening connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:58:35.370 -05:00 [DBG] Opened connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:58:35.370 -05:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c0].[Id], [c0].[City], [c0].[Details], [c0].[FirstName], [c0].[IsDeleted], [c0].[LastName], [c0].[State], [c0].[StreetAddress], [c0].[ZipCode], [c].[Id], [r].[Id], [r].[Email], [r].[FirstName], [r].[IsDeleted], [r].[LastName], [r].[Phone]
+FROM [Cases] AS [c]
+INNER JOIN [Children] AS [c0] ON [c].[ChildId] = [c0].[Id]
+INNER JOIN [Reporters] AS [r] ON [c].[ReporterId] = [r].[Id]
+WHERE [c].[IsDeleted] = CAST(0 AS bit)
+2022-09-15 07:58:35.376 -05:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c0].[Id], [c0].[City], [c0].[Details], [c0].[FirstName], [c0].[IsDeleted], [c0].[LastName], [c0].[State], [c0].[StreetAddress], [c0].[ZipCode], [c].[Id], [r].[Id], [r].[Email], [r].[FirstName], [r].[IsDeleted], [r].[LastName], [r].[Phone]
+FROM [Cases] AS [c]
+INNER JOIN [Children] AS [c0] ON [c].[ChildId] = [c0].[Id]
+INNER JOIN [Reporters] AS [r] ON [c].[ReporterId] = [r].[Id]
+WHERE [c].[IsDeleted] = CAST(0 AS bit)
+2022-09-15 07:58:35.381 -05:00 [DBG] A data reader was disposed.
+2022-09-15 07:58:35.381 -05:00 [DBG] Closing connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:58:35.381 -05:00 [DBG] Closed connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 07:58:35.383 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-09-15 07:58:35.385 -05:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2022-09-15 07:58:35.385 -05:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2022-09-15 07:58:35.385 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-09-15 07:58:35.385 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-09-15 07:58:35.386 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-09-15 07:58:35.386 -05:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ActionResult`1[[System.Collections.Generic.IEnumerable`1[[CaseMgmtAPI.Features.Cases.DTO.CaseDTO, CaseMgmtAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-09-15 07:58:35.390 -05:00 [INF] Executed action CaseMgmtAPI.Features.Cases.Controllers.CasesController.Get (CaseMgmtAPI) in 284.6279ms
+2022-09-15 07:58:35.390 -05:00 [INF] Executed endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Get (CaseMgmtAPI)'
+2022-09-15 07:58:35.390 -05:00 [DBG] 'CaseMgmtContext' disposed.
+2022-09-15 07:58:35.390 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/api/Cases - - - 200 - application/json;+charset=utf-8 288.2954ms
+2022-09-15 08:01:39.990 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2022-09-15 08:01:40.056 -05:00 [DBG] Hosting starting
+2022-09-15 08:01:40.177 -05:00 [DBG] Using development certificate: CN=localhost (Thumbprint: 60D9DC33054A8CA56CD12BC2E96E05719EFCB64C)
+2022-09-15 08:01:40.216 -05:00 [INF] Now listening on: https://localhost:7060
+2022-09-15 08:01:40.216 -05:00 [INF] Now listening on: http://localhost:5060
+2022-09-15 08:01:40.216 -05:00 [DBG] Loaded hosting startup assembly CaseMgmtAPI
+2022-09-15 08:01:40.216 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2022-09-15 08:01:40.216 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2022-09-15 08:01:40.216 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-09-15 08:01:40.216 -05:00 [INF] Hosting environment: Development
+2022-09-15 08:01:40.216 -05:00 [INF] Content root path: C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtAPI\CaseMgmtAPI\
+2022-09-15 08:01:40.216 -05:00 [DBG] Hosting started
+2022-09-15 08:01:40.316 -05:00 [DBG] Connection id "0HMKN39N623M1" accepted.
+2022-09-15 08:01:40.316 -05:00 [DBG] Connection id "0HMKN39N623M2" accepted.
+2022-09-15 08:01:40.317 -05:00 [DBG] Connection id "0HMKN39N623M1" started.
+2022-09-15 08:01:40.317 -05:00 [DBG] Connection id "0HMKN39N623M2" started.
+2022-09-15 08:01:40.333 -05:00 [DBG] Connection id "0HMKN39N623M2" received FIN.
+2022-09-15 08:01:40.333 -05:00 [DBG] Connection id "0HMKN39N623M1" received FIN.
+2022-09-15 08:01:40.344 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-09-15 08:01:40.344 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2022-09-15 08:01:40.369 -05:00 [DBG] Connection id "0HMKN39N623M1" stopped.
+2022-09-15 08:01:40.369 -05:00 [DBG] Connection id "0HMKN39N623M2" stopped.
+2022-09-15 08:01:40.370 -05:00 [DBG] Connection id "0HMKN39N623M1" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-09-15 08:01:40.370 -05:00 [DBG] Connection id "0HMKN39N623M2" sending FIN because: "The Socket transport's send loop completed gracefully."
+2022-09-15 08:01:41.244 -05:00 [DBG] Connection id "0HMKN39N623M3" accepted.
+2022-09-15 08:01:41.245 -05:00 [DBG] Connection id "0HMKN39N623M3" started.
+2022-09-15 08:01:41.343 -05:00 [DBG] Connection 0HMKN39N623M3 established using the following protocol: "Tls12"
+2022-09-15 08:01:41.427 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/swagger/index.html - -
+2022-09-15 08:01:41.470 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2022-09-15 08:01:41.501 -05:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2022-09-15 08:01:41.501 -05:00 [DBG] Request did not match any endpoints
+2022-09-15 08:01:41.622 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2022-09-15 08:01:41.766 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2022-09-15 08:01:41.771 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/swagger/index.html - - - 200 - text/html;charset=utf-8 349.9942ms
+2022-09-15 08:01:41.782 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/_vs/browserLink - -
+2022-09-15 08:01:41.783 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/_framework/aspnetcore-browser-refresh.js - -
+2022-09-15 08:01:41.792 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/_framework/aspnetcore-browser-refresh.js - - - 200 11992 application/javascript;+charset=utf-8 9.6008ms
+2022-09-15 08:01:41.807 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 24.4173ms
+2022-09-15 08:01:41.888 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/swagger/v1/swagger.json - -
+2022-09-15 08:01:41.888 -05:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2022-09-15 08:01:41.888 -05:00 [DBG] Request did not match any endpoints
+2022-09-15 08:01:41.990 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 101.9211ms
+2022-09-15 08:01:49.318 -05:00 [INF] Request starting HTTP/2 DELETE https://localhost:7060/api/Cases/1 - -
+2022-09-15 08:01:49.326 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Cases/1'
+2022-09-15 08:01:49.329 -05:00 [DBG] Endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Delete (CaseMgmtAPI)' with route pattern 'api/Cases/{id}' is valid for the request path '/api/Cases/1'
+2022-09-15 08:01:49.329 -05:00 [DBG] Request matched endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Delete (CaseMgmtAPI)'
+2022-09-15 08:01:49.331 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-09-15 08:01:49.334 -05:00 [INF] Executing endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Delete (CaseMgmtAPI)'
+2022-09-15 08:01:49.360 -05:00 [INF] Route matched with {action = "Delete", controller = "Cases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(Int32) on controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI).
+2022-09-15 08:01:49.361 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-09-15 08:01:49.361 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-09-15 08:01:49.361 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-09-15 08:01:49.361 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-09-15 08:01:49.361 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-09-15 08:01:49.361 -05:00 [DBG] Executing controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 08:01:49.361 -05:00 [DBG] Executed controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 08:01:49.364 -05:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' ...
+2022-09-15 08:01:49.366 -05:00 [DBG] Attempting to bind parameter 'id' of type 'System.Int32' using the name 'id' in request data ...
+2022-09-15 08:01:49.366 -05:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2022-09-15 08:01:49.366 -05:00 [DBG] Done attempting to bind parameter 'id' of type 'System.Int32'.
+2022-09-15 08:01:49.366 -05:00 [DBG] Attempting to validate the bound parameter 'id' of type 'System.Int32' ...
+2022-09-15 08:01:49.367 -05:00 [DBG] Done attempting to validate the bound parameter 'id' of type 'System.Int32'.
+2022-09-15 08:01:49.480 -05:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2022-09-15 08:02:13.765 -05:00 [INF] Entity Framework Core 6.0.8 initialized 'CaseMgmtContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 08:02:13.869 -05:00 [DBG] Compiling query expression: 
+'DbSet<Case>()
+    .FirstOrDefault(e => EF.Property<int>(e, "Id") == __p_0)'
+2022-09-15 08:02:14.146 -05:00 [DBG] Generated query execution expression: 
+'queryContext => ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync<Case>(
+    asyncEnumerable: new SingleQueryingEnumerable<Case>(
+        (RelationalQueryContext)queryContext, 
+        RelationalCommandCache.SelectExpression(
+            Projection Mapping:
+                EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: Case.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Case.ChildId (int) Required FK Index, 1], [Property: Case.IsDeleted (bool) Required, 2], [Property: Case.ReporterId (int) Required FK Index, 3] }
+            SELECT TOP(1) c.Id, c.ChildId, c.IsDeleted, c.ReporterId
+            FROM Cases AS c
+            WHERE c.Id == @__p_0), 
+        Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, Case>, 
+        CaseMgmtAPI.Infra.CaseMgmtContext, 
+        False, 
+        False, 
+        True
+    ), 
+    cancellationToken: queryContext.CancellationToken)'
+2022-09-15 08:02:14.196 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-09-15 08:02:14.233 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (35ms).
+2022-09-15 08:02:14.265 -05:00 [DBG] Opening connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 08:02:14.586 -05:00 [DBG] Opened connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 08:02:14.614 -05:00 [DBG] Executing DbCommand [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[ChildId], [c].[IsDeleted], [c].[ReporterId]
+FROM [Cases] AS [c]
+WHERE [c].[Id] = @__p_0
+2022-09-15 08:02:14.692 -05:00 [INF] Executed DbCommand (94ms) [Parameters=[@__p_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[Id], [c].[ChildId], [c].[IsDeleted], [c].[ReporterId]
+FROM [Cases] AS [c]
+WHERE [c].[Id] = @__p_0
+2022-09-15 08:02:14.721 -05:00 [DBG] Context 'CaseMgmtContext' started tracking 'Case' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 08:02:14.764 -05:00 [DBG] A data reader was disposed.
+2022-09-15 08:02:14.770 -05:00 [DBG] Closing connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 08:02:14.777 -05:00 [DBG] Closed connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 08:02:24.867 -05:00 [DBG] SaveChanges starting for 'CaseMgmtContext'.
+2022-09-15 08:02:24.869 -05:00 [DBG] DetectChanges starting for 'CaseMgmtContext'.
+2022-09-15 08:02:24.881 -05:00 [DBG] The unchanged property 'Case.IsDeleted' was detected as changed and will be marked as modified. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values.
+2022-09-15 08:02:24.888 -05:00 [DBG] An entity of type 'Case' tracked by 'CaseMgmtContext' changed state from '"Unchanged"' to '"Modified"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 08:02:24.893 -05:00 [DBG] DetectChanges completed for 'CaseMgmtContext'.
+2022-09-15 08:02:24.910 -05:00 [DBG] Opening connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 08:02:24.912 -05:00 [DBG] Opened connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 08:02:24.915 -05:00 [DBG] Beginning transaction with isolation level 'Unspecified'.
+2022-09-15 08:02:24.932 -05:00 [DBG] Began transaction with isolation level 'ReadCommitted'.
+2022-09-15 08:02:24.970 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-09-15 08:02:24.970 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-09-15 08:02:24.971 -05:00 [DBG] Executing DbCommand [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Cases] SET [IsDeleted] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+2022-09-15 08:02:24.973 -05:00 [INF] Executed DbCommand (3ms) [Parameters=[@p1='?' (DbType = Int32), @p0='?' (DbType = Boolean)], CommandType='"Text"', CommandTimeout='30']
+SET NOCOUNT ON;
+UPDATE [Cases] SET [IsDeleted] = @p0
+WHERE [Id] = @p1;
+SELECT @@ROWCOUNT;
+2022-09-15 08:02:24.990 -05:00 [DBG] A data reader was disposed.
+2022-09-15 08:02:24.997 -05:00 [DBG] Committing transaction.
+2022-09-15 08:02:25.002 -05:00 [DBG] Committed transaction.
+2022-09-15 08:02:25.005 -05:00 [DBG] Closing connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 08:02:25.005 -05:00 [DBG] Closed connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 08:02:25.008 -05:00 [DBG] Disposing transaction.
+2022-09-15 08:02:25.013 -05:00 [DBG] An entity of type 'Case' tracked by 'CaseMgmtContext' changed state from '"Modified"' to '"Unchanged"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2022-09-15 08:02:25.016 -05:00 [DBG] SaveChanges completed for 'CaseMgmtContext' with 1 entities written to the database.
+2022-09-15 08:02:31.714 -05:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2022-09-15 08:02:31.718 -05:00 [INF] Executed action CaseMgmtAPI.Features.Cases.Controllers.CasesController.Delete (CaseMgmtAPI) in 42354.3272ms
+2022-09-15 08:02:31.719 -05:00 [INF] Executed endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Delete (CaseMgmtAPI)'
+2022-09-15 08:02:31.723 -05:00 [DBG] 'CaseMgmtContext' disposed.
+2022-09-15 08:02:31.726 -05:00 [INF] Request finished HTTP/2 DELETE https://localhost:7060/api/Cases/1 - - - 204 - - 42407.7839ms
+2022-09-15 08:02:37.981 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7060/api/Cases - -
+2022-09-15 08:02:37.983 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Cases'
+2022-09-15 08:02:37.983 -05:00 [DBG] Endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Get (CaseMgmtAPI)' with route pattern 'api/Cases' is valid for the request path '/api/Cases'
+2022-09-15 08:02:37.983 -05:00 [DBG] Request matched endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Get (CaseMgmtAPI)'
+2022-09-15 08:02:37.983 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2022-09-15 08:02:37.983 -05:00 [INF] Executing endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Get (CaseMgmtAPI)'
+2022-09-15 08:02:37.986 -05:00 [INF] Route matched with {action = "Get", controller = "Cases"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[CaseMgmtAPI.Features.Cases.DTO.CaseDTO]]] Get() on controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI).
+2022-09-15 08:02:37.986 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2022-09-15 08:02:37.986 -05:00 [DBG] Execution plan of resource filters (in the following order): ["None"]
+2022-09-15 08:02:37.986 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2022-09-15 08:02:37.986 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2022-09-15 08:02:37.986 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2022-09-15 08:02:37.986 -05:00 [DBG] Executing controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 08:02:54.704 -05:00 [DBG] Executed controller factory for controller CaseMgmtAPI.Features.Cases.Controllers.CasesController (CaseMgmtAPI)
+2022-09-15 08:02:54.850 -05:00 [INF] Entity Framework Core 6.0.8 initialized 'CaseMgmtContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.8' with options: None
+2022-09-15 08:02:54.882 -05:00 [DBG] Compiling query expression: 
+'DbSet<Case>()
+    .Where(x => !(x.IsDeleted))
+    .AsNoTracking()
+    .Select(dtoCase => new CaseDTO{ 
+        Child = dtoCase.Child, 
+        Id = dtoCase.Id, 
+        Reporter = dtoCase.Reporter 
+    }
+    )'
+2022-09-15 08:02:54.939 -05:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<CaseDTO>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.SelectExpression(
+        Projection Mapping:
+            Child -> Dictionary<IProperty, int> { [Property: Child.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 0], [Property: Child.City (int) Required, 1], [Property: Child.Details (string), 2], [Property: Child.FirstName (string), 3], [Property: Child.IsDeleted (bool) Required, 4], [Property: Child.LastName (string), 5], [Property: Child.State (int) Required, 6], [Property: Child.StreetAddress (string), 7], [Property: Child.ZipCode (string), 8] }
+            Id -> 9
+            Reporter -> Dictionary<IProperty, int> { [Property: Reporter.Id (int) Required PK AfterSave:Throw ValueGenerated.OnAdd, 10], [Property: Reporter.Email (string) Required, 11], [Property: Reporter.FirstName (string) Required, 12], [Property: Reporter.IsDeleted (bool) Required, 13], [Property: Reporter.LastName (string) Required, 14], [Property: Reporter.Phone (string) Required, 15] }
+        SELECT c0.Id, c0.City, c0.Details, c0.FirstName, c0.IsDeleted, c0.LastName, c0.State, c0.StreetAddress, c0.ZipCode, c.Id, r.Id, r.Email, r.FirstName, r.IsDeleted, r.LastName, r.Phone
+        FROM Cases AS c
+        INNER JOIN Children AS c0 ON c.ChildId == c0.Id
+        INNER JOIN Reporters AS r ON c.ReporterId == r.Id
+        WHERE Not(c.IsDeleted)), 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, CaseDTO>, 
+    CaseMgmtAPI.Infra.CaseMgmtContext, 
+    False, 
+    False, 
+    True
+)'
+2022-09-15 08:02:54.944 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2022-09-15 08:02:54.944 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (0ms).
+2022-09-15 08:02:54.944 -05:00 [DBG] Opening connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 08:02:54.944 -05:00 [DBG] Opened connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 08:02:54.944 -05:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c0].[Id], [c0].[City], [c0].[Details], [c0].[FirstName], [c0].[IsDeleted], [c0].[LastName], [c0].[State], [c0].[StreetAddress], [c0].[ZipCode], [c].[Id], [r].[Id], [r].[Email], [r].[FirstName], [r].[IsDeleted], [r].[LastName], [r].[Phone]
+FROM [Cases] AS [c]
+INNER JOIN [Children] AS [c0] ON [c].[ChildId] = [c0].[Id]
+INNER JOIN [Reporters] AS [r] ON [c].[ReporterId] = [r].[Id]
+WHERE [c].[IsDeleted] = CAST(0 AS bit)
+2022-09-15 08:02:54.951 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c0].[Id], [c0].[City], [c0].[Details], [c0].[FirstName], [c0].[IsDeleted], [c0].[LastName], [c0].[State], [c0].[StreetAddress], [c0].[ZipCode], [c].[Id], [r].[Id], [r].[Email], [r].[FirstName], [r].[IsDeleted], [r].[LastName], [r].[Phone]
+FROM [Cases] AS [c]
+INNER JOIN [Children] AS [c0] ON [c].[ChildId] = [c0].[Id]
+INNER JOIN [Reporters] AS [r] ON [c].[ReporterId] = [r].[Id]
+WHERE [c].[IsDeleted] = CAST(0 AS bit)
+2022-09-15 08:02:54.953 -05:00 [DBG] A data reader was disposed.
+2022-09-15 08:02:54.953 -05:00 [DBG] Closing connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 08:02:54.953 -05:00 [DBG] Closed connection to database 'CaseMgmt' on server '(localdb)\MSSQLLocalDB'.
+2022-09-15 08:02:54.954 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter"]
+2022-09-15 08:02:54.956 -05:00 [DBG] Attempting to select an output formatter based on Accept header '["text/plain"]'.
+2022-09-15 08:02:54.957 -05:00 [DBG] Could not find an output formatter based on content negotiation. Accepted types were (["text/plain"])
+2022-09-15 08:02:54.957 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2022-09-15 08:02:54.957 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2022-09-15 08:02:54.957 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter' and content type 'application/json' to write the response.
+2022-09-15 08:02:54.957 -05:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ActionResult`1[[System.Collections.Generic.IEnumerable`1[[CaseMgmtAPI.Features.Cases.DTO.CaseDTO, CaseMgmtAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=6.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2022-09-15 08:02:54.960 -05:00 [INF] Executed action CaseMgmtAPI.Features.Cases.Controllers.CasesController.Get (CaseMgmtAPI) in 16973.4975ms
+2022-09-15 08:02:54.960 -05:00 [INF] Executed endpoint 'CaseMgmtAPI.Features.Cases.Controllers.CasesController.Get (CaseMgmtAPI)'
+2022-09-15 08:02:54.960 -05:00 [DBG] 'CaseMgmtContext' disposed.
+2022-09-15 08:02:54.960 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7060/api/Cases - - - 200 - application/json;+charset=utf-8 16978.7609ms
