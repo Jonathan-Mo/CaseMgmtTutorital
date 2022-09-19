@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Case Management Tutorial\\CaseMgmtPortal\\CaseMgmtPortal\\CaseMgmtPortal.csproj",
+      "projectUniqueName": "C:\\Users\\P00348089\\Documents\\GitHub\\CaseMgmtTutorital\\CaseMgmtPortal\\CaseMgmtPortal\\CaseMgmtPortal.csproj",
       "projectName": "CaseMgmtPortal",
-      "projectPath": "C:\\Case Management Tutorial\\CaseMgmtPortal\\CaseMgmtPortal\\CaseMgmtPortal.csproj",
+      "projectPath": "C:\\Users\\P00348089\\Documents\\GitHub\\CaseMgmtTutorital\\CaseMgmtPortal\\CaseMgmtPortal\\CaseMgmtPortal.csproj",
       "packagesPath": "C:\\Users\\P00348089\\.nuget\\packages\\",
-      "outputPath": "C:\\Case Management Tutorial\\CaseMgmtPortal\\CaseMgmtPortal\\obj\\",
+      "outputPath": "C:\\Users\\P00348089\\Documents\\GitHub\\CaseMgmtTutorital\\CaseMgmtPortal\\CaseMgmtPortal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\P00348089\\AppData\\Roaming\\NuGet\\NuGet.Config",

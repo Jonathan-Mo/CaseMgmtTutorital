@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../js/pelican.js"],
+  "sourcesContent": ["\"use strict\";\n\nimport $ from \"jquery\";\nwindow.$ = $;\nimport \"popper.js\";\nimport \"bootstrap\";\n"],
+  "mappings": ";;;;;;;;;;;;;;;;;AAEA,sBAAc;AAEd,sBAAO;AACP,yBAAO;AAFP,SAAO,IAAI;",
+  "names": []
+}

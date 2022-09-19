@@ -5,7 +5,7 @@ using AutoMapper;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using HealthChecks.UI.Client;
-using CaseMgmtAPI.Test;
+//using CaseMgmtAPI.Test;
 using Serilog;
 
 Log.Logger = new LoggerConfiguration()
