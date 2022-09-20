@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "avpje348d0IosgZTZEEa5VWOYDIMMQ1jhrkxg0XIHcA=",
+  "Hash": "H8EVlxxHywizhCOWnE1uhH2bz4svXErA7GwrJVVCWDo=",
   "Source": "CaseMgmtPortal",
   "BasePath": "_content/CaseMgmtPortal",
   "Mode": "Default",
@@ -474,6 +474,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\MotherAndBaby.png"
+    },
+    {
+      "Identity": "C:\\Users\\P00348089\\Documents\\GitHub\\CaseMgmtTutorital\\CaseMgmtPortal\\CaseMgmtPortal\\wwwroot\\img\\pelican-background.png",
+      "SourceId": "CaseMgmtPortal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\P00348089\\Documents\\GitHub\\CaseMgmtTutorital\\CaseMgmtPortal\\CaseMgmtPortal\\wwwroot\\",
+      "BasePath": "_content/CaseMgmtPortal",
+      "RelativePath": "img/pelican-background.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\pelican-background.png"
     },
     {
       "Identity": "C:\\Users\\P00348089\\Documents\\GitHub\\CaseMgmtTutorital\\CaseMgmtPortal\\CaseMgmtPortal\\wwwroot\\js\\dependencies.js",

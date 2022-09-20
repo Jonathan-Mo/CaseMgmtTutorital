@@ -34928,4 +34928,12 @@ body {
   margin-bottom: 60px;
 }
 
+.footer {
+    position: fixed;
+}
+
+hr.solid {
+    border-top: 3px solid #bbb;
+}
+
 /*# sourceMappingURL=site.css.map*/

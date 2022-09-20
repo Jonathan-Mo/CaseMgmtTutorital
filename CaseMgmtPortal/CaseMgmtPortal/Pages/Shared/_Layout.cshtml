@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="~/css/pelican.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/CaseMgmtPortal.styles.css" asp-append-version="true" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/brands.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/brands.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900" rel="stylesheet">
@@ -22,10 +22,10 @@ body {
   background-size: cover;
 }
 </style>
-<body>
+<body id="main">
     <header>
         <div class="official-banner">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="row align-items-center">
                     <!-- This next column can removed if your digital product doesn’t need to be localized. -->
                     <div class="col-lg-5 order-lg-1 text-lg-right">
@@ -101,11 +101,11 @@ body {
                 <div class="collapse navbar-collapse" id="NavigationIcons">
                     <ul class="navbar-nav navbar-icon-links">
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><span class="fas fa-solid fa-house" aria-hidden="true"></span><span class="">Reporting Child Neglect</span></a>
+                            <a class="nav-link" href="/Home"><span class="fas fa-home" aria-hidden="true"></span><span class="">Reporting Child Neglect</span></a>
                             <div class="icon-link-border-bottom"></div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#"><span class="fas fa-solid fa-file" aria-hidden="true"></span><span class="">Submit New Report</span></a>
+                            <a class="nav-link active" href="/CreateCase"><span class="fas fa-solid fa-file-alt" aria-hidden="true"></span><span class="">Submit New Report</span></a>
                             <div class="icon-link-border-bottom"></div>
                         </li>
                         <li class="nav-item">
@@ -117,16 +117,18 @@ body {
             </div>
         </nav>
     </header>
-    <div class="container-fluid">
         <main role="main">
             @RenderBody()
         </main>
-    </div>
+    <a id="ScrollToTop" href="#main" class="btn-scroll-top" role="button">
+        <span class="fas fa-arrow-up" aria-hidden="true"></span>
+        <span class="sr-only">Go back to the top of this page</span>
+    </a>
 
     <footer class="footer footer-basic fix">
         <div class="container-fluid" role="navigation" aria-label="Footer navigation" id="FooterNavigation">
             <div class="links-wrapper" role="navigation">
-                <a class="btn btn-link" href="Account">Home</a>
+                <a class="btn btn-link" href="/Home">Home</a>
                 <a class="btn btn-link" href="Account">Help</a>
                 <a class="btn btn-link" href="MoreInfo">More Info</a>
                 <a class="btn btn-link" href="Home\Index">Privacy</a>
@@ -135,7 +137,7 @@ body {
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/pelican/dist/js/pelican.bundle.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
 
     @await RenderSectionAsync("Scripts", required: false)
