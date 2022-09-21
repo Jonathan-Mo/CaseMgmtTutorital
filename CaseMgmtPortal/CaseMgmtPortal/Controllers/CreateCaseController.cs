@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CaseMgmtPortal.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace CaseMgmtPortal.Controllers
 {
@@ -8,5 +9,17 @@ namespace CaseMgmtPortal.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult Index(Case childCase)
+        {
+            if (ModelState.IsValid)
+            {
+                return RedirectToAction("Index", "CreatedCase");
+            }
+
+            return View(childCase);
+        }
     }
 }
+   

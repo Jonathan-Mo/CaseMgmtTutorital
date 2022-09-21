@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace CaseMgmtPortal.Web.Controllers
+namespace CaseMgmtPortal.Controllers
 {
-    public class HomeController : Controller
+    public class CreatedCaseController : Controller
     {
         public IActionResult Index()
         {
