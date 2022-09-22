@@ -15,8 +15,9 @@ namespace CaseMgmtAPI.Features.Cases.Handlers
             {
                 this.Child = new Child();
                 this.Reporter = new Reporter();
-                this.Id = childCase.Id;
+                //this.Id = childCase.Id;
                 this.Child.FirstName = childCase.Child.FirstName;
+                this.Child.MiddleName = childCase.Child.MiddleName;
                 this.Child.LastName = childCase.Child.LastName;
                 this.Child.StreetAddress = childCase.Child.StreetAddress;
                 this.Child.City = childCase.Child.City;
@@ -24,6 +25,7 @@ namespace CaseMgmtAPI.Features.Cases.Handlers
                 this.Child.ZipCode = childCase.Child.ZipCode;
                 this.Child.Details = childCase.Child.Details;
                 this.Reporter.FirstName = childCase.Reporter.FirstName;
+                this.Reporter.MiddleName = childCase.Reporter.MiddleName;
                 this.Reporter.LastName = childCase.Reporter.LastName;
                 this.Reporter.Email = childCase.Reporter.Email;
                 this.Reporter.Phone = childCase.Reporter.Phone;

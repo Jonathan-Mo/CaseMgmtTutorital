@@ -1,5 +1,6 @@
 ﻿using CaseMgmtPortal.Models;
 using Microsoft.AspNetCore.Mvc;
+using RestSharp;
 
 namespace CaseMgmtPortal.Controllers
 {
@@ -15,7 +16,19 @@ namespace CaseMgmtPortal.Controllers
         {
             if (ModelState.IsValid)
             {
-                return RedirectToAction("Index", "CreatedCase");
+                string url = "https://localhost:7060/api/cases";
+
+                var client = new RestClient(url);
+
+                var request = new RestRequest();
+
+                request.AddJsonBody(childCase);
+
+                var response = client.Post(request);
+
+                //Console.WriteLine(response.StatusCode.ToString() + "     " + response.Content.ToString());
+
+                return RedirectToAction("Index", "CreatedCase", childCase);
             }
 
             return View(childCase);

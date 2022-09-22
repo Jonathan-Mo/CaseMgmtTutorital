@@ -5,10 +5,11 @@ namespace CaseMgmtAPI.Features.Children.DTO
     public class ChildDTO
     {
         public string? FirstName { get; set; }
+        public string? MiddleName { get; set; }
         public string? LastName { get; set; }
         public string? StreetAddress { get; set; }
         [Required]
-        public int City { get; set; }
+        public string City { get; set; }
         [Required]
         public int State { get; set; }
         public string? ZipCode { get; set; }

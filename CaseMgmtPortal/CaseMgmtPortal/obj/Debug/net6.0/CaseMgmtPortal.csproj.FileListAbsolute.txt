@@ -18,7 +18,6 @@ C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPor
 C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortal\obj\Debug\net6.0\CaseMgmtPortal.RazorAssemblyInfo.cs
 C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortal\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortal\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortal\obj\Debug\net6.0\scopedcss\Pages\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortal\obj\Debug\net6.0\scopedcss\bundle\CaseMgmtPortal.styles.css
 C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortal\obj\Debug\net6.0\scopedcss\projectbundle\CaseMgmtPortal.bundle.scp.css
 C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortal\obj\Debug\net6.0\CaseMgmtPortal.dll
@@ -26,3 +25,6 @@ C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPor
 C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortal\obj\Debug\net6.0\CaseMgmtPortal.pdb
 C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortal\obj\Debug\net6.0\CaseMgmtPortal.genruntimeconfig.cache
 C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortal\obj\Debug\net6.0\ref\CaseMgmtPortal.dll
+C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortal\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortal\bin\Debug\net6.0\RestSharp.dll
+C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortal\obj\Debug\net6.0\CaseMgmtPortal.csproj.CopyComplete

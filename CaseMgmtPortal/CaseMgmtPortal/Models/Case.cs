@@ -17,5 +17,11 @@ namespace CaseMgmtPortal.Models
         public Reporter Reporter { get; set; }
         public int ReporterId { get; set; }
         public bool IsDeleted { get; set; }
+
+        public Case()
+        {
+            Child = new Child();
+            Reporter = new Reporter();
+        }
     }
 }
