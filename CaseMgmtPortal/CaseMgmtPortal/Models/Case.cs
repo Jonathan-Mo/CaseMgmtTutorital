@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using Newtonsoft.Json;
 
 namespace CaseMgmtPortal.Models
 {
@@ -7,11 +8,13 @@ namespace CaseMgmtPortal.Models
     {
         public int Id { get; set; }
 
+        [JsonProperty("child")]
         [Required]
         [ForeignKey("ChildId")]
         public Child Child { get; set; }
         public int ChildId { get; set; }
 
+        [JsonProperty("reporter")]
         [Required]
         [ForeignKey("ReporterId")]
         public Reporter Reporter { get; set; }

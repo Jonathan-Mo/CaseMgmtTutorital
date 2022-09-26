@@ -1,0 +1,48 @@
+﻿@model CaseMgmtPortal.ViewModels.CaseListViewModel
+
+@{
+    Layout = "_Layout";
+}
+
+<nav class="breadcrumb-wrapper" aria-label="breadcrumbs">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="/">
+                <span class="fas fa-home mr-1" aria-hidden="true"></span><span class="sr-only">Home</span>
+            </a>
+        <li class="breadcrumb-item active" aria-current="page">
+            <span>View Submitted Cases</span><span class="fas fa-eye ml-1" aria-hidden="true"></span>
+        </li>
+    </ol>
+</nav>
+<div class="page-title">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 d-lg-flex justify-content-lg-between align-items-center">
+                <div class="mb-2 mb-lg-0">
+                    <h2 class="page-title-text">
+                        <span class="icon fas fa-home mr-1" aria-hidden="true"></span>View Submitted Cases
+                    </h2>
+                    <p class="mb-0">Below lists the child neglect reports you submitted.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (Model.Value.Count > 0)
+{
+    @for(var i=1; 1 <= Model.Value.Count; i++)
+    {
+        var currentCase = --i;
+        <div class="content-container p-3">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>@Model.Value.
+            </label>
+        </div>
+    }
+}
+else
+{
+    
+}

@@ -28,10 +28,10 @@ namespace CaseMgmtPortal.Controllers
 
                 //Console.WriteLine(response.StatusCode.ToString() + "     " + response.Content.ToString());
 
-                return RedirectToAction("Index", "CreatedCase", childCase);
+                return RedirectToAction("Index", "CreatedCase");
             }
 
-            return View(childCase);
+            return View();
         }
     }
 }

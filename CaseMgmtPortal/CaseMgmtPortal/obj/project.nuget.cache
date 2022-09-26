@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "yl2SRI/+yHAh1/O19UzD4owkaVHZAbrYGWswgryZZtzgKz7Z+vbeUII5NbABlbA8ctGZ8limgQWvewAiIMlBYw==",
+  "dgSpecHash": "85tXIFkzy3ZMV+wdVL1cW3morqKl5mnH9sioNyBay84YneIz2cVTSOiKR4/Z7DtS41XpHMDGRTuJTb+mzULd0w==",
   "success": true,
   "projectFilePath": "C:\\Users\\P00348089\\Documents\\GitHub\\CaseMgmtTutorital\\CaseMgmtPortal\\CaseMgmtPortal\\CaseMgmtPortal.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\P00348089\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\P00348089\\.nuget\\packages\\restsharp\\108.0.2\\restsharp.108.0.2.nupkg.sha512"
   ],
   "logs": []

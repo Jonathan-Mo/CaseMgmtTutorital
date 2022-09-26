@@ -23,36 +23,36 @@
                     <h2 class="page-title-text">
                         <span class="icon fas fa-home mr-1" aria-hidden="true"></span>Report Child Neglect
                     </h2>
-                    <p class="mb-0">Fill in the form below to submit a child neglect report in Louisiana.</p>
+                    <p class="text-primary mb-0">Fill in the form below to submit a child neglect report in Louisiana.</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <form asp-action="Index" method="post" role="form">
-    <div class="content-container">
+    <div class="content-container p-3">
         <!-- Content here -->
         <div asp-validation-summary="All" class="text-danger"></div>
         <div class="row">
-            <p>Your Personal Information</p>
+            <p class="text-primary">Your Personal Information</p>
         </div>
         <div class="row">
-            <div class="col form-group">
-                <label asp-for="Reporter.FirstName" class="form-label">
+            <div class="col-12 col-sm-3 form-group">
+                <label asp-for="Reporter.FirstName" class="fw-bold text-black form-label">
                     <span class="fas fa-asterisk text-danger mr-1" aria-hidden="true"></span>First Name
                 </label>
                 <input asp-for="Reporter.FirstName" type="tel" class="form-control" placeholder="Value">
                 <span asp-validation-for="Reporter.FirstName" class="text-danger"></span>
             </div>
-            <div class="col form-group">
-                <label asp-for="Reporter.MiddleName">
+            <div class="col-12 col-sm-3 form-group">
+                <label class="fw-bold text-black" asp-for="Reporter.MiddleName">
                     <span aria-hidden="true"></span>Middle Name
                 </label>
                 <input asp-for="Reporter.MiddleName" type="tel" class="form-control" placeholder="Value">
                 <span asp-validation-for="Reporter.MiddleName" class="text-danger"></span>
             </div>
-            <div class="col form-group">
-                <label asp-for="Reporter.LastName">
+            <div class="col-12 col-sm-3 form-group">
+                <label class="fw-bold text-black" asp-for="Reporter.LastName">
                     <span class="fas fa-asterisk text-danger mr-1" aria-hidden="true"></span>Last Name
                 </label>
                 <input asp-for="Reporter.LastName" type="tel" class="form-control" placeholder="Value">
@@ -61,40 +61,40 @@
             <div class="col"></div>
         </div>
         <div class="row">
-            <div class="col form-group">
-                <label asp-for="Reporter.Email">Email Address</label>
+            <div class="col-12 col-sm-3 form-group">
+                <label class="fw-bold text-black" asp-for="Reporter.Email">Email Address</label>
                 <input asp-for="Reporter.Email" type="email" class="form-control" placeholder="Value">
                 <span asp-validation-for="Reporter.Email" class="text-danger"></span>
             </div>
-            <div class="col form-group">
-                <label asp-for="Reporter.Phone">Phone Number</label>
+            <div class="col-12 col-sm-3 form-group">
+                <label class="fw-bold text-black" asp-for="Reporter.Phone">Phone Number</label>
                 <input asp-for="Reporter.Phone" type="tel" class="form-control" placeholder="Value">
                 <span asp-validation-for="Reporter.Phone" class="text-danger"></span>
             </div>
-            <div class="col"></div>
-            <div class="col"></div>
+            <div class="col-12 col-sm-3"></div>
+            <div class="col-12 col-sm-3"></div>
         </div>
         <hr class="solid"/>
         <div class="row">
-            <p>Child Nelgect Information</p>
+            <p class="text-primary">Child Nelgect Information</p>
         </div>
         <div class="row">
-            <div class="col form-group">
-                <label asp-for="Child.FirstName">
+            <div class="col-12 col-sm-3 form-group">
+                <label class="fw-bold text-black" asp-for="Child.FirstName">
                     <span class="fas fa-asterisk text-danger mr-1" aria-hidden="true"></span>Child's First Name
                 </label>
                 <input asp-for="Child.FirstName" type="tel" class="form-control" placeholder="Value">
                 <span asp-validation-for="Child.FirstName" class="text-danger"></span>
             </div>
-            <div class="col form-group">
-                <label asp-for="Child.MiddleName">
+            <div class="col-12 col-sm-3 form-group">
+                <label class="fw-bold text-black" asp-for="Child.MiddleName">
                     <span aria-hidden="true"></span>Child's Middle Name
                 </label>
                 <input asp-for="Child.MiddleName" type="tel" class="form-control" placeholder="Value">
                 <span asp-validation-for="Child.MiddleName" class="text-danger"></span>
             </div>
-            <div class="col form-group">
-                <label asp-for="Child.LastName">
+            <div class="col-12 col-sm-3 form-group">
+                <label class="fw-bold text-black" asp-for="Child.LastName">
                     <span class="fas fa-asterisk text-danger mr-1" aria-hidden="true"></span>Child's Last Name
                 </label>
                 <input asp-for="Child.LastName" type="tel" class="form-control" placeholder="Value">
@@ -103,8 +103,8 @@
             <div class="col"></div>
         </div>
         <div class="row">
-            <div class="col form-group">
-                <label asp-for="Child.StreetAddress">
+            <div class="col-12 col-sm-3 form-group">
+                <label class="fw-bold text-black" asp-for="Child.StreetAddress">
                     <span class="fas fa-asterisk text-danger mr-1" aria-hidden="true"></span>Child's Street Address
                 </label>
                 <input asp-for="Child.StreetAddress" type="tel" class="form-control" placeholder="Value">
@@ -112,15 +112,15 @@
             </div>
         </div>
         <div class="row">
-            <div class="col form-group">
-                <label asp-for="Child.City">
+            <div class="col-12 col-sm-3 form-group">
+                <label class="fw-bold text-black" asp-for="Child.City">
                     <span class="fas fa-asterisk text-danger mr-1" aria-hidden="true"></span>Child's City
                 </label>
                 <input asp-for="Child.City" type="tel" class="form-control" placeholder="Value">
                 <span asp-validation-for="Child.City" class="text-danger"></span>
             </div>
-            <div class="col form-group">
-                <label asp-for="Child.State">Child's State</label>
+            <div class="col-12 col-sm-3 form-group">
+                <label class="fw-bold text-black" asp-for="Child.State">Child's State</label>
                 <select asp-for="Child.State" class="custom-select">
                     <option selected>&mdash; Select &mdash;</option>
                     <option value="1">Alabama</option>
@@ -177,18 +177,18 @@
                 </select>
                 <span asp-validation-for="Child.State" class="text-danger"></span>
             </div>
-            <div class="col form-group">
-                <label asp-for="Child.ZipCode">
+            <div class="col-12 col-sm-3 form-group">
+                <label class="fw-bold text-black" asp-for="Child.ZipCode">
                     <span class="fas fa-asterisk text-danger mr-1" aria-hidden="true"></span>Child's ZIP Code
                 </label>
                 <input asp-for="Child.ZipCode" type="tel" class="form-control" placeholder="Value">
                 <span asp-validation-for="Child.ZipCode" class="text-danger"></span>
             </div>
-            <div class="col"></div>
+            <div class="col-12 col-sm-3"></div>
         </div>
         <div class="row">
             <div class="form-group">
-                <label asp-for="Child.Details" class="label">Neglect Details</label>
+                <label class="fw-bold text-black" asp-for="Child.Details" class="label">Neglect Details</label>
                 <textarea asp-for="Child.Details" class="form-control" rows="5" placeholder="Value"></textarea>
                 <small>This accepts any kind of alphanumeric characters.</small>
                 <span asp-validation-for="Child.Details" class="text-danger"></span>
@@ -196,8 +196,8 @@
         </div>
     </div>
 
-    <div class="content-container">
-        <div clas="row col-12">
+    <div class="content-container p-3">
+        <div clas="row col-12 col-sm-3">
             <input type="submit" class="btn btn-primary" value="Submit Report" />
             <a href="/Home">
                 <button type="submit" class="btn btn-outline-ui">Cancel</button>

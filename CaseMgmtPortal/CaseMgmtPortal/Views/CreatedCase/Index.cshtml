@@ -1,4 +1,4 @@
-﻿@*@model Student*@
+﻿@model CaseMgmtPortal.ViewModels.CaseViewModel
 @{
     Layout = "_Layout";
 }
@@ -28,37 +28,123 @@
         </div>
     </div>
 </div>
-
-<div class="alert alert-success alert-dismissable fade show" role="alert">
-    <span class="alert-icon fas fa-check-circle" aria-hidden="true"></span>
-    <strong>Successfully submitted!</strong> Your report was successfully submitted. Your case number is 0123456789. You can view your submission below.
-    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-        <span class="fas fa-times" aria-hidden="true"></span>
-    </button>
+<div class="container-fluid">
+    @*<div class="row">*@
+        <div class="alert alert-success alert-dismissable fade show" role="alert">
+            <span class="alert-icon fas fa-check-circle" aria-hidden="true"></span>
+            <strong>Successfully submitted!</strong> Your report was successfully submitted. Your case number is @Model.Value.id. You can view your submission below.
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span class="fas fa-times" aria-hidden="true"></span>
+            </button>
+        </div>
+    @*</div>*@
 </div>
 
-    <div class="content-container">
-        <!-- Content here -->
-        <div class="row">
-            <p>Your Personal Information</p>
+<div class="content-container p-3" >
+    <!-- Content here -->
+    <div class="row">
+        <p class="fw-bold text-primary">Your Personal Information</p>
+    </div>
+    <div class="row p-1">
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>First Name
+            </label>
+                <p>@Model.Value.reporter.FirstName</p>
         </div>
-        <div class="row">
-
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>Middle Name
+            </label>
+                <p>@Model.Value.reporter.MiddleName</p>
         </div>
-        <hr class="solid" />
-        <div class="row">
-            <p>Child Nelgect Information</p>
+        <div class="col-12 col-sm-3 form-group">
+        <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>Last Name
+        </label>
+                <p>@Model.Value.reporter.LastName</p>
         </div>
-        <div class="row">
-
+        <div class="col-12 col-sm-3"></div>
+    </div>
+    <div class="row p-1">
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>Email Address
+            </label>
+                <p>@Model.Value.reporter.Email</p>
         </div>
-        <div class="row">
-        
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>Phone Number
+            </label>
+                <p>@Model.Value.reporter.Phone</p>
         </div>
-        <div class="row">
-
+        <div class="col-12 col-sm-3"></div>
+        <div class="col-12 col-sm-3"></div>
+    </div>
+    <hr class="solid" />
+    <div class="row">
+        <p class="fw-bold text-primary">Child Nelgect Information</p>
+    </div>
+    <div class="row p-1">
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>First Name
+            </label>
+                <p>@Model.Value.child.FirstName</p>
         </div>
-        <div class="row">
-
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>Middle Name
+            </label>
+                <p>@Model.Value.child.MiddleName</p>
+        </div>
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>Last Name
+            </label>
+                <p>@Model.Value.child.LastName</p>
+        </div>
+        <div class="col-12 col-sm-3"></div>
+    </div>
+    <div class="row p-1">
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>Child's Street Address
+            </label>
+                <p>@Model.Value.child.StreetAddress</p>
         </div>
     </div>
+    <div class="row p-1">
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>Child's City
+            </label>
+                <p>@Model.Value.child.City</p>
+        </div>
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>Child's State
+            </label>
+                <p>@Model.Value.child.State</p>
+        </div>
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>Child's ZIP Code
+            </label>
+                <p>@Model.Value.child.ZipCode</p>
+        </div>
+        <div class="col"></div>
+    </div>
+    <div class="row p-1">
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>Neglect Details
+            </label>
+                <p>@Model.Value.child.Details</p>
+        </div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+</div>

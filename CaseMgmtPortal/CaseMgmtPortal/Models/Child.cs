@@ -1,11 +1,14 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Newtonsoft.Json;
+using System.ComponentModel.DataAnnotations;
 
 namespace CaseMgmtPortal.Models
 {
     public class Child
     {
+        [JsonProperty("id")]
         public int Id { get; set; }
 
+        [JsonProperty("firstName")]
         [Required(ErrorMessage = "Please enter the child's first name.")]
         [StringLength(50)]
         public string? FirstName { get; set; }
