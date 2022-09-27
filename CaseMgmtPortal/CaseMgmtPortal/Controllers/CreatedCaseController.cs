@@ -25,10 +25,6 @@ namespace CaseMgmtPortal.Controllers
 
             var newestCase = childCases.value.OrderByDescending(c => c.id).FirstOrDefault();
 
-            //Console.WriteLine($"{newestCase.id}, {newestCase.child.FirstName}");
-
-            //Console.Read();
-
             CaseViewModel caseViewModel = new CaseViewModel(newestCase);
 
             return View(caseViewModel);

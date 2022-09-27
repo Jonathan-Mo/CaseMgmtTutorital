@@ -21,6 +21,9 @@ namespace CaseMgmtPortal.Models
         public int ReporterId { get; set; }
         public bool IsDeleted { get; set; }
 
+        [JsonProperty("date")]
+        public DateTime Date { get; set; }
+
         public Case()
         {
             Child = new Child();

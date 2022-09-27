@@ -16,6 +16,8 @@ namespace CaseMgmtPortal.Controllers
         {
             if (ModelState.IsValid)
             {
+                childCase.Date = DateTime.Now;
+
                 string url = "https://localhost:7060/api/cases";
 
                 var client = new RestClient(url);
@@ -25,8 +27,6 @@ namespace CaseMgmtPortal.Controllers
                 request.AddJsonBody(childCase);
 
                 var response = client.Post(request);
-
-                //Console.WriteLine(response.StatusCode.ToString() + "     " + response.Content.ToString());
 
                 return RedirectToAction("Index", "CreatedCase");
             }

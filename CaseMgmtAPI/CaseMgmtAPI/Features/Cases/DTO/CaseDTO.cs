@@ -10,5 +10,6 @@ namespace CaseMgmtAPI.Features.Cases.DTO
         public Child Child { get; set; }
         [Required]
         public Reporter Reporter { get; set; }
+        public DateTime Date { get; set; }
     }
 }

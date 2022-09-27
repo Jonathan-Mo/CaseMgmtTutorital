@@ -32,17 +32,36 @@
 
 @if (Model.Value.Count > 0)
 {
-    @for(var i=1; 1 <= Model.Value.Count; i++)
+    @foreach (var values in Model.Value)
     {
-        var currentCase = --i;
-        <div class="content-container p-3">
-            <label class="fw-bold form-label">
-                <span aria-hidden="true"></span>@Model.Value.
-            </label>
+        @*var currentCase = (i - 1);*@
+        <div class="content-container p-2 m-3">
+            <div class="row p-3">
+                <div class="col-12 col-sm-10">
+                    <label class="fw-bold form-label row">
+                        <span aria-hidden="true"></span>Case @values.id
+                    </label>
+                    <label class="form-label row">
+                        <span aria-hidden="true"></span>Submited on @values.date
+                    </label>
+                </div>
+                <div class="col-12 col-sm-2 pl-40" align="center">
+                    @*<button type="button" class="btn btn-outline-ui">View Details <span class="fas fa-solid fa-arrow-right"></span></button>*@
+@*                    <input type="button" class="btn btn-outline-ui" onclick="location.href='/ViewCases/ViewCase';" value="View Details" />*@
+                    <input type="button" class="btn btn-outline-ui" value="View Details" onclick="location.href='@Url.Action("ViewCase", "ViewCases", values)'" />
+                </div>
+            </div>
         </div>
     }
 }
 else
 {
-    
+    <div class="content-container mx-40 pl-30 border border-gray rounded">
+        <div class="row">
+            <h2 class="text-primary">It's empty here.</h2>
+        </div>
+        <div class="row">
+            <p>Once you submit a child neglect report, you can view those cases here. </p>
+        </div>
+    </div>
 }
