@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "H8EVlxxHywizhCOWnE1uhH2bz4svXErA7GwrJVVCWDo=",
+  "Hash": "Um7sqv6mjKwhuovnKe7W7QajnC1Zfn6nNQWb/LZAxWo=",
   "Source": "CaseMgmtPortal",
   "BasePath": "_content/CaseMgmtPortal",
   "Mode": "Default",
@@ -423,6 +423,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\P00348089\\Documents\\GitHub\\CaseMgmtTutorital\\CaseMgmtPortal\\CaseMgmtPortal\\wwwroot\\img\\hands-holding-child.svg",
+      "SourceId": "CaseMgmtPortal",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\P00348089\\Documents\\GitHub\\CaseMgmtTutorital\\CaseMgmtPortal\\CaseMgmtPortal\\wwwroot\\",
+      "BasePath": "_content/CaseMgmtPortal",
+      "RelativePath": "img/hands-holding-child.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\hands-holding-child.svg"
     },
     {
       "Identity": "C:\\Users\\P00348089\\Documents\\GitHub\\CaseMgmtTutorital\\CaseMgmtPortal\\CaseMgmtPortal\\wwwroot\\img\\Louisiana-State-Seal.png",
