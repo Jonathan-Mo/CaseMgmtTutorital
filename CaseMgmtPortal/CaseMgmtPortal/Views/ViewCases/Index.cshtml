@@ -45,10 +45,17 @@
                         <span aria-hidden="true"></span>Submited on @values.date
                     </label>
                 </div>
-                <div class="col-12 col-sm-2 pl-40" align="center">
+                <div class="col-12 col-sm-2" align="center">
                     @*<button type="button" class="btn btn-outline-ui">View Details <span class="fas fa-solid fa-arrow-right"></span></button>*@
 @*                    <input type="button" class="btn btn-outline-ui" onclick="location.href='/ViewCases/ViewCase';" value="View Details" />*@
-                    <input type="button" class="btn btn-outline-ui" value="View Details" onclick="location.href='@Url.Action("ViewCase", "ViewCases", values)'" />
+                    @*<input type="button" class="btn btn-outline-ui fas fa-solid fa-arrow-right" value="View Details" onclick="location.href='@Url.Action("ViewCase", "ViewCases", new {values.id})'" />*@
+                    @*<div class="col-2">
+                        @Html.ActionLink("View Case", "ViewCase", new {values.id}, new { @class = "btn btn-outline-ui fas fa-solid fa-arrow-right"})
+                    </div>*@
+                    <a class="btn btn-outline-ui" asp-controller="ViewCases" asp-action="ViewCase" asp-route-id="@values.id">
+                        View Details
+                        <span class="fas fa-arrow-right" aria-hidden="true"></span>
+                    </a>
                 </div>
             </div>
         </div>

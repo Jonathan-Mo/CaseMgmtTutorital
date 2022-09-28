@@ -1,0 +1,209 @@
+﻿@model CaseMgmtPortal.ViewModels.CaseViewModel
+@{
+    Layout = "_Layout";
+}
+
+<nav class="breadcrumb-wrapper" aria-label="breadcrumbs">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="/">
+                <span class="fas fa-home mr-1" aria-hidden="true"></span><span class="sr-only">Home</span>
+            </a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="/ViewCases">View Submitted Cases</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+            <span>Case @Model.Value.id</span><span class="fas fa-eye ml-1" aria-hidden="true"></span>
+        </li>
+    </ol>
+</nav>
+<div class="page-title">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 d-lg-flex justify-content-lg-between align-items-center">
+                <div class="mb-2 mb-lg-0">
+                    <h2 class="page-title-text">
+                        <span class="icon fas fa-home mr-1" aria-hidden="true"></span>Case @Model.Value.id
+                    </h2>
+                    <p class="mb-0">Submitted on @Model.Value.date</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<form asp-action="Index" method="post" role="form">
+    <div class="content-container p-3">
+        <!-- Content here -->
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <div class="row">
+            <p class="text-primary">Your Personal Information</p>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-3 form-group">
+                <label asp-for="Value.reporter.FirstName" class="fw-bold text-black form-label">
+                    <span class="fas fa-asterisk text-danger mr-1" aria-hidden="true"></span>First Name
+                </label>
+                <input asp-for="Value.reporter.FirstName" type="tel" class="form-control" placeholder="Value">
+                <span asp-validation-for="Value.reporter.FirstName" class="text-danger"></span>
+            </div>
+            <div class="col-12 col-sm-3 form-group">
+                <label class="fw-bold text-black" asp-for="Value.reporter.MiddleName">
+                    <span aria-hidden="true"></span>Middle Name
+                </label>
+                <input asp-for="Value.reporter.MiddleName" type="tel" class="form-control" placeholder="Value">
+                <span asp-validation-for="Value.reporter.MiddleName" class="text-danger"></span>
+            </div>
+            <div class="col-12 col-sm-3 form-group">
+                <label class="fw-bold text-black" asp-for="Value.reporter.LastName">
+                    <span class="fas fa-asterisk text-danger mr-1" aria-hidden="true"></span>Last Name
+                </label>
+                <input asp-for="Value.reporter.LastName" type="tel" class="form-control" placeholder="Value">
+                <span asp-validation-for="Value.reporter.LastName" class="text-danger"></span>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-3 form-group">
+                <label class="fw-bold text-black" asp-for="Value.reporter.Email">Email Address</label>
+                <input asp-for="Value.reporter.Email" type="email" class="form-control" placeholder="Value">
+                <span asp-validation-for="Value.reporter.Email" class="text-danger"></span>
+            </div>
+            <div class="col-12 col-sm-3 form-group">
+                <label class="fw-bold text-black" asp-for="Value.reporter.Phone">Phone Number</label>
+                <input asp-for="Value.reporter.Phone" type="tel" class="form-control" placeholder="Value">
+                <span asp-validation-for="Value.reporter.Phone" class="text-danger"></span>
+            </div>
+            <div class="col-12 col-sm-3"></div>
+            <div class="col-12 col-sm-3"></div>
+        </div>
+        <hr class="solid" />
+        <div class="row">
+            <p class="text-primary">Child Nelgect Information</p>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-3 form-group">
+                <label class="fw-bold text-black" asp-for="Value.child.FirstName">
+                    <span class="fas fa-asterisk text-danger mr-1" aria-hidden="true"></span>Child's First Name
+                </label>
+                <input asp-for="Value.child.FirstName" type="tel" class="form-control" placeholder="Value">
+                <span asp-validation-for="Value.child.FirstName" class="text-danger"></span>
+            </div>
+            <div class="col-12 col-sm-3 form-group">
+                <label class="fw-bold text-black" asp-for="Value.child.MiddleName">
+                    <span aria-hidden="true"></span>Child's Middle Name
+                </label>
+                <input asp-for="Value.child.MiddleName" type="tel" class="form-control" placeholder="Value">
+                <span asp-validation-for="Value.child.MiddleName" class="text-danger"></span>
+            </div>
+            <div class="col-12 col-sm-3 form-group">
+                <label class="fw-bold text-black" asp-for="Value.child.LastName">
+                    <span class="fas fa-asterisk text-danger mr-1" aria-hidden="true"></span>Child's Last Name
+                </label>
+                <input asp-for="Value.child.LastName" type="tel" class="form-control" placeholder="Value">
+                <span asp-validation-for="Value.child.LastName" class="text-danger"></span>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-3 form-group">
+                <label class="fw-bold text-black" asp-for="Value.child.StreetAddress">
+                    <span class="fas fa-asterisk text-danger mr-1" aria-hidden="true"></span>Child's Street Address
+                </label>
+                <input asp-for="Value.child.StreetAddress" type="tel" class="form-control" placeholder="Value">
+                <span asp-validation-for="Value.child.StreetAddress" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-3 form-group">
+                <label class="fw-bold text-black" asp-for="Value.child.City">
+                    <span class="fas fa-asterisk text-danger mr-1" aria-hidden="true"></span>Child's City
+                </label>
+                <input asp-for="Value.child.City" type="tel" class="form-control" placeholder="Value">
+                <span asp-validation-for="Value.child.City" class="text-danger"></span>
+            </div>
+            <div class="col-12 col-sm-3 form-group">
+                <label class="fw-bold text-black" asp-for="Value.child.State">Child's State</label>
+                <select asp-for="Value.child.State" class="custom-select">
+                    <option selected>&mdash; Select &mdash;</option>
+                    <option value="1">Alabama</option>
+                    <option value="2">Alaska</option>
+                    <option value="3">Arizona</option>
+                    <option value="4">Arkansas</option>
+                    <option value="5">California</option>
+                    <option value="6">Colorado</option>
+                    <option value="7">Connecticut</option>
+                    <option value="8">Delaware</option>
+                    <option value="9">District Of Columbia</option>
+                    <option value="10">Florida</option>
+                    <option value="11">Georgia</option>
+                    <option value="12">Hawaii</option>
+                    <option value="13">Idaho</option>
+                    <option value="14">Illinois</option>
+                    <option value="15">Indiana</option>
+                    <option value="16">Iowa</option>
+                    <option value="17">Kansas</option>
+                    <option value="18">Kentucky</option>
+                    <option value="19">Louisiana</option>
+                    <option value="20">Maine</option>
+                    <option value="21">Maryland</option>
+                    <option value="22">Massachusetts</option>
+                    <option value="23">Michigan</option>
+                    <option value="24">Minnesota</option>
+                    <option value="25">Mississippi</option>
+                    <option value="26">Missouri</option>
+                    <option value="27">Montana</option>
+                    <option value="28">Nebraska</option>
+                    <option value="29">Nevada</option>
+                    <option value="30">New Hampshire</option>
+                    <option value="31">New Jersey</option>
+                    <option value="32">New Mexico</option>
+                    <option value="33">New York</option>
+                    <option value="34">North Carolina</option>
+                    <option value="35">North Dakota</option>
+                    <option value="36">Ohio</option>
+                    <option value="37">Oklahoma</option>
+                    <option value="38">Oregon</option>
+                    <option value="39">Pennsylvania</option>
+                    <option value="40">Rhode Island</option>
+                    <option value="41">South Carolina</option>
+                    <option value="42">South Dakota</option>
+                    <option value="43">Tennessee</option>
+                    <option value="44">Texas</option>
+                    <option value="45">Utah</option>
+                    <option value="46">Vermont</option>
+                    <option value="47">Virginia</option>
+                    <option value="48">Washington</option>
+                    <option value="49">West Virginia</option>
+                    <option value="50">Wisconsin</option>
+                    <option value="51">Wyoming</option>
+                </select>
+                <span asp-validation-for="Value.child.State" class="text-danger"></span>
+            </div>
+            <div class="col-12 col-sm-3 form-group">
+                <label class="fw-bold text-black" asp-for="Value.child.ZipCode">
+                    <span class="fas fa-asterisk text-danger mr-1" aria-hidden="true"></span>Child's ZIP Code
+                </label>
+                <input asp-for="Value.child.ZipCode" type="tel" class="form-control" placeholder="Value">
+                <span asp-validation-for="Value.child.ZipCode" class="text-danger"></span>
+            </div>
+            <div class="col-12 col-sm-3"></div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <label class="fw-bold text-black" asp-for="Value.child.Details" class="label">Neglect Details</label>
+                <textarea asp-for="Value.child.Details" class="form-control" rows="5" placeholder="Value"></textarea>
+                <small>This accepts any kind of alphanumeric characters.</small>
+                <span asp-validation-for="Value.child.Details" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-container p-3">
+        <div clas="row col-12 col-sm-3">
+            <input type="submit" class="btn btn-primary" value="Submit Report" />
+            <input type="button" class="btn btn-outline-ui" onclick="location.href='/Home';" value="Cancel" />
+        </div>
+    </div>
+</form>

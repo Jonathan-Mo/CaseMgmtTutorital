@@ -8,6 +8,7 @@ namespace CaseMgmtPortal.Controllers
 {
     public class ViewCasesController : Controller
     {
+        public Value? WantedCase { get; set; }
         public IActionResult Index()
         {
             string url = "https://localhost:7060/api/Cases";
@@ -27,7 +28,7 @@ namespace CaseMgmtPortal.Controllers
             return View(caseListViewModel);
         }
 
-        public IActionResult ViewCase(int idOfWantedCase)
+        public IActionResult ViewCase(int id)
         {
             string url = "https://localhost:7060/api/Cases";
 
@@ -39,16 +40,30 @@ namespace CaseMgmtPortal.Controllers
 
             var childCases = JsonConvert.DeserializeObject<Root>(response.Content);
 
-            var wantedCase = childCases.value.OrderByDescending(c => c.id == idOfWantedCase).FirstOrDefault();
+            var newestCase = childCases.value.OrderByDescending(c => c.id == id).FirstOrDefault();
 
-            CaseViewModel caseViewModel = new CaseViewModel(wantedCase);
+            CaseViewModel caseViewModel = new CaseViewModel(newestCase);
 
             return View(caseViewModel);
+        }
 
+        public IActionResult EditCase(int id)
+        {
+            string url = "https://localhost:7060/api/Cases";
 
+            var client = new RestClient(url);
 
-            //CaseViewModel caseViewModel = new CaseViewModel(value);
-            //return View(value);
+            var request = new RestRequest();
+
+            var response = client.Get(request);
+
+            var childCases = JsonConvert.DeserializeObject<Root>(response.Content);
+
+            var newestCase = childCases.value.OrderByDescending(c => c.id == id).FirstOrDefault();
+
+            CaseViewModel caseViewModel = new CaseViewModel(newestCase);
+
+            return View(caseViewModel);
         }
     }
 }

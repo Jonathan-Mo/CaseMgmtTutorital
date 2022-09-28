@@ -24,3 +24,8 @@ body {
 hr.solid {
     border-top: 3px solid #bbb;
 }
+
+/*.btn.btn-outline-ui.fas.fa-solid.fa-arrow-right {
+    width: 150px;
+    height: 35px;
+}*/
