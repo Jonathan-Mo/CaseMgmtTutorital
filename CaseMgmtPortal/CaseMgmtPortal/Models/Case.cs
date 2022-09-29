@@ -24,6 +24,12 @@ namespace CaseMgmtPortal.Models
         [JsonProperty("date")]
         public DateTime Date { get; set; }
 
+        [JsonProperty("status")]
+        public int Status { get; set; }
+
+        [JsonProperty("notes")]
+        public string Notes { get; set; }
+
         public Case()
         {
             Child = new Child();

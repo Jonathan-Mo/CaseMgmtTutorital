@@ -11,5 +11,7 @@ namespace CaseMgmtAPI.Features.Cases.DTO
         [Required]
         public Reporter Reporter { get; set; }
         public DateTime Date { get; set; }
+        public int Status { get; set; }
+        public string Notes { get; set; }
     }
 }

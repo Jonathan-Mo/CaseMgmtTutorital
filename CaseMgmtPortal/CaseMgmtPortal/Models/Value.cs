@@ -1,4 +1,6 @@
-﻿namespace CaseMgmtPortal.Models
+﻿using Newtonsoft.Json;
+
+namespace CaseMgmtPortal.Models
 {
     public class Value
     {
@@ -6,5 +8,7 @@
         public Child child { get; set; }
         public Reporter reporter { get; set; }
         public DateTime date { get; set; }
+        public int status { get; set; }
+        public string notes { get; set; }
     }
 }

@@ -65,5 +65,28 @@ namespace CaseMgmtPortal.Controllers
 
             return View(caseViewModel);
         }
+
+        [HttpPost]
+        public IActionResult EditCase(CaseViewModel childCase)
+        {
+            if (ModelState.IsValid)
+            {
+                string url = "https://localhost:7060/api/cases/";
+
+                //url = url + childCase.id.ToString();
+
+                var client = new RestClient(url);
+
+                var request = new RestRequest();
+
+                request.AddJsonBody(childCase);
+
+                var response = client.Post(request);
+
+                return RedirectToAction("ViewCases", "ViewCase");
+            }
+
+            return View();
+        }
     }
 }

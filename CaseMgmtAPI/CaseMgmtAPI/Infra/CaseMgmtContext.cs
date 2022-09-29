@@ -9,9 +9,9 @@ namespace CaseMgmtAPI.Infra
         {
         }
 
-        public DbSet<Case>? Cases { get; set; }
-        public DbSet<Child>? Children { get; set; }
-        public DbSet<Reporter>? Reporters { get; set; }
+        public DbSet<Case> Cases { get; set; }
+        public DbSet<Child> Children { get; set; }
+        public DbSet<Reporter> Reporters { get; set; }
 
         //protected override void OnModelCreating(ModelBuilder modelBuilder)
         //{

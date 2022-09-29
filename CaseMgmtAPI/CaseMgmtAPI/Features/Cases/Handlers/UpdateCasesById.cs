@@ -31,6 +31,9 @@ namespace CaseMgmtAPI.Features.Cases.Handlers
                 this.Reporter.LastName = childCase.Reporter.LastName;
                 this.Reporter.Email = childCase.Reporter.Email;
                 this.Reporter.Phone = childCase.Reporter.Phone;
+                this.Date = childCase.Date;
+                this.Status = childCase.Status;
+                this.Notes = childCase.Notes;
             }
         }
 

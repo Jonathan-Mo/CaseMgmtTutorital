@@ -18,5 +18,7 @@ namespace CaseMgmtAPI.Domain.Entity
         public int ReporterId { get; set; }
         public bool IsDeleted { get; set; }
         public DateTime Date { get; set; }
+        public int Status{ get; set; }
+        public string Notes { get; set; }
     }
 }

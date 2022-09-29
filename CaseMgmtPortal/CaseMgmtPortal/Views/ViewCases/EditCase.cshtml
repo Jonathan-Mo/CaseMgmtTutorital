@@ -1,7 +1,4 @@
 ﻿@model CaseMgmtPortal.ViewModels.CaseViewModel
-@{
-    Layout = "_Layout";
-}
 
 <nav class="breadcrumb-wrapper" aria-label="breadcrumbs">
     <ol class="breadcrumb">
@@ -33,7 +30,7 @@
     </div>
 </div>
 
-<form asp-action="Index" method="post" role="form">
+<form asp-action="EditCase" method="post" role="form">
     <div class="content-container p-3">
         <!-- Content here -->
         <div asp-validation-summary="All" class="text-danger"></div>
@@ -198,12 +195,33 @@
                 <span asp-validation-for="Value.child.Details" class="text-danger"></span>
             </div>
         </div>
+        <hr class="solid" />
+        <div class="row">
+            <p class="text-primary">Request to Close Case</p>
+        </div>
+        <div class="row">
+            <div class="form-group col-12 col-sm-3">
+                <label class="fw-bold text-black" asp-for="Value.status">Reason for Case Closure</label>
+                <select asp-for="Value.status" class="custom-select">
+                    <option selected>&mdash; Select &mdash;</option>
+                    <option value="1">Entered in Error</option>
+                    <option value="2">Neglect Resolved</option>
+                </select>
+            </div>
+            <div class="col-12 col-sm-3"></div>
+            <div class="col-12 col-sm-3"></div>
+        </div>
     </div>
 
     <div class="content-container p-3">
         <div clas="row col-12 col-sm-3">
-            <input type="submit" class="btn btn-primary" value="Submit Report" />
-            <input type="button" class="btn btn-outline-ui" onclick="location.href='/Home';" value="Cancel" />
+            <input type="submit" class="btn btn-primary" value="Save" />
+@*            <a type="submit" class="btn btn-primary" asp-controller="ViewCases" asp-action="ViewCase" asp-route-id="@Model.Value.id">
+                Save
+            </a>*@
+            <a class="btn btn-outline-ui" asp-controller="ViewCases" asp-action="ViewCase" asp-route-id="@Model.Value.id">
+                Cancel
+            </a>
         </div>
     </div>
 </form>
