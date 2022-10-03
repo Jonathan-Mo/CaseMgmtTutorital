@@ -1,14 +1,21 @@
-﻿using CaseMgmtPortal.Models;
+﻿using AutoMapper;
+using CaseMgmtPortal.Models;
 using CaseMgmtPortal.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using RestSharp;
+using System.Net.Http;
 
 namespace CaseMgmtPortal.Controllers
 {
     public class ViewCasesController : Controller
     {
-        public Value? WantedCase { get; set; }
+        private readonly IMapper _mapper;
+
+        public ViewCasesController(IMapper mapper)
+        {
+            _mapper = mapper;
+        }
         public IActionResult Index()
         {
             string url = "https://localhost:7060/api/Cases";
@@ -47,7 +54,7 @@ namespace CaseMgmtPortal.Controllers
             return View(caseViewModel);
         }
 
-        public IActionResult EditCase(int id)
+        public async Task<IActionResult> EditCase(int id)
         {
             string url = "https://localhost:7060/api/Cases";
 
@@ -59,15 +66,17 @@ namespace CaseMgmtPortal.Controllers
 
             var childCases = JsonConvert.DeserializeObject<Root>(response.Content);
 
-            var newestCase = childCases.value.OrderByDescending(c => c.id == id).FirstOrDefault();
+            var tempCase = childCases.value.OrderByDescending(c => c.id == id).FirstOrDefault();
 
-            CaseViewModel caseViewModel = new CaseViewModel(newestCase);
+            Case newestCase = _mapper.Map<Case>(tempCase);
 
-            return View(caseViewModel);
+            //Case caseViewModel = new Case();
+
+            return View(newestCase);
         }
 
         [HttpPost]
-        public IActionResult EditCase(CaseViewModel childCase)
+        public IActionResult EditCase(Case childCase)
         {
             if (ModelState.IsValid)
             {

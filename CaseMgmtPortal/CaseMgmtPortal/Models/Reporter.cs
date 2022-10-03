@@ -8,6 +8,7 @@ namespace CaseMgmtPortal.Models
 
         [Required(ErrorMessage = "Please enter your first name.")]
         [StringLength(50)]
+        [Display(Name = "First Name")]
         public string FirstName { get; set; }
 
         [StringLength(50)]

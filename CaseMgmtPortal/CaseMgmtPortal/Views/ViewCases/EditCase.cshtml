@@ -1,4 +1,4 @@
-﻿@model CaseMgmtPortal.ViewModels.CaseViewModel
+﻿@model CaseMgmtPortal.Models.Case
 
 <nav class="breadcrumb-wrapper" aria-label="breadcrumbs">
     <ol class="breadcrumb">
@@ -11,7 +11,7 @@
             <a href="/ViewCases">View Submitted Cases</a>
         </li>
         <li class="breadcrumb-item active" aria-current="page">
-            <span>Case @Model.Value.id</span><span class="fas fa-eye ml-1" aria-hidden="true"></span>
+            <span>Case @Model.Id</span><span class="fas fa-eye ml-1" aria-hidden="true"></span>
         </li>
     </ol>
 </nav>
@@ -21,16 +21,19 @@
             <div class="col-12 d-lg-flex justify-content-lg-between align-items-center">
                 <div class="mb-2 mb-lg-0">
                     <h2 class="page-title-text">
-                        <span class="icon fas fa-home mr-1" aria-hidden="true"></span>Case @Model.Value.id
+                        <span class="icon fas fa-home mr-1" aria-hidden="true"></span>Case @Model.Id
                     </h2>
-                    <p class="mb-0">Submitted on @Model.Value.date</p>
+                    <p class="mb-0">Submitted on @Model.Date</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
+
+
 <form asp-action="EditCase" method="post" role="form">
+    @Html.HiddenFor(m => m.Id);
     <div class="content-container p-3">
         <!-- Content here -->
         <div asp-validation-summary="All" class="text-danger"></div>
@@ -39,38 +42,38 @@
         </div>
         <div class="row">
             <div class="col-12 col-sm-3 form-group">
-                <label asp-for="Value.reporter.FirstName" class="fw-bold text-black form-label">
+                <label asp-for="Reporter.FirstName" class="fw-bold text-black form-label">
                     <span class="fas fa-asterisk text-danger mr-1" aria-hidden="true"></span>First Name
                 </label>
-                <input asp-for="Value.reporter.FirstName" type="tel" class="form-control" placeholder="Value">
-                <span asp-validation-for="Value.reporter.FirstName" class="text-danger"></span>
+                <input asp-for="Reporter.FirstName" type="tel" class="form-control" placeholder="Value">
+                <span asp-validation-for="Reporter.FirstName" class="text-danger"></span>
             </div>
             <div class="col-12 col-sm-3 form-group">
-                <label class="fw-bold text-black" asp-for="Value.reporter.MiddleName">
+                <label class="fw-bold text-black" asp-for="Reporter.MiddleName">
                     <span aria-hidden="true"></span>Middle Name
                 </label>
-                <input asp-for="Value.reporter.MiddleName" type="tel" class="form-control" placeholder="Value">
-                <span asp-validation-for="Value.reporter.MiddleName" class="text-danger"></span>
+                <input asp-for="Reporter.MiddleName" type="tel" class="form-control" placeholder="Value">
+                <span asp-validation-for="Reporter.MiddleName" class="text-danger"></span>
             </div>
             <div class="col-12 col-sm-3 form-group">
-                <label class="fw-bold text-black" asp-for="Value.reporter.LastName">
+                <label class="fw-bold text-black" asp-for="Reporter.LastName">
                     <span class="fas fa-asterisk text-danger mr-1" aria-hidden="true"></span>Last Name
                 </label>
-                <input asp-for="Value.reporter.LastName" type="tel" class="form-control" placeholder="Value">
-                <span asp-validation-for="Value.reporter.LastName" class="text-danger"></span>
+                <input asp-for="Reporter.LastName" type="tel" class="form-control" placeholder="Value">
+                <span asp-validation-for="Reporter.LastName" class="text-danger"></span>
             </div>
             <div class="col"></div>
         </div>
         <div class="row">
             <div class="col-12 col-sm-3 form-group">
-                <label class="fw-bold text-black" asp-for="Value.reporter.Email">Email Address</label>
-                <input asp-for="Value.reporter.Email" type="email" class="form-control" placeholder="Value">
-                <span asp-validation-for="Value.reporter.Email" class="text-danger"></span>
+                <label class="fw-bold text-black" asp-for="Reporter.Email">Email Address</label>
+                <input asp-for="Reporter.Email" type="email" class="form-control" placeholder="Value">
+                <span asp-validation-for="Reporter.Email" class="text-danger"></span>
             </div>
             <div class="col-12 col-sm-3 form-group">
-                <label class="fw-bold text-black" asp-for="Value.reporter.Phone">Phone Number</label>
-                <input asp-for="Value.reporter.Phone" type="tel" class="form-control" placeholder="Value">
-                <span asp-validation-for="Value.reporter.Phone" class="text-danger"></span>
+                <label class="fw-bold text-black" asp-for="Reporter.Phone">Phone Number</label>
+                <input asp-for="Reporter.Phone" type="tel" class="form-control" placeholder="Value">
+                <span asp-validation-for="Reporter.Phone" class="text-danger"></span>
             </div>
             <div class="col-12 col-sm-3"></div>
             <div class="col-12 col-sm-3"></div>
@@ -81,48 +84,48 @@
         </div>
         <div class="row">
             <div class="col-12 col-sm-3 form-group">
-                <label class="fw-bold text-black" asp-for="Value.child.FirstName">
+                <label class="fw-bold text-black" asp-for="Child.FirstName">
                     <span class="fas fa-asterisk text-danger mr-1" aria-hidden="true"></span>Child's First Name
                 </label>
-                <input asp-for="Value.child.FirstName" type="tel" class="form-control" placeholder="Value">
-                <span asp-validation-for="Value.child.FirstName" class="text-danger"></span>
+                <input asp-for="Child.FirstName" type="tel" class="form-control" placeholder="Value">
+                <span asp-validation-for="Child.FirstName" class="text-danger"></span>
             </div>
             <div class="col-12 col-sm-3 form-group">
-                <label class="fw-bold text-black" asp-for="Value.child.MiddleName">
+                <label class="fw-bold text-black" asp-for="Child.MiddleName">
                     <span aria-hidden="true"></span>Child's Middle Name
                 </label>
-                <input asp-for="Value.child.MiddleName" type="tel" class="form-control" placeholder="Value">
-                <span asp-validation-for="Value.child.MiddleName" class="text-danger"></span>
+                <input asp-for="Child.MiddleName" type="tel" class="form-control" placeholder="Value">
+                <span asp-validation-for="Child.MiddleName" class="text-danger"></span>
             </div>
             <div class="col-12 col-sm-3 form-group">
-                <label class="fw-bold text-black" asp-for="Value.child.LastName">
+                <label class="fw-bold text-black" asp-for="Child.LastName">
                     <span class="fas fa-asterisk text-danger mr-1" aria-hidden="true"></span>Child's Last Name
                 </label>
-                <input asp-for="Value.child.LastName" type="tel" class="form-control" placeholder="Value">
-                <span asp-validation-for="Value.child.LastName" class="text-danger"></span>
+                <input asp-for="Child.LastName" type="tel" class="form-control" placeholder="Value">
+                <span asp-validation-for="Child.LastName" class="text-danger"></span>
             </div>
             <div class="col"></div>
         </div>
         <div class="row">
             <div class="col-12 col-sm-3 form-group">
-                <label class="fw-bold text-black" asp-for="Value.child.StreetAddress">
+                <label class="fw-bold text-black" asp-for="Child.StreetAddress">
                     <span class="fas fa-asterisk text-danger mr-1" aria-hidden="true"></span>Child's Street Address
                 </label>
-                <input asp-for="Value.child.StreetAddress" type="tel" class="form-control" placeholder="Value">
-                <span asp-validation-for="Value.child.StreetAddress" class="text-danger"></span>
+                <input asp-for="Child.StreetAddress" type="tel" class="form-control" placeholder="Value">
+                <span asp-validation-for="Child.StreetAddress" class="text-danger"></span>
             </div>
         </div>
         <div class="row">
             <div class="col-12 col-sm-3 form-group">
-                <label class="fw-bold text-black" asp-for="Value.child.City">
+                <label class="fw-bold text-black" asp-for="Child.City">
                     <span class="fas fa-asterisk text-danger mr-1" aria-hidden="true"></span>Child's City
                 </label>
-                <input asp-for="Value.child.City" type="tel" class="form-control" placeholder="Value">
-                <span asp-validation-for="Value.child.City" class="text-danger"></span>
+                <input asp-for="Child.City" type="tel" class="form-control" placeholder="Value">
+                <span asp-validation-for="Child.City" class="text-danger"></span>
             </div>
             <div class="col-12 col-sm-3 form-group">
-                <label class="fw-bold text-black" asp-for="Value.child.State">Child's State</label>
-                <select asp-for="Value.child.State" class="custom-select">
+                <label class="fw-bold text-black" asp-for="Child.State">Child's State</label>
+                <select asp-for="Child.State" class="custom-select">
                     <option selected>&mdash; Select &mdash;</option>
                     <option value="1">Alabama</option>
                     <option value="2">Alaska</option>
@@ -176,23 +179,23 @@
                     <option value="50">Wisconsin</option>
                     <option value="51">Wyoming</option>
                 </select>
-                <span asp-validation-for="Value.child.State" class="text-danger"></span>
+                <span asp-validation-for="Child.State" class="text-danger"></span>
             </div>
             <div class="col-12 col-sm-3 form-group">
-                <label class="fw-bold text-black" asp-for="Value.child.ZipCode">
+                <label class="fw-bold text-black" asp-for="Child.ZipCode">
                     <span class="fas fa-asterisk text-danger mr-1" aria-hidden="true"></span>Child's ZIP Code
                 </label>
-                <input asp-for="Value.child.ZipCode" type="tel" class="form-control" placeholder="Value">
-                <span asp-validation-for="Value.child.ZipCode" class="text-danger"></span>
+                <input asp-for="Child.ZipCode" type="tel" class="form-control" placeholder="Value">
+                <span asp-validation-for="Child.ZipCode" class="text-danger"></span>
             </div>
             <div class="col-12 col-sm-3"></div>
         </div>
         <div class="row">
             <div class="form-group">
-                <label class="fw-bold text-black" asp-for="Value.child.Details" class="label">Neglect Details</label>
-                <textarea asp-for="Value.child.Details" class="form-control" rows="5" placeholder="Value"></textarea>
+                <label class="fw-bold text-black" asp-for="Child.Details" class="label">Neglect Details</label>
+                <textarea asp-for="Child.Details" class="form-control" rows="5" placeholder="Value"></textarea>
                 <small>This accepts any kind of alphanumeric characters.</small>
-                <span asp-validation-for="Value.child.Details" class="text-danger"></span>
+                <span asp-validation-for="Child.Details" class="text-danger"></span>
             </div>
         </div>
         <hr class="solid" />
@@ -201,8 +204,8 @@
         </div>
         <div class="row">
             <div class="form-group col-12 col-sm-3">
-                <label class="fw-bold text-black" asp-for="Value.status">Reason for Case Closure</label>
-                <select asp-for="Value.status" class="custom-select">
+                <label class="fw-bold text-black" asp-for="Status">Reason for Case Closure</label>
+                <select asp-for="Status" class="custom-select">
                     <option selected>&mdash; Select &mdash;</option>
                     <option value="1">Entered in Error</option>
                     <option value="2">Neglect Resolved</option>
@@ -214,14 +217,16 @@
     </div>
 
     <div class="content-container p-3">
-        <div clas="row col-12 col-sm-3">
-            <input type="submit" class="btn btn-primary" value="Save" />
-@*            <a type="submit" class="btn btn-primary" asp-controller="ViewCases" asp-action="ViewCase" asp-route-id="@Model.Value.id">
-                Save
-            </a>*@
-            <a class="btn btn-outline-ui" asp-controller="ViewCases" asp-action="ViewCase" asp-route-id="@Model.Value.id">
-                Cancel
-            </a>
+        <div clas="row">
+            <div class="col-12 col-sm-3">
+                <input type="submit" class="btn btn-primary" value="Save" />
+    @*            <a type="submit" class="btn btn-primary" asp-controller="ViewCases" asp-action="ViewCase" asp-route-id="@Model.Value.id">
+                    Save
+                </a>*@
+                <a class="btn btn-outline-ui" asp-controller="ViewCases" asp-action="ViewCase" asp-route-id="@Model.Id">
+                    Cancel
+                </a>
+            </div>
         </div>
     </div>
 </form>

@@ -29,3 +29,8 @@ C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPor
 C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortal\bin\Debug\net6.0\RestSharp.dll
 C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortal\obj\Debug\net6.0\CaseMgmtPortal.csproj.CopyComplete
 C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortal\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortal\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortal\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortal\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortal\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortal\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
