@@ -32,6 +32,7 @@ namespace CaseMgmtAPI.Features.Cases.Handlers
                 this.Date = childCase.Date;
                 this.Status = childCase.Status;
                 this.Notes = childCase.Notes;
+                this.UpdateDate = childCase.UpdateDate;
             }
         }
 

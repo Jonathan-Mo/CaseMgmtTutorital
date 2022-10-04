@@ -17,10 +17,13 @@ namespace CaseMgmtAPI.Features.Cases.Handlers
             {
                 idVerify = caseID;
 
-                this.Child = childCase.Child;
-                this.Reporter = childCase.Reporter;
                 this.Id = childCase.Id;
+                this.Child = childCase.Child;
+                this.ChildId = childCase.ChildId;
+                this.Reporter = childCase.Reporter;
+                this.ReporterId = childCase.ReporterId;
                 this.Child.FirstName = childCase.Child.FirstName;
+                this.Child.MiddleName = childCase.Child.MiddleName;
                 this.Child.LastName = childCase.Child.LastName;
                 this.Child.StreetAddress = childCase.Child.StreetAddress;
                 this.Child.City = childCase.Child.City;
@@ -28,9 +31,11 @@ namespace CaseMgmtAPI.Features.Cases.Handlers
                 this.Child.ZipCode = childCase.Child.ZipCode;
                 this.Child.Details = childCase.Child.Details;
                 this.Reporter.FirstName = childCase.Reporter.FirstName;
+                this.Reporter.MiddleName = childCase.Reporter.MiddleName;
                 this.Reporter.LastName = childCase.Reporter.LastName;
                 this.Reporter.Email = childCase.Reporter.Email;
                 this.Reporter.Phone = childCase.Reporter.Phone;
+                this.IsDeleted = childCase.IsDeleted;
                 this.Date = childCase.Date;
                 this.Status = childCase.Status;
                 this.Notes = childCase.Notes;
@@ -59,9 +64,13 @@ namespace CaseMgmtAPI.Features.Cases.Handlers
                     return null;
                 }
 
+                childCase.Id = request.Id;
                 childCase.Child = request.Child;
+                childCase.ChildId = request.ChildId;
                 childCase.Reporter = request.Reporter;
+                childCase.ReporterId = request.ReporterId;
                 childCase.Child.FirstName = request.Child.FirstName;
+                childCase.Child.MiddleName = request.Child.MiddleName;
                 childCase.Child.LastName = request.Child.LastName;
                 childCase.Child.StreetAddress = request.Child.StreetAddress;
                 childCase.Child.City = request.Child.City;
@@ -69,9 +78,15 @@ namespace CaseMgmtAPI.Features.Cases.Handlers
                 childCase.Child.ZipCode = request.Child.ZipCode;
                 childCase.Child.Details = request.Child.Details;
                 childCase.Reporter.FirstName = request.Reporter.FirstName;
+                childCase.Reporter.MiddleName = request.Reporter.MiddleName;
                 childCase.Reporter.LastName = request.Reporter.LastName;
                 childCase.Reporter.Email = request.Reporter.Email;
                 childCase.Reporter.Phone = request.Reporter.Phone;
+                childCase.IsDeleted = request.IsDeleted;
+                childCase.Date = request.Date;
+                childCase.Status = request.Status;
+                childCase.Notes = request.Notes;
+                childCase.UpdateDate = request.UpdateDate;
 
                 try
                 {

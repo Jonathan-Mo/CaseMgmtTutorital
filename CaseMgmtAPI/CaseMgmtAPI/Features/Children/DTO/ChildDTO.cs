@@ -11,7 +11,7 @@ namespace CaseMgmtAPI.Features.Children.DTO
         [Required]
         public string City { get; set; }
         [Required]
-        public int State { get; set; }
+        public string? State { get; set; }
         public string? ZipCode { get; set; }
         public string? Details { get; set; }
         public bool IsDeleted { get; set; }

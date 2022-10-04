@@ -1,4 +1,5 @@
 ﻿using CaseMgmtAPI.Domain.Entity;
+using Newtonsoft.Json;
 using System.ComponentModel.DataAnnotations;
 
 namespace CaseMgmtAPI.Features.Cases.DTO
@@ -14,7 +15,8 @@ namespace CaseMgmtAPI.Features.Cases.DTO
         public int ReporterId { get; set; }
         public bool IsDeleted { get; set; }
         public DateTime Date { get; set; }
-        public int Status { get; set; }
-        public string Notes { get; set; }
+        public string? Status { get; set; }
+        public string? Notes { get; set; }
+        public DateTime UpdateDate { get; set; }
     }
 }

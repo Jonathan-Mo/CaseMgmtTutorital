@@ -8,7 +8,8 @@ namespace CaseMgmtPortal.Models
         public Child child { get; set; }
         public Reporter reporter { get; set; }
         public DateTime date { get; set; }
-        public int status { get; set; }
-        public string notes { get; set; }
+        public string? status { get; set; }
+        public string? notes { get; set; }
+        public DateTime updateDate { get; set; }
     }
 }

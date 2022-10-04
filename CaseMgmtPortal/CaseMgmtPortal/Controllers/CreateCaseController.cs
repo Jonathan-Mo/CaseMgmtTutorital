@@ -18,6 +18,8 @@ namespace CaseMgmtPortal.Controllers
             {
                 childCase.Date = DateTime.Now;
 
+                childCase.UpdateDate = childCase.Date;
+
                 string url = "https://localhost:7060/api/cases";
 
                 var client = new RestClient(url);

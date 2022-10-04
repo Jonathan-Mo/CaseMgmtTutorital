@@ -7,6 +7,7 @@ namespace CaseMgmtPortal.Controllers
         public CaseMapper()
         {
             CreateMap<Models.Value, Models.Case>();
+            CreateMap<Models.Value, ModelDTOs.CaseDTO>();
         }
     }
 }

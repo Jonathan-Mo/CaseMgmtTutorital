@@ -25,10 +25,12 @@ namespace CaseMgmtPortal.ModelDTOs
         [JsonProperty("date")]
         public DateTime Date { get; set; }
 
+        public DateTime UpdateDate { get; set; }
+
         [JsonProperty("status")]
-        public int Status { get; set; }
+        public string? Status { get; set; }
 
         [JsonProperty("notes")]
-        public string Notes { get; set; }
+        public string? Notes { get; set; }
     }
 }

@@ -1,0 +1,72 @@
+﻿@model CaseMgmtPortal.ViewModels.CaseListViewModel
+
+<nav class="breadcrumb-wrapper" aria-label="breadcrumbs">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="/">
+                <span class="fas fa-home mr-1" aria-hidden="true"></span><span class="sr-only">Home</span>
+            </a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="/ViewCases">View Submitted Cases</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+            <span>Case Report</span><span class="fas fa-eye ml-1" aria-hidden="true"></span>
+        </li>
+    </ol>
+</nav>
+<div class="page-title">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 d-lg-flex justify-content-lg-between align-items-center">
+                <div class="mb-2 mb-lg-0">
+                    <h2 class="page-title-text">
+                        Case Report
+                    </h2>
+                    <p class="mb-0">Below is a report that shows each case and its status.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (Model.Value.Count > 0)
+{
+    <div class="content-container p-3">
+        @foreach(var childCase in Model.Value)
+        {
+            <div class="row m-1">
+                <div class="col-12 col-sm-3">
+                    Case ID: @childCase.id
+                </div>
+                <div class="col-12 col-sm-3">
+                    Child Name: @childCase.child.FirstName @childCase.child.LastName
+                </div>
+                <div class="col-12 col-sm-3">
+                    @if (childCase.date != childCase.updateDate)
+                    {
+                        <p class="mb-0">Updated On: @childCase.updateDate</p>
+                    }
+                    else
+                    {
+                        <p class="mb-0">Submitted On: @childCase.date</p>
+                    }
+                </div>
+                <div class="col-12 col-sm-3">
+                    Status: @childCase.status
+                </div>
+            </div>
+        }
+    </div>
+}
+else
+{
+    <div class="content-container mx-40 pl-30 border border-gray rounded">
+        <div class="row">
+            <h2 class="text-primary"><span class="fas fa-solid fa-wind" aria-hidden="true"></span> It's empty here.</h2>
+        </div>
+        <div class="row">
+            <p>Once you submit a child neglect report, you can view a report here. </p>
+        </div>
+    </div>
+}

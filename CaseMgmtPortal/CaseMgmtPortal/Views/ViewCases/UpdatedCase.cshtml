@@ -1,0 +1,193 @@
+﻿@model CaseMgmtPortal.ModelDTOs.CaseDTO
+
+<nav class="breadcrumb-wrapper" aria-label="breadcrumbs">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="/">
+                <span class="fas fa-home mr-1" aria-hidden="true"></span><span class="sr-only">Home</span>
+            </a>
+        </li>
+        <li class="breadcrumb-item">
+            <a href="/ViewCases">View Submitted Cases</a>
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+            <span>Case @Model.Id</span><span class="fas fa-eye ml-1" aria-hidden="true"></span>
+        </li>
+    </ol>
+</nav>
+<div class="page-title">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 d-lg-flex justify-content-lg-between align-items-center">
+                <div class="mb-2 mb-lg-0">
+                    <h2 class="page-title-text">
+                        <span class="icon fas fa-home mr-1" aria-hidden="true"></span>Case @Model.Id
+                    </h2>
+                    @if (Model.Date != Model.UpdateDate)
+                    {
+                        <p class="mb-0">Updated on @Model.Date</p>
+                    }
+                    else
+                    {
+                        <p class="mb-0">Submitted on @Model.Date</p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    @*<div class="row">*@
+    <div class="alert alert-success alert-dismissable fade show" role="alert">
+        <span class="alert-icon fas fa-check-circle" aria-hidden="true"></span>
+        <strong>Successfully updated!</strong> The case details has been updated and saved.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span class="fas fa-times" aria-hidden="true"></span>
+        </button>
+    </div>
+    @*</div>*@
+</div>
+
+@*<input type="button" class="btn btn-outline-ui fas fa-solid fa-arrow-left" value="Back to Case List" onclick="location.href='@Url.Action("ViewCase", "ViewCases")'" />*@
+<a class="btn btn-outline-ui mx-3 mb-3" asp-controller="ViewCases" asp-action="Index">
+    <span class="fas fa-arrow-left" aria-hidden="true"></span>
+    Back to Case List
+</a>
+
+<div class="content-container p-3">
+    <!-- Content here -->
+    <div class="row">
+        <p class="fw-bold text-primary">Your Personal Information</p>
+    </div>
+    <div class="row p-1">
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>First Name
+            </label>
+            <p>@Model.Reporter.FirstName</p>
+        </div>
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>Middle Name
+            </label>
+            <p>@Model.Reporter.MiddleName</p>
+        </div>
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>Last Name
+            </label>
+            <p>@Model.Reporter.LastName</p>
+        </div>
+        <div class="col-12 col-sm-3"></div>
+    </div>
+    <div class="row p-1">
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>Email Address
+            </label>
+            <p>@Model.Reporter.Email</p>
+        </div>
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>Phone Number
+            </label>
+            <p>@Model.Reporter.Phone</p>
+        </div>
+        <div class="col-12 col-sm-3"></div>
+        <div class="col-12 col-sm-3"></div>
+    </div>
+    <hr class="solid" />
+    <div class="row">
+        <p class="fw-bold text-primary">Child Nelgect Information</p>
+    </div>
+    <div class="row p-1">
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>First Name
+            </label>
+            <p>@Model.Child.FirstName</p>
+        </div>
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>Middle Name
+            </label>
+            <p>@Model.Child.MiddleName</p>
+        </div>
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>Last Name
+            </label>
+            <p>@Model.Child.LastName</p>
+        </div>
+        <div class="col-12 col-sm-3"></div>
+    </div>
+    <div class="row p-1">
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>Child's Street Address
+            </label>
+            <p>@Model.Child.StreetAddress</p>
+        </div>
+    </div>
+    <div class="row p-1">
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>Child's City
+            </label>
+            <p>@Model.Child.City</p>
+        </div>
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>Child's State
+            </label>
+            <p>@Model.Child.State</p>
+        </div>
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>Child's ZIP Code
+            </label>
+            <p>@Model.Child.ZipCode</p>
+        </div>
+        <div class="col"></div>
+    </div>
+    <div class="row p-1">
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>Neglect Details
+            </label>
+            <p>@Model.Child.Details</p>
+        </div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+
+    <hr class="solid" />
+    <div class="row">
+        <p class="fw-bold text-primary">Case Updates</p>
+    </div>
+    <div class="row p-1">
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>Status
+            </label>
+            <p>@Model.Status</p>
+        </div>
+    </div>
+    <div class="row p-1">
+        <div class="col-12 col-sm-3 form-group">
+            <label class="fw-bold form-label">
+                <span aria-hidden="true"></span>Notes
+            </label>
+            <p>@Model.Notes</p>
+        </div>
+    </div>
+</div>
+
+<div class="content-container">
+    <a class="btn btn-primary ml-3" asp-controller="ViewCases" asp-action="EditCase" asp-route-id="@Model.Id">
+        <span class="fas fa-solid fa-edit" aria-hidden="true"></span>
+        Edit Case
+    </a>
+</div>

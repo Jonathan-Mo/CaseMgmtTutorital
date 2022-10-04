@@ -37,9 +37,18 @@
                     <label class="fw-bold form-label row">
                         <span aria-hidden="true"></span>Case @values.id
                     </label>
-                    <label class="form-label row">
-                        <span aria-hidden="true"></span>Submited on @values.date
-                    </label>
+                    @if (values.date != values.updateDate)
+                    {
+                        <label class="form-label row">
+                            <span aria-hidden="true"></span>Updated on @values.date
+                        </label>
+                    }
+                    else
+                    {
+                        <label class="form-label row">
+                            <span aria-hidden="true"></span>Submited on @values.date
+                        </label>
+                    }
                 </div>
                 <div class="col-12 col-sm-2" align="center">
                     @*<button type="button" class="btn btn-outline-ui">View Details <span class="fas fa-solid fa-arrow-right"></span></button>*@
@@ -61,7 +70,7 @@ else
 {
     <div class="content-container mx-40 pl-30 border border-gray rounded">
         <div class="row">
-            <h2 class="text-primary">It's empty here.</h2>
+            <h2 class="text-primary"><span class="fas fa-solid fa-wind" aria-hidden="true"></span> It's empty here.</h2>
         </div>
         <div class="row">
             <p>Once you submit a child neglect report, you can view those cases here. </p>
