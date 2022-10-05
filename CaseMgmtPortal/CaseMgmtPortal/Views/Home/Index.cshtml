@@ -1,4 +1,6 @@
-﻿@{
+﻿@model CaseMgmtPortal.ViewModels.CaseListViewModel
+
+@{
     ViewData["Title"] = "Home";
 }
 
@@ -13,16 +15,29 @@
         <div class="col-lg-6 half-right bg-accent">
             <div class="container-fluid">
                 <div class="row align-items-center justify-content-center">
-                    <div class="col-10 col-lg-8 m-1">
-                        <h2 class="hero-big-text">Reporting Child Neglect</h2>
-                        <p class="hero-small-text">
-                            If you know a Louisiana child being neglected, report it online by clicking the button below.
-                        </p>
-                        <a href="/CreateCase" class="btn btn-primary btn-lg px-20">Report Child Neglect<span class="fas fa-arrow-right ml-1" aria-hidden="true"></span></a>
-                    </div>
-                    <div class="col-10 col-lg-8 m-1">
-                        <a href="/ViewCases" class="btn btn-white btn-lg px-18">View Submitted Cases<span class="fas fa-arrow-right ml-1" aria-hidden="true"></span></a>
-                    </div>
+                    @if (Model.Value.Count > 0)
+                    {
+                        <div class="col-10 col-lg-8 m-1">
+                            <h2 class="hero-big-text">Reporting Child Neglect</h2>
+                            <p class="hero-small-text">
+                                If you know a Louisiana child being neglected, report it online by clicking the button below.
+                            </p>
+                            <a href="/CreateCase" class="btn btn-primary btn-lg px-20">Report Child Neglect<span class="fas fa-arrow-right ml-1" aria-hidden="true"></span></a>
+                        </div>
+                        <div class="col-10 col-lg-8 m-1">
+                            <a href="/ViewCases" class="btn btn-white btn-lg px-18">View Submitted Cases<span class="fas fa-arrow-right ml-1" aria-hidden="true"></span></a>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="col-10 col-lg-8 m-1">
+                            <h2 class="hero-big-text">Reporting Child Neglect</h2>
+                            <p class="hero-small-text">
+                                If you know a Louisiana child being neglected, report it online by clicking the button below.
+                            </p>
+                            <a href="/CreateCase" class="btn btn-white btn-lg px-20">Report Child Neglect<span class="fas fa-arrow-right ml-1" aria-hidden="true"></span></a>
+                        </div>
+                    }
                 </div>
             </div>
         </div>
@@ -30,7 +45,7 @@
 </div>
 
 <div class="container-fluid">
-    <div class="row m-3">
+    <div class="row align-items-start m-3">
         <div class="card col-12 col-lg-4">
             <div class="card-body">
                 <details id="example01">

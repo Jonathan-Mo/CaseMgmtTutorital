@@ -28,7 +28,7 @@
 
 @if (Model.Value.Count > 0)
 {
-    @foreach (var values in Model.Value)
+    @foreach (var values in Model.Value.AsEnumerable().Reverse())
     {
         @*var currentCase = (i - 1);*@
         <div class="content-container p-2 m-3">

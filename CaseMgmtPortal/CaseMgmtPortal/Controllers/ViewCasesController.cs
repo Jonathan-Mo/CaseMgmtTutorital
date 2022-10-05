@@ -88,7 +88,7 @@ namespace CaseMgmtPortal.Controllers
                 else if (childCase.Notes == "Neglect Resolved")
                     childCase.Status = "Request for Case Closure.";
                 else
-                    childCase.Status = "";
+                    childCase.Status = childCase.Status;
                 
                 childCase.UpdateDate = DateTime.Now;
 

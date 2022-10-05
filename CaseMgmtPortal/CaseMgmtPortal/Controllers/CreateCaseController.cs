@@ -20,6 +20,8 @@ namespace CaseMgmtPortal.Controllers
 
                 childCase.UpdateDate = childCase.Date;
 
+                childCase.Status = "Pending Review";
+
                 string url = "https://localhost:7060/api/cases";
 
                 var client = new RestClient(url);

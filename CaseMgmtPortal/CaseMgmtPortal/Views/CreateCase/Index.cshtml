@@ -25,7 +25,7 @@
         </div>
     </div>
 </div>
-<form asp-action="Index" method="post" role="form">
+<form asp-action="Index" id="createCaseForm" method="post" role="form">
     <div class="content-container p-3">
         <!-- Content here -->
         <div asp-validation-summary="All" class="text-danger"></div>
@@ -37,7 +37,7 @@
                 <label asp-for="Reporter.FirstName" class="fw-bold text-black form-label">
                     <span class="fas fa-asterisk text-danger mr-1" aria-hidden="true"></span>First Name
                 </label>
-                <input asp-for="Reporter.FirstName" type="tel" class="form-control" placeholder="Value">
+                <input asp-for="Reporter.FirstName" id="reporterFirstName" type="tel" class="form-control" placeholder="Value">
                 <span asp-validation-for="Reporter.FirstName" class="text-danger"></span>
             </div>
             <div class="col-12 col-sm-3 form-group">
@@ -194,7 +194,7 @@
 
     <div class="content-container p-3">
         <div clas="row col-12 col-sm-3">
-            <input type="submit" class="btn btn-primary" value="Submit Report" />
+            <input type="submit" id="createCaseBtn" class="btn btn-primary" value="Submit Report" />
             <input type="button" class="btn btn-outline-ui" onclick="location.href='/Home';" value="Cancel" />
         </div>
     </div>

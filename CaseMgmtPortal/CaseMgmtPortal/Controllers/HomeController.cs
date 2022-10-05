@@ -1,4 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CaseMgmtPortal.Models;
+using CaseMgmtPortal.ViewModels;
+using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using RestSharp;
 
 namespace CaseMgmtPortal.Web.Controllers
 {
@@ -6,7 +10,21 @@ namespace CaseMgmtPortal.Web.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            string url = "https://localhost:7060/api/Cases";
+
+            var client = new RestClient(url);
+
+            var request = new RestRequest();
+
+            var response = client.Get(request);
+
+            var childCases = JsonConvert.DeserializeObject<Root>(response.Content);
+
+            var newestCase = childCases.value;
+
+            CaseListViewModel caseListViewModel = new CaseListViewModel(newestCase);
+
+            return View(caseListViewModel);
         }
     }
 }

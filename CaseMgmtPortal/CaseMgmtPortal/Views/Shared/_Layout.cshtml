@@ -24,6 +24,9 @@ body {
 </style>
 <body id="main">
     <header>
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/pelican/dist/js/pelican.bundle.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
         <div class="official-banner">
             <div class="container-fluid">
                 <div class="row align-items-center">
@@ -140,10 +143,10 @@ body {
             </div>
         </div>
     </footer>
-
+@*
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/pelican/dist/js/pelican.bundle.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>*@
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
