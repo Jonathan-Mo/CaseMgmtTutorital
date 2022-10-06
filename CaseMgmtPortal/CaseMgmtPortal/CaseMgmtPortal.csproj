@@ -7,8 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Test\**" />
+    <Content Remove="Test\**" />
+    <EmbeddedResource Remove="Test\**" />
+    <None Remove="Test\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Infra\Services\MainPage\" />
-    <Folder Include="Test\" />
     <Folder Include="wwwroot\img\" />
   </ItemGroup>
 
