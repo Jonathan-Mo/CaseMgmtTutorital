@@ -1,4 +1,5 @@
-﻿using CaseMgmtPortal.Models;
+﻿using CaseMgmtPortal.ModelDTOs;
+using CaseMgmtPortal.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,7 +15,105 @@ namespace CaseMgmtPortalTests.Mocks
         {
             var childCase = new Case()
             {
-                Id = 1,
+                Id = 60,
+
+                Child = new Child
+                {
+                    Id = 1,
+                    FirstName = "John",
+                    MiddleName = "Doe",
+                    LastName = "Cena",
+                    StreetAddress = "1234 GeryLane Ave",
+                    City = "Baton Rouge",
+                    State = "Louisiana",
+                    ZipCode = "70817",
+                    Details = "Here's some details.",
+                    IsDeleted = false
+                },
+
+                ChildId = 1,
+
+                Reporter = new Reporter()
+                {
+                    Id = 1,
+                    FirstName = "Leia",
+                    MiddleName = "Doe",
+                    LastName = "Amadalla",
+                    Email = "Leia@planet.com",
+                    Phone = "5558675309",
+                    IsDeleted = false
+                },
+
+                ReporterId = 1,
+
+                IsDeleted = false,
+
+                Date = DateTime.Now,
+
+                UpdateDate = DateTime.Now,
+
+                Status = "Some status.",
+
+                Notes = "Some notes."
+            };
+
+            return childCase;
+        }
+
+        public static CaseDTO GetCaseDTO()
+        {
+            var childCase = new CaseDTO()
+            {
+                Id = 60,
+
+                Child = new Child
+                {
+                    Id = 1,
+                    FirstName = "John",
+                    MiddleName = "Doe",
+                    LastName = "Cena",
+                    StreetAddress = "1234 GeryLane Ave",
+                    City = "Baton Rouge",
+                    State = "Louisiana",
+                    ZipCode = "70817",
+                    Details = "Here's some details.",
+                    IsDeleted = false
+                },
+
+                ChildId = 1,
+
+                Reporter = new Reporter()
+                {
+                    Id = 1,
+                    FirstName = "Leia",
+                    MiddleName = "Doe",
+                    LastName = "Amadalla",
+                    Email = "Leia@planet.com",
+                    Phone = "5558675309",
+                    IsDeleted = false
+                },
+
+                ReporterId = 1,
+
+                IsDeleted = false,
+
+                Date = DateTime.Now,
+
+                UpdateDate = DateTime.Now,
+
+                Status = "Some status.",
+
+                Notes = "Some notes."
+            };
+
+            return childCase;
+        }
+
+        public static CaseDTO GetExistingCaseDTO()
+        {
+            var childCase = new CaseDTO()
+            {
+                Id = 60,
 
                 Child = new Child
                 {

@@ -57,7 +57,7 @@ namespace CaseMgmtPortal.Controllers
             return View(newestCase);
         }
 
-        public async Task<IActionResult> EditCase(int id)
+        public IActionResult EditCase(int id)
         {
             string url = "https://localhost:7060/api/Cases";
 

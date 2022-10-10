@@ -120,3 +120,4 @@ C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPor
 C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortalTests\bin\Debug\net6.0\AutoFixture.AutoMoq.dll
 C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortalTests\bin\Debug\net6.0\AutoFixture.Xunit2.dll
 C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortalTests\bin\Debug\net6.0\Fare.dll
+C:\Users\P00348089\Documents\GitHub\CaseMgmtTutorital\CaseMgmtPortal\CaseMgmtPortalTests\bin\Debug\net6.0\libman.json
