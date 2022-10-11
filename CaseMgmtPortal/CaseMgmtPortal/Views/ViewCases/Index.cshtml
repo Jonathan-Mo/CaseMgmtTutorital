@@ -28,6 +28,35 @@
 
 @if (Model.Value.Count > 0)
 {
+    <form method="get" asp-action="ViewCase" asp-controller="ViewCases">
+    <div  class="text-danger"></div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 d-lg-flex justify-content-lg-between align-items-center">
+                <div class="mb-2 mb-lg-0">
+                    <div class="form-group">
+                       <label for="InputCid">Search by Case Number</label>
+                            <input type="text" class="form-control" id="InputCid" name="InputCid" value="0000000000">
+                            <small>This accepts any kind of alphanumeric characters.</small>
+                        <div class="btn-group">
+                            <input type="submit" value="Search"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+
+@*    @for (int i = 0; i < 1; i++)
+    {
+        <div class="row">
+            @using (Html.BeginForm("ViewCase", "ViewCases", FormMethod.Post))
+            {
+                <input asp-for="@Model.Value[i].id" id="reporterFirstName" type="tel" class="form-control" placeholder="Value">
+            }
+        </div>
+    }*@
     @foreach (var values in Model.Value.AsEnumerable().Reverse())
     {
         @*var currentCase = (i - 1);*@
@@ -65,6 +94,57 @@
             </div>
         </div>
     }
+
+    <div class="row justify-content-center align-items-md-end">
+        <div class="col-md-3">
+            <form action="" class="">
+                <label class="d-none" aria-hidden="false" for="NumberItemsToShow">Show how many?</label>
+                <select class="custom-select mb-4 mb-lg-0" id="NumberItemsToShow">
+                    <option selected>Show 10 per page</option>
+                    <option value="1">Show 25 per page</option>
+                    <option value="2">Show 50 per page</option>
+                    <option value="3">Show All</option>
+                </select>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <nav class="" aria-label="Page navigation example">
+                <ul class="pagination justify-content-center mb-lg-0">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span class="fas fa-angle-double-left" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span class="fas fa-angle-double-right" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-md-3 text-center text-lg-right">
+            <p class="mb-2">
+                Showing<br class="d-none d-md-block d-lg-none"> <strong>X</strong> of <strong>Y</strong>
+                items.
+            </p>
+        </div>
+    </div>
 }
 else
 {

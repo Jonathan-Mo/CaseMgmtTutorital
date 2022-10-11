@@ -27,7 +27,7 @@ namespace CaseMgmtAPI.Features.Cases.Controllers
             {
                 var result = await _mediator.Send(new GetCases.Query());
 
-                if (result == null)
+                if (result.Value == null)
                     return NoContent();
 
                 return Ok(result);
