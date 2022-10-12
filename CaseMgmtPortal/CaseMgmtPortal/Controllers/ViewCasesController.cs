@@ -4,7 +4,9 @@ using CaseMgmtPortal.Models;
 using CaseMgmtPortal.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using ReflectionIT.Mvc.Paging;
 using RestSharp;
+using System.Linq;
 using System.Net.Http;
 
 namespace CaseMgmtPortal.Controllers
@@ -17,7 +19,7 @@ namespace CaseMgmtPortal.Controllers
         {
             _mapper = mapper;
         }
-        public IActionResult Index()
+        public IActionResult Index(int page = 1)
         {
             string url = "https://localhost:7060/api/Cases";
 
@@ -29,15 +31,37 @@ namespace CaseMgmtPortal.Controllers
 
             var childCases = JsonConvert.DeserializeObject<Root>(response.Content);
 
-            var newestCase = childCases.value;
+            var newestCases = childCases?.value.OrderBy(c => c.updateDate);
 
-            CaseListViewModel caseListViewModel = new CaseListViewModel(newestCase);
+            // CaseListViewModel caseListViewModel = new CaseListViewModel(newestCases);
 
-            return View(caseListViewModel);
+            //var query = newestCase.OrderBy(c => c.updateDate);
+            //var query = caseListViewModel.Value.OrderBy(c => c.updateDate);
+
+            //IOrderedQueryable<CaseMgmtPortal.Models.Value> orderedQueryable = query.AsQueryable().OrderBy(s => s.id);
+
+            var model = new ListRecords();
+
+            model.NumRecords = newestCases.Count();
+
+            var extractedCases = newestCases.Skip((page-1)*10);
+
+            model.ListOfRecords = extractedCases.Take(10);
+
+            return View(model);
         }
 
-        public IActionResult ViewCase(int id)
+        public IActionResult ViewCase(long id)
         {
+            string[] subs;
+            if (id == null || id == 0)
+            {
+                string myUrl = Microsoft.AspNetCore.Http.Extensions.UriHelper.GetDisplayUrl(Request);
+                subs = myUrl.Split('=');
+                if (subs.Length > 1)
+                    id = long.Parse(subs[1]);
+            }
+
             string url = "https://localhost:7060/api/Cases";
 
             var client = new RestClient(url);
@@ -73,7 +97,7 @@ namespace CaseMgmtPortal.Controllers
 
             CaseDTO newestCase = _mapper.Map<CaseDTO>(tempCase);
 
-            //Case caseViewModel = new Case();
+            Case caseViewModel = new Case();
 
             return View(newestCase);
         }
