@@ -1,0 +1,123 @@
+﻿@model CaseMgmtPortal.ViewModels.CaseListViewModel
+@using CaseMgmtPortal.Models
+@using ReflectionIT.Mvc.Paging
+@addTagHelper *, ReflectionIT.Mvc.Paging
+
+<nav class="breadcrumb-wrapper" aria-label="breadcrumbs">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="/">
+                <span class="fas fa-home mr-1" aria-hidden="true"></span><span class="sr-only">Home</span>
+            </a>
+        <li class="breadcrumb-item active" aria-current="page">
+            <span>View Submitted Cases</span><span class="fas fa-eye ml-1" aria-hidden="true"></span>
+        </li>
+    </ol>
+</nav>
+<div class="page-title">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 d-lg-flex justify-content-lg-between align-items-center">
+                <div class="mb-2 mb-lg-0">
+                    <h2 class="page-title-text">
+                        <span class="icon fas fa-home mr-1" aria-hidden="true"></span>View Submitted Cases
+                    </h2>
+                    <p class="mb-0">Below lists the child neglect reports you submitted.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@if (Model.Value.Count > 0)
+{
+    <form method="get" asp-action="ViewCase" asp-controller="ViewCases">
+        <div class="text-danger"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 d-lg-flex justify-content-lg-between align-items-center">
+                    <div class="mb-2 mb-lg-0">
+                        <div class="form-group">
+                            <label for="InputCid">Search by Case Number</label>
+                            <input type="text" class="form-control" id="InputCid" name="InputCid" value="0000000000">
+                            <small>This accepts any kind of alphanumeric characters.</small>
+                            <div class="btn-group">
+                                <input type="submit" value="Search" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    @*    @foreach (var values in Model.Value.AsEnumerable().Reverse())*@
+    @foreach (var values in Model.Value)
+    {
+        @*var currentCase = (i - 1);*@
+        <div class="content-container p-2 m-3">
+            <div class="row p-3">
+                <div class="col-12 col-sm-10">
+                    <label class="fw-bold form-label row">
+                        <span aria-hidden="true"></span>Case @values.id
+                    </label>
+                    @if (values.date != values.updateDate)
+                    {
+                        <label class="form-label row">
+                            <span aria-hidden="true"></span>Updated on @values.date
+                        </label>
+                    }
+                    else
+                    {
+                        <label class="form-label row">
+                            <span aria-hidden="true"></span>Submited on @values.date
+                        </label>
+                    }
+                </div>
+                <div class="col-12 col-sm-2" align="center">
+                    @*<button type="button" class="btn btn-outline-ui">View Details <span class="fas fa-solid fa-arrow-right"></span></button>*@
+                    @*                    <input type="button" class="btn btn-outline-ui" onclick="location.href='/ViewCases/ViewCase';" value="View Details" />*@
+                    @*<input type="button" class="btn btn-outline-ui fas fa-solid fa-arrow-right" value="View Details" onclick="location.href='@Url.Action("ViewCase", "ViewCases", new {values.id})'" />*@
+                    @*<div class="col-2">
+            @Html.ActionLink("View Case", "ViewCase", new {values.id}, new { @class = "btn btn-outline-ui fas fa-solid fa-arrow-right"})
+            </div>*@
+                    <a class="btn btn-outline-ui" asp-controller="ViewCases" asp-action="ViewCase" asp-route-id="@values.id">
+                        View Details
+                        <span class="fas fa-arrow-right" aria-hidden="true"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+
+    <div class="row justify-content-center align-items-md-end">
+        <div class="col-md-3">
+            <form action="" class="">
+                <label class="d-none" aria-hidden="false" for="NumberItemsToShow">Show how many?</label>
+                <select onchange="location = this.value" class="custom-select mb-4 mb-lg-0" id="NumberItemsToShow">
+                    <option value="/ViewCases/index">Show 10 per page</option>
+                    <option value="/ViewCases/index25">Show 25 per page</option>
+                    <option value="/ViewCases/index50">Show 50 per page</option>
+                    <option value="/ViewCases/indexAll" selected>Show All</option>
+                </select>
+            </form>
+        </div>
+        <div class="col-md-3 text-center text-lg-right">
+            <p class="mb-2">
+                Showing<br class="d-none d-md-block d-lg-none"> <strong>@Model.Value.Count</strong> of <strong>@Model.Value.Count</strong>
+                items.
+            </p>
+        </div>
+    </div>
+}
+else
+{
+    <div class="content-container mx-40 pl-30 border border-gray rounded">
+        <div class="row">
+            <h2 class="text-primary"><span class="fas fa-solid fa-wind" aria-hidden="true"></span> It's empty here.</h2>
+        </div>
+        <div class="row">
+            <p>Once you submit a child neglect report, you can view those cases here. </p>
+        </div>
+    </div>
+}

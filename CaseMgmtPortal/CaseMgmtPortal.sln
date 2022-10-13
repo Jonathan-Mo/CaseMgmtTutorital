@@ -5,7 +5,7 @@ VisualStudioVersion = 17.3.32804.467
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaseMgmtPortal", "CaseMgmtPortal\CaseMgmtPortal.csproj", "{3CCFC0B7-AA74-41B6-9EC1-8432E86F7371}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CaseMgmtPortalTests", "CaseMgmtPortalTests\CaseMgmtPortalTests.csproj", "{6A1DB5EE-4483-45F4-AC8D-A1586258DECB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaseMgmtPortalTests", "CaseMgmtPortalTests\CaseMgmtPortalTests.csproj", "{6A1DB5EE-4483-45F4-AC8D-A1586258DECB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

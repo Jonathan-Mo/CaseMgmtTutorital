@@ -33,13 +33,6 @@ namespace CaseMgmtPortal.Controllers
 
             var newestCases = childCases?.value.OrderBy(c => c.updateDate);
 
-            // CaseListViewModel caseListViewModel = new CaseListViewModel(newestCases);
-
-            //var query = newestCase.OrderBy(c => c.updateDate);
-            //var query = caseListViewModel.Value.OrderBy(c => c.updateDate);
-
-            //IOrderedQueryable<CaseMgmtPortal.Models.Value> orderedQueryable = query.AsQueryable().OrderBy(s => s.id);
-
             var model = new ListRecords();
 
             model.NumRecords = newestCases.Count();
@@ -51,17 +44,8 @@ namespace CaseMgmtPortal.Controllers
             return View(model);
         }
 
-        public IActionResult ViewCase(long id)
+        public IActionResult Index25(int page = 1)
         {
-            string[] subs;
-            if (id == null || id == 0)
-            {
-                string myUrl = Microsoft.AspNetCore.Http.Extensions.UriHelper.GetDisplayUrl(Request);
-                subs = myUrl.Split('=');
-                if (subs.Length > 1)
-                    id = long.Parse(subs[1]);
-            }
-
             string url = "https://localhost:7060/api/Cases";
 
             var client = new RestClient(url);
@@ -72,13 +56,93 @@ namespace CaseMgmtPortal.Controllers
 
             var childCases = JsonConvert.DeserializeObject<Root>(response.Content);
 
-            var tempCase = childCases.value.OrderByDescending(c => c.id == id).FirstOrDefault();
+            var newestCases = childCases?.value.OrderBy(c => c.updateDate);
 
-            CaseDTO newestCase = _mapper.Map<CaseDTO>(tempCase);
+            var model = new ListRecords();
 
-            //CaseViewModel caseViewModel = new CaseViewModel(newestCase);
+            model.NumRecords = newestCases.Count();
 
-            return View(newestCase);
+            var extractedCases = newestCases.Skip((page - 1) * 25);
+
+            model.ListOfRecords = extractedCases.Take(25);
+
+            return View(model);
+        }
+
+        public IActionResult Index50(int page = 1)
+        {
+            string url = "https://localhost:7060/api/Cases";
+
+            var client = new RestClient(url);
+
+            var request = new RestRequest();
+
+            var response = client.Get(request);
+
+            var childCases = JsonConvert.DeserializeObject<Root>(response.Content);
+
+            var newestCases = childCases?.value.OrderBy(c => c.updateDate);
+
+            var model = new ListRecords();
+
+            model.NumRecords = newestCases.Count();
+
+            var extractedCases = newestCases.Skip((page - 1) * 50);
+
+            model.ListOfRecords = extractedCases.Take(50);
+
+            return View(model);
+        }
+
+        public IActionResult IndexAll()
+        {
+            string url = "https://localhost:7060/api/Cases";
+
+            var client = new RestClient(url);
+
+            var request = new RestRequest();
+
+            var response = client.Get(request);
+
+            var childCases = JsonConvert.DeserializeObject<Root>(response.Content);
+
+            var newestCase = childCases.value;
+
+            CaseListViewModel caseListViewModel = new CaseListViewModel(newestCase);
+
+            return View(caseListViewModel);
+        }
+
+        public IActionResult ViewCase(long id)
+        {
+            string[] subs;
+            if (id == null || id == 0)
+            {
+                string myUrl = Microsoft.AspNetCore.Http.Extensions.UriHelper.GetDisplayUrl(Request);
+                subs = myUrl.Split('=', '&');
+                if (subs.Length > 1)
+                    if (subs[1] != "")
+                    {
+                        id = long.Parse(subs[1]);
+
+                        string url = "https://localhost:7060/api/Cases";
+
+                        var client = new RestClient(url);
+
+                        var request = new RestRequest();
+
+                        var response = client.Get(request);
+
+                        var childCases = JsonConvert.DeserializeObject<Root>(response.Content);
+
+                        var tempCase = childCases.value.OrderByDescending(c => c.id == id).FirstOrDefault();
+
+                        CaseDTO newestCase = _mapper.Map<CaseDTO>(tempCase);
+
+                        return View(newestCase);
+                    }
+            }
+            return View();
         }
 
         public IActionResult EditCase(int id)
@@ -108,9 +172,9 @@ namespace CaseMgmtPortal.Controllers
             if (ModelState.IsValid)
             {
                 if (childCase.Notes == "Entered in Error")
-                    childCase.Status = "Request for Case Closure.";
+                    childCase.Status = "Request for Closure";
                 else if (childCase.Notes == "Neglect Resolved")
-                    childCase.Status = "Request for Case Closure.";
+                    childCase.Status = "Request for Closure";
                 else
                     childCase.Status = childCase.Status;
                 

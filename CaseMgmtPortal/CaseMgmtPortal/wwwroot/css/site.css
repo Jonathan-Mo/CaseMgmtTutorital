@@ -25,7 +25,17 @@ hr.solid {
     border-top: 3px solid #bbb;
 }
 
-/*.btn.btn-outline-ui.fas.fa-solid.fa-arrow-right {
-    width: 150px;
-    height: 35px;
-}*/
+#caseInfo {
+    position: relative;
+}
+
+#caseBadge {
+    position: absolute;
+    z-index: 2;
+    top: 1px;
+    left: 20px;
+}
+
+#caseContainer {
+    z-index: 1;
+}
