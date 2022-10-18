@@ -39,59 +39,129 @@
 @if (Model.ListOfRecords.Count() > 0)
 {
     <form method="get" asp-action="ViewCase" asp-controller="ViewCases">
-        <div class="text-danger"></div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 d-lg-flex justify-content-lg-between align-items-center">
-                    <div class="mb-2 mb-lg-0">
-                        <div class="form-group">
-                            <label for="InputCid">Search by Case Number</label>
-                            <input type="text" class="form-control" id="InputCid" name="InputCid" value="0000000000">
-                            <small>This accepts any kind of alphanumeric characters.</small>
-                            <div class="btn-group">
-                                <input type="submit" value="Search" />
-                            </div>
-                        </div>
+                <div class="form-group">
+                    <div>
+                        <label for="InputCid">Search by Case Number</label>
+                        <input type="text" class="form-control" id="InputCid" name="InputCid" placeholder="Value">
+                        <small>Case numbers are 10 digits (e.g. 0123456789).</small>
                     </div>
+
                 </div>
             </div>
         </div>
+
+        <p class="label">Filter by Case Status</p>
+        <div class="form-check toggle-token">
+            <input class="form-check-input" type="checkbox" name="Filter" id="Filter1" value="All">
+            <label class="form-check-label" for="Filter1">
+                <span class="fas fa-square" aria-hidden="true"></span>
+                <span class="fas fa-check-square" aria-hidden="true"></span>
+                All
+            </label>
+        </div>
+        <div class="form-check toggle-token">
+            <input class="form-check-input" type="checkbox" name="Filter" id="filter2" value="PendingReview">
+            <label class="form-check-label" for="filter2">
+                <span class="fas fa-square" aria-hidden="true"></span>
+                <span class="fas fa-check-square" aria-hidden="true"></span>
+                Pending Review
+            </label>
+        </div>
+        <div class="form-check toggle-token">
+            <input class="form-check-input" type="checkbox" name="Filter" id="filter3" value="InProgress">
+            <label class="form-check-label" for="filter3">
+                <span class="fas fa-square" aria-hidden="true"></span>
+                <span class="fas fa-check-square" aria-hidden="true"></span>
+                In Progress
+            </label>
+        </div>
+        <div class="form-check toggle-token">
+            <input class="form-check-input" type="checkbox" name="Filter" id="filter4" value="Assigned">
+            <label class="form-check-label" for="filter4">
+                <span class="fas fa-square" aria-hidden="true"></span>
+                <span class="fas fa-check-square" aria-hidden="true"></span>
+                Assigned
+            </label>
+        </div>
+        <div class="form-check toggle-token">
+            <input class="form-check-input" type="checkbox" name="Filter" id="filter5" value="Closed">
+            <label class="form-check-label" for="filter5">
+                <span class="fas fa-square" aria-hidden="true"></span>
+                <span class="fas fa-check-square" aria-hidden="true"></span>
+                Closed
+            </label>
+        </div>
+        <div class="form-check toggle-token">
+            <input class="form-check-input" type="checkbox" name="Filter" id="filter6" value="RequestforClosure">
+            <label class="form-check-label" for="filter6">
+                <span class="fas fa-square" aria-hidden="true"></span>
+                <span class="fas fa-check-square" aria-hidden="true"></span>
+                Request for Closure
+            </label>
+        </div>
+        <div class="btn btn-primary col-12 col-sm-1">
+            <input type="submit" value="Search" />
+        </div>
     </form>
+    <hr class="solid" />
 
     @*    @foreach (var values in Model.Value.AsEnumerable().Reverse())*@
     @foreach (var values in Model.ListOfRecords)
     {
-        @*var currentCase = (i - 1);*@
-        <div class="content-container p-2 m-3">
-            <div class="row p-3">
-                <div class="col-12 col-sm-10">
-                    <label class="fw-bold form-label row">
-                        <span aria-hidden="true"></span>Case @values.id
-                    </label>
-                    @if (values.date != values.updateDate)
-                    {
-                        <label class="form-label row">
-                            <span aria-hidden="true"></span>Updated on @values.date
+        <div id="caseInfo" class="p-1">
+            <div id="caseBadge">
+                @if (values.status == "Request for Closure")
+                {
+                    <span class="badge badge-danger">@values.status</span>
+                }
+                else if (values.status == "Pending Review")
+                {
+                    <span class="badge badge-warning">@values.status</span>
+                }
+                else if (values.status == "Assigned")
+                {
+                    <span class="badge badge-secondary">@values.status</span>
+                }
+                else if (values.status == "In Progress")
+                {
+                    <span class="badge badge-ui-priority">@values.status</span>
+                }
+                else if (values.status == "Closed")
+                {
+                    <span class="badge badge-ui">@values.status</span>
+                }
+                else
+                {
+                    <span class="badge badge-accent">Unknown Status</span>
+                }
+            </div>
+            <div id="caseContainer" class="content-container p-2 m-3">
+                <div class="row p-3">
+                    <div class="col-12 col-sm-10">
+                        <label class="fw-bold form-label row">
+                            <span aria-hidden="true"></span>Case @values.id
                         </label>
-                    }
-                    else
-                    {
-                        <label class="form-label row">
-                            <span aria-hidden="true"></span>Submited on @values.date
-                        </label>
-                    }
-                </div>
-                <div class="col-12 col-sm-2" align="center">
-                    @*<button type="button" class="btn btn-outline-ui">View Details <span class="fas fa-solid fa-arrow-right"></span></button>*@
-                    @*                    <input type="button" class="btn btn-outline-ui" onclick="location.href='/ViewCases/ViewCase';" value="View Details" />*@
-                    @*<input type="button" class="btn btn-outline-ui fas fa-solid fa-arrow-right" value="View Details" onclick="location.href='@Url.Action("ViewCase", "ViewCases", new {values.id})'" />*@
-                    @*<div class="col-2">
-            @Html.ActionLink("View Case", "ViewCase", new {values.id}, new { @class = "btn btn-outline-ui fas fa-solid fa-arrow-right"})
-            </div>*@
-                    <a class="btn btn-outline-ui" asp-controller="ViewCases" asp-action="ViewCase" asp-route-id="@values.id">
-                        View Details
-                        <span class="fas fa-arrow-right" aria-hidden="true"></span>
-                    </a>
+                        @if (values.date != values.updateDate)
+                        {
+                            <label class="form-label row">
+                                <span aria-hidden="true"></span>Updated on @values.date
+                            </label>
+                        }
+                        else
+                        {
+                            <label class="form-label row">
+                                <span aria-hidden="true"></span>Submited on @values.date
+                            </label>
+                        }
+                    </div>
+                    <div class="col-12 col-sm-2" align="center">
+                        <a class="btn btn-outline-ui" asp-controller="ViewCases" asp-action="ViewCase" asp-route-id="@values.id">
+                            View Details
+                            <span class="fas fa-arrow-right" aria-hidden="true"></span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

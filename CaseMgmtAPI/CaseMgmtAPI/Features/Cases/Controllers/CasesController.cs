@@ -3,6 +3,8 @@ using CaseMgmtAPI.Features.Cases.DTO;
 using CaseMgmtAPI.Features.Cases.Handlers;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using System.Net.Http.Headers;
 
 namespace CaseMgmtAPI.Features.Cases.Controllers
 {
@@ -27,10 +29,73 @@ namespace CaseMgmtAPI.Features.Cases.Controllers
             {
                 var result = await _mediator.Send(new GetCases.Query());
 
-                if (result.Value == null)
+                if (result == null)
                     return NoContent();
 
                 return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogCritical($"Exception while getting a list of cases.", ex);
+                return BadRequest();
+            }
+        }
+
+        [Route("partial")]
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<CaseDTO>>> GetPartial()
+        {
+            try
+            {
+                string myUrl = Microsoft.AspNetCore.Http.Extensions.UriHelper.GetDisplayUrl(Request);
+
+                Microsoft.Extensions.Primitives.StringValues headerValues;
+                //var filterFilter = string.Empty;
+                //if (Request.Headers.TryGetValue("filter", out headerValues))
+                //{
+                //    filterFilter = headerValues.FirstOrDefault();
+                //}
+
+                int page;
+                if (Request.Headers.TryGetValue("page", out headerValues))
+                {
+                    page = Int32.Parse(headerValues.FirstOrDefault());
+                }
+                else
+                {
+                    return BadRequest();
+                }
+
+                int size;
+                if (Request.Headers.TryGetValue("size", out headerValues))
+                {
+                    size = Int32.Parse(headerValues.FirstOrDefault());
+                }
+                else
+                {
+                    return BadRequest();
+                }
+
+                int count;
+                if (Request.Headers.TryGetValue("count", out headerValues))
+                {
+                    count = Int32.Parse(headerValues.FirstOrDefault());
+                }
+                else
+                {
+                    return BadRequest();
+                }
+
+
+
+                var totalResult = await _mediator.Send(new GetCases.Query());
+
+                if (totalResult.Value == null)
+                    return NoContent();
+
+                ActionResult<IEnumerable<CaseDTO>> extractedResult = totalResult.Value.ToList().Skip((page - 1) * size).Take(size).ToList();
+
+                return Ok(extractedResult);
             }
             catch (Exception ex)
             {

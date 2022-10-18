@@ -10,6 +10,7 @@ namespace CaseMgmtAPI.Features.Cases
         {
             CreateMap<Case, CaseDTO>();
             CreateMap<CaseDTO, Case>();
+            //CreateMap<CaseDTO, ListRecords>();
         }
     }
 }

@@ -94,8 +94,8 @@
             </label>
         </div>
         <div class="form-check toggle-token">
-            <input class="form-check-input" type="checkbox" name="Filter" id="filter2" value="RquestForClosure">
-            <label class="form-check-label" for="filter2">
+            <input class="form-check-input" type="checkbox" name="Filter" id="filter6" value="RequestforClosure">
+            <label class="form-check-label" for="filter6">
                 <span class="fas fa-square" aria-hidden="true"></span>
                 <span class="fas fa-check-square" aria-hidden="true"></span>
                 Request for Closure
@@ -104,23 +104,6 @@
         <div class="btn btn-primary col-12 col-sm-1">
             <input type="submit" value="Search" />
         </div>
-
-@*        <div class="form-check toggle-token">
-            <input class="form-check-input" type="checkbox" value="" name="exclusiveChoice01" id="toggleTokenField12" value="option2">
-            <label class="form-check-label" for="toggleTokenField12">
-                <span class="fas fa-square" aria-hidden="true"></span>
-                <span class="fas fa-check-square" aria-hidden="true"></span>
-                Pending Review
-            </label>
-        </div>
-        <div class="form-check toggle-token">
-            <input class="form-check-input" type="checkbox" value="" name="exclusiveChoice01" id="toggleTokenField13" value="option3" disabled>
-            <label class="form-check-label" for="toggleTokenField13">
-                <span class="fas fa-circle" aria-hidden="true"></span>
-                <span class="fas fa-dot-circle" aria-hidden="true"></span>
-                Exclusive Choice 3
-            </label>
-        </div>*@
     </form>
     <hr class="solid" />
 
@@ -208,7 +191,7 @@
                     @for (int i = 1; i <= calculatedNumber; i++)
                     {
                         <li class="page-item">
-                            <a class="page-link" asp-controller="ViewCases" asp-action="Index" asp-route-page="@i">
+                            <a class="page-link" asp-controller="ViewCases" asp-action="Index" asp-route-page="@i" asp-route-size="10" aap-route-count="@(i * 10)">
                                 @i
                             </a>
                         </li>
